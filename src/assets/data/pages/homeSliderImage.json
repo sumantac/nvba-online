@@ -1,0 +1,22 @@
+[
+    {
+        "homeSliderImageId": "1",
+        "name": "bg_1.jpg",
+        "imageLink": "./../../../assets/images/bg_1.jpg",
+        "tag": "",
+        "description": ""
+    },
+    {
+        "homeSliderImageId": "2",
+        "homeSliderImage": "bg_2.jpg",
+        "imageLink": "./../../../assets/images/bg_2.jpg",
+        "tag": "",
+        "description": ""
+    },{
+        "homeSliderImageId": "3",
+        "homeSliderImage": "bg_3.jpg",
+        "imageLink": "./../../../assets/images/bg_3.jpg",
+        "tag": "",
+        "description": ""
+    }
+]
