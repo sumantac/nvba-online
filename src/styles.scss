@@ -1,5 +1,10 @@
 // /* You can add global styles to this file, and also import other style files */
 
+@media (min-width: 992px) {
+  .wrapper{
+    margin-top: 74px;
+  }
+}
 
 .navbar-nav {
   li{
@@ -45,3 +50,4 @@
 }
 
 }
+
