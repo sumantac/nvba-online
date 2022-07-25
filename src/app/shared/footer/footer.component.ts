@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetjsonfileService } from './../../services/getjsonfile.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  siteLinks : any;
+  constructor( private jsonFile:GetjsonfileService ) { }
 
   ngOnInit(): void {
+    this.jsonFile.pageData('header').subscribe(data => {
+      console.log(data.length);
+      this.siteLinks = data;
+
+    });
+    
   }
 
 }

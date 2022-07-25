@@ -12,6 +12,12 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { TeamComponent } from './pages/aboutus/team/team.component';
 
 import { GetjsonfileService } from './services/getjsonfile.service';
+import { ConstitutionComponent } from './pages/aboutus/constitution/constitution.component';
+import { ThreecolComponent } from './helper/home/threecol/threecol.component';
+import { DonationsComponent } from './helper/home/donations/donations.component';
+
+import { LatesteventsComponent } from './helper/home/latestevents/latestevents.component';
+import { VolunteerComponent } from './helper/home/volunteer/volunteer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,12 @@ import { GetjsonfileService } from './services/getjsonfile.service';
     FooterComponent,
     HomeComponent,
     ContactusComponent,
-    TeamComponent
+    TeamComponent,
+    ConstitutionComponent,
+    ThreecolComponent,
+    DonationsComponent,
+    LatesteventsComponent,
+    VolunteerComponent
   ],
   imports: [
     BrowserModule,

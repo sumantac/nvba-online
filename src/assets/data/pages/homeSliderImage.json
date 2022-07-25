@@ -1,21 +1,21 @@
 [
     {
         "homeSliderImageId": "1",
-        "name": "bg_1.jpg",
-        "imageLink": "./../../../assets/images/bg_1.jpg",
+        "name": "care-1.jpg",
+        "imageLink": "./../../../assets/images/gallery/cares/care-1.jpg",
         "tag": "",
         "description": ""
     },
     {
         "homeSliderImageId": "2",
-        "homeSliderImage": "bg_2.jpg",
-        "imageLink": "./../../../assets/images/bg_2.jpg",
+        "homeSliderImage": "111.jpg",
+        "imageLink": "./../../../assets/images/gallery/common/images-2019/111.jpg",
         "tag": "",
         "description": ""
     },{
         "homeSliderImageId": "3",
         "homeSliderImage": "bg_3.jpg",
-        "imageLink": "./../../../assets/images/bg_3.jpg",
+        "imageLink": "./../../../assets/images/gallery/common/picnic/picnic-2022.jpg",
         "tag": "",
         "description": ""
     }
