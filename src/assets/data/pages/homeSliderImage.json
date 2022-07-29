@@ -18,5 +18,11 @@
         "imageLink": "./../../../assets/images/gallery/common/picnic/picnic-2022.jpg",
         "tag": "",
         "description": ""
+    },{
+        "homeSliderImageId": "4",
+        "homeSliderImage": "1.jpg",
+        "imageLink": "./../../../assets/images/gallery/common/images-2016/1.jpg",
+        "tag": "",
+        "description": ""
     }
 ]
