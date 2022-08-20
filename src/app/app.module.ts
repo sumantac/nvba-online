@@ -18,6 +18,7 @@ import { DonationsComponent } from './helper/home/donations/donations.component'
 
 import { LatesteventsComponent } from './helper/home/latestevents/latestevents.component';
 import { VolunteerComponent } from './helper/home/volunteer/volunteer.component';
+import { SponsersComponent } from './helper/home/sponsers/sponsers.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { VolunteerComponent } from './helper/home/volunteer/volunteer.component'
     ThreecolComponent,
     DonationsComponent,
     LatesteventsComponent,
-    VolunteerComponent
+    VolunteerComponent,
+    SponsersComponent
   ],
   imports: [
     BrowserModule,

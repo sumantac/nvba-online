@@ -14,4 +14,10 @@ export class GetjsonfileService {
     return this.http.get(_jsonURL);
   }
 
+  public blockData(fileName:any): Observable<any> {
+    let _jsonURL = '/assets/data/pages/'+fileName+'.json';
+  //  console.log(this.http.get(_jsonURL))
+    return this.http.get(_jsonURL);
+  }
+
 }
