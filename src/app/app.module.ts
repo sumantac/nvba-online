@@ -34,7 +34,12 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
 import { ProfileComponent } from './helper/dashboard/profile/profile.component';
+import { CartmemberComponent } from './helper/dashboard/cartmember/cartmember.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+
+import { ToastrModule } from 'ngx-toastr';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +60,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    ProfileComponent
+    CartmemberComponent,
+    CheckoutComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,6 +75,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [GetjsonfileService, AuthService ],
   bootstrap: [AppComponent]
