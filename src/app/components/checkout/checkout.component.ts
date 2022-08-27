@@ -12,6 +12,7 @@ import {
   ICreateOrderRequest 
 } from 'ngx-paypal';
 
+import * as moment from 'moment';
 declare let paypal:any;
 
 @Component({
@@ -25,7 +26,7 @@ export class CheckoutComponent implements OnInit {
   tax: number = 0;
   addScript: boolean = false;
   paypalLoad: boolean = true;
-  emptyCart: boolean = true;
+  emptyCart: boolean = false;
 
   member:any;
 
@@ -58,39 +59,13 @@ export class CheckoutComponent implements OnInit {
     }
 
   ngOnInit(): void {
-     let ppList: any = [];
-     let newList: any;
         this.cartCheck.forEach((i:any)=>{
         //  console.log(parseFloat(i.price) * parseFloat(i.quantity));
           this.subtotal +=(( parseFloat(i.price)) * (parseFloat(i.quantity)));
           this.emptyCart = true;
-
-          let ppObject= {
-              name: i.name,
-              quantity: i.quantity.toString(),
-              category: i.sku,
-              tax:{currency_code:"USD", value:"0.00"},
-              unit_amount: {
-                  currency_code: "USD",
-                  value: (( parseFloat(i.price)) * (parseFloat(i.quantity))).toString(),
-              },
-          }
-          // let newObject = { 
-          //     "name": i.name,
-          //     "sku": i.sku,
-          //     "price": (i.price).toString(),
-          //     "currency": "USD",
-          //     "quantity": (i.quantity).toString() 
-          // }
-
-          ppList.push(ppObject);
-        //  newList.append(ppObject);
-
         });
-      let value = this.subtotal.toString() +'.00';
-      console.log(ppList);
-      // this.initConfig(value.toString(), ppList);
-   
+        console.log( moment(this.member.expires).format('LL') );
+        console.log( this.member.expires );
   }
 
 
@@ -102,7 +77,7 @@ export class CheckoutComponent implements OnInit {
         this.addPaypalScript().then(() => {
           paypal.Button.render(this.paypalConfig, '#paypal-button-container');
           this.paypalLoad = false;
-      //    console.log(this.paypalConfig);  
+           console.log(this.paypalConfig);  
         })
       }
     }
@@ -165,16 +140,23 @@ export class CheckoutComponent implements OnInit {
            console.log(this.member);
            
   
-           this.toastr.success('Your payment is successful.');
+        //   this.toastr.success('Your payment is successful.');
           
            if(this.member.email){
-  
+            console.log(this.member.email);
               if(!this.member.payments){
+                console.log('!this.member.payments');
                 this.member.payments = [];
                 console.log('First Time');
               }
               this.member.payments.unshift(paymentTrans);
-          //    this.updateMemberDetailsFun(payment);
+              console.log('this.member.payments.unshift(paymentTrans);');
+            //  this.updateMemberDetailsFun(payment);
+
+
+
+
+              console.log(this.member.purchase);
               if(!this.member.purchase){
                   this.member.purchase = [];
               //   console.log('First Time purchase');
@@ -188,9 +170,9 @@ export class CheckoutComponent implements OnInit {
          //   this.mds.addPayments(payment) ;
            }
           
-       
+           this.mds.UpdateMember( this.member.id, this.member );
              this.cart.clearCart();
-       //      this.cleanup();
+             this.cleanup();
             // this.router.navigate(['/durgapuja2020']);
   
             setTimeout(()=>{                           
@@ -203,17 +185,59 @@ export class CheckoutComponent implements OnInit {
     };
 
 
+    updateMemberDetailsFun(payment:any){
+      console.log(payment.transactions[0].item_list.items[0].name);
+      // Add Membership Details Start
+        if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
+          console.log('Inside If');
+            let newdate;
+            let date = moment();
+            let expiredDate = moment(this.member.expires);
+            console.log(expiredDate);
+
+            if(this.member.expires){
+        //   newdate = new Date(new Date().setFullYear(new Date(this.member.expires).getFullYear() + 1))
+             newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
+             date = moment( new Date(new Date().setFullYear(new Date().getFullYear() + 1)));
+             console.log('If = '+ newdate);
+             console.log(newdate);
+             console.log('If = '+ date);
+             console.log(date.format('MMMM Do YYYY, h:mm:ss'));
+            }
+            else{
+            newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
+       //     alert('else = '+newdate);
+            }
+            
+           this.member.expires = newdate.toISOString().split('T')[0];
+           this.member.expires = date;
+          
+            this.member.membershipstatus = 'Valid';
+            this.mds.UpdateMember( this.member.id, this.member );
+        } // Add Membership Details End
+  
+          //   // Add Non-Membership Ticket Details 
+          //   if( payment.transactions[0].item_list.items[0].name == 'Non-Member Concert ticket' ){
+  
+          //     this.member.nonmemberpogramticket = "paid";
+              
+          // } // Add Non-Membership Ticket Details
+
+
+    }  
+
+
 
   goBack(){
       this.location.back();
   }
 
-  // cleanup(){
-  //   this.cartCheck = [];
-  //   this.subtotal = 0;
-  //   this.tax= 0;
-  //   this.emptyCart= true;
-  // }
+  cleanup(){
+    this.cartCheck = [];
+    this.subtotal = 0;
+    this.tax= 0;
+    this.emptyCart= true;
+  }
 
 
 

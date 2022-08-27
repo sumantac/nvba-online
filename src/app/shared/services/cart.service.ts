@@ -21,12 +21,8 @@ export class CartService {
 
   addToCart(product:any) { // console.log(product);
     console.log(product);
-    // this.items.forEach( (item, index) => {
-    //   if(item.category === product.category) this.items.splice(index,1);
-    // });
-
-    this.items = [...this.items, ...product];
-    console.log(this.items);
+    this.items = [...product];
+ //   console.log(this.items);
     this.cartvalue.next(this.items);
   }
 

@@ -12,14 +12,14 @@
           <div>
               <div class="mb-3"><a (click)="goBack()"  style="color: #ff6500; cursor: pointer; " ><i class="fa fa-chevron-left" aria-hidden="true"></i> Go Back</a></div>
                             <div class="table-responsive">
-                                <div class="flex-column my-5"   > 
+                                <div class="flex-column my-5" *ngIf="!emptyCart"  > 
                                     <div class="flex-center  my-5">Your last order is completed. Cart is empty now. </div> 
                                     <h2 class="flex-center  my-3">Always update your mailing address and phone number in case we need to issue a refund.</h2>
                                     <div class="flex-center ">
-                                        <a class="btn-get-started text-center " routerLink="/user" >Membership Details Page</a>
+                                        <a class="btn-get-started text-center " routerLink="/dashboard" >Membership Details Page</a>
                                     </div>
                                 </div> 
-                                <table class="table table-hover table-bordered"  >
+                                <table class="table table-hover table-bordered" *ngIf="emptyCart"  >
                                     <thead>
                                     <tr>
                                         <th scope="col">Items</th>
@@ -38,22 +38,6 @@
                                         <td  >$ {{item.price * item.quantity}}</td>
                                     </tr>
                                     </tbody>
-                                    <!-- <thead>
-                                        <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">Subtotal</th>
-                                        <th scope="col">$ {{subtotal}}</th>
-                                        </tr>
-                                    </thead> -->
-                                    <!-- <thead>
-                                        <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">Tax</th>
-                                        <th scope="col">$ {{tax}}</th>
-                                        </tr>
-                                    </thead> -->
                                     <thead>
                                         <tr>
                                         <th scope="col"></th>
@@ -68,10 +52,7 @@
                                     {{ cartCheck | json }}
                                 </div> -->
                                 <div class="  my-5 col-md-4  float-end " >
-                                    <!-- <div class="outside" >
-                                        <ngx-paypal [config]="payPalConfig"></ngx-paypal>
-                                    </div> -->
-                                    <div class="d-flex justify-content-end mb-5" >
+                                    <div class="d-flex justify-content-end mb-5" *ngIf="emptyCart" >
                                         <div id="paypal-button-container"></div>
                                     </div>
                                 </div>

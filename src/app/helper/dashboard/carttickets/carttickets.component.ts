@@ -64,7 +64,9 @@ export class CartticketsComponent implements OnInit {
 
   addToCartobj(){
     console.log(this.dataObject);
+    console.log(this.cs.items);
     this.cs.items = [];
+    console.log(this.cs.items);
     this.dataObject.forEach((value:any) => {
   //    console.log(value.quantity);
     //  console.log(value);
@@ -81,6 +83,7 @@ export class CartticketsComponent implements OnInit {
      //   this.checkObject.push(value);
      } 
     });
+    console.log(this.cs.items);
     this.cs.addToCart(this.cs.items);
     
  //   this.cs.addToCart(this.checkObject);
