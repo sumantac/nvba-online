@@ -7,7 +7,7 @@ import { BehaviorSubject, from } from 'rxjs';
 })
 export class CartService {
 
-  items: any = [];
+  items: any;
 
   constructor(  private http: HttpClient ) {}
 

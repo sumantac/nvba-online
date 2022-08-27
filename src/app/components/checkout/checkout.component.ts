@@ -58,7 +58,8 @@ export class CheckoutComponent implements OnInit {
     }
 
   ngOnInit(): void {
-     let ppList: any[] = [];
+     let ppList: any = [];
+     let newList: any;
         this.cartCheck.forEach((i:any)=>{
         //  console.log(parseFloat(i.price) * parseFloat(i.quantity));
           this.subtotal +=(( parseFloat(i.price)) * (parseFloat(i.quantity)));
@@ -74,8 +75,16 @@ export class CheckoutComponent implements OnInit {
                   value: (( parseFloat(i.price)) * (parseFloat(i.quantity))).toString(),
               },
           }
+          // let newObject = { 
+          //     "name": i.name,
+          //     "sku": i.sku,
+          //     "price": (i.price).toString(),
+          //     "currency": "USD",
+          //     "quantity": (i.quantity).toString() 
+          // }
 
           ppList.push(ppObject);
+        //  newList.append(ppObject);
 
         });
       let value = this.subtotal.toString() +'.00';
@@ -84,7 +93,7 @@ export class CheckoutComponent implements OnInit {
    
   }
 
-  private initConfig(val:any,cartcheck:any): void {
+  private initConfig(val:any,cc:any): void {
     this.payPalConfig = {
         currency: 'USD',
         // Sandbox
@@ -101,10 +110,10 @@ export class CheckoutComponent implements OnInit {
                         item_total: {
                             currency_code: 'USD',
                             value: val
-                        }
+                        },  
                     }
                 },
-               // items: this.cartCheck
+             //   items: cc,
               //   items: [{
               //       name: 'Enterprise Subscription',
               //       quantity: '1',
@@ -114,15 +123,7 @@ export class CheckoutComponent implements OnInit {
               //           value: '9.99',
               //       },
               //   },
-              //   {
-              //     name: 'Enterprise Subscription',
-              //     quantity: '1',
-              //     category: 'DIGITAL_GOODS',
-              //     unit_amount: {
-              //         currency_code: 'USD',
-              //         value: '9.99',
-              //     },
-              //   }
+           
               // ]
             }]
         },
