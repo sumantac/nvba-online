@@ -27,7 +27,7 @@ export class CartmemberComponent implements OnInit {
   totalCost: number = 0;
   cartCheck: any;
 
-  private  memberCart = {
+  private  memberCart = [{
     "name": "NVBA Annual Membership",
     "description": "NVBA Annual Membership Fee",
     "quantity": 1,
@@ -35,7 +35,7 @@ export class CartmemberComponent implements OnInit {
     "tax": 0,
     "sku": "MM2022YY",
     "currency": "USD" 
-  }
+  }];
 
   constructor(
     private auth: AuthService, 

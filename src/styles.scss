@@ -1,4 +1,15 @@
 // /* You can add global styles to this file, and also import other style files */
+#myTab{
+   a.nav-link{
+    font-size: 0.9rem;
+    padding: 0.3rem .75rem;
+   }
+
+}
+
+table tr, table tr td {
+  font-size: 0.8rem !important;
+ }
 
 @media (min-width: 992px) {
   .wrapper{
@@ -51,3 +62,80 @@
 
 }
 
+
+.white{
+  color: #fff;
+}
+
+#about .upcomming .icon{
+  border-radius: 0px;
+}
+#about .upcomming .about-container .icon-box .icon{
+  border: 0px;
+}
+#about .upcomming .about-container .icon-box:hover .icon {
+  background: #fff;
+}
+
+.upcomming p {
+  color: #556877;
+}
+
+.smallOrangeHeader{
+  color: #ff8d00;
+  font-size: 0.7em;
+}
+
+.nav-link {
+  color: #ff8d00;
+}
+
+
+#membership{
+
+  #orderHistoryTab, #profileTab {
+    display: none;
+  }
+  #membershipTab{
+    display: block;
+  }
+
+}
+
+#profile{
+
+  #orderHistoryTab, #membershipTab {
+    display: none;
+  }
+  #profileTab{
+    display: block;
+  }
+
+}
+
+#orderHistory{
+
+  #profileTab, #membershipTab {
+    display: none;
+  }
+  #orderHistoryTab {
+    display: block;
+  }
+
+}
+
+
+// @include media-breakpoint-up(sm) { }
+// @include media-breakpoint-up(md) {  }
+// @include media-breakpoint-up(lg) {  }
+// @include media-breakpoint-up(xl) { }
+// @include media-breakpoint-up(xxl) { ... }
+
+app-cartmember{
+  ul{
+    li{
+      list-style: none;
+      padding: 1rem;
+    }
+  }
+}

@@ -7,6 +7,10 @@ import { ToastrService } from 'ngx-toastr';
 import { Location} from "@angular/common";
 import { Router } from '@angular/router';
 import { AuthService } from './../../shared/services/auth.service';
+import {
+  IPayPalConfig,
+  ICreateOrderRequest 
+} from 'ngx-paypal';
 
 declare let paypal:any;
 
@@ -15,8 +19,8 @@ declare let paypal:any;
   templateUrl: './checkout.component.html',
   styleUrls: ['./checkout.component.scss']
 })
-export class CheckoutComponent implements OnInit, AfterViewInit {
-  cartCheck: any;
+export class CheckoutComponent implements OnInit {
+  cartCheck: any = [];
   subtotal: number = 0;
   tax: number = 0;
   addScript: boolean = false;
@@ -27,6 +31,10 @@ export class CheckoutComponent implements OnInit, AfterViewInit {
 
   userDetails: any;
   move:boolean = false;
+
+
+  public payPalConfig ? : IPayPalConfig;
+  item: any;
 
   constructor( 
     private cart: CartService, 
@@ -43,181 +51,135 @@ export class CheckoutComponent implements OnInit, AfterViewInit {
         console.log(this.member);
       });
 
+    this.cart.currentCart.subscribe( (cartCheck) => this.cartCheck = cartCheck);
+    console.log(this.cartCheck.length);
+    console.log(this.cart.getItems());
+
     }
 
   ngOnInit(): void {
-    this.cart.currentCart.subscribe( cartCheck => this.cartCheck = cartCheck);
-  //  console.log(this.cartCheck);
-    [...this.cartCheck].forEach(value => {
-      // console.log(value.quantity);
-      // console.log(value);
-      if(value.quantity){
-       this.subtotal += (value.price * value.quantity);
-       this.tax =  + parseFloat(value.tax).toFixed(2);
-       this.emptyCart = false;
-      //  console.log('this.emptyCart');
-      //  console.log(this.emptyCart);
-     } 
-    });
-    // console.log('Total');
-    // console.log(this.subtotal);
-    // console.log(this.tax);
-    // console.log('this.cartCheck');
-    // console.log(this.cartCheck);
+     let ppList: any[] = [];
+        this.cartCheck.forEach((i:any)=>{
+        //  console.log(parseFloat(i.price) * parseFloat(i.quantity));
+          this.subtotal +=(( parseFloat(i.price)) * (parseFloat(i.quantity)));
+          this.emptyCart = true;
 
-    this.ar.data.subscribe(routeData => {
-      this.userDetails = routeData['data'];
-      console.log(this.userDetails);
-    });
+          let ppObject= {
+              name: i.name,
+              quantity: i.quantity.toString(),
+              category: i.sku,
+              tax:{currency_code:"USD", value:"0.00"},
+              unit_amount: {
+                  currency_code: "USD",
+                  value: (( parseFloat(i.price)) * (parseFloat(i.quantity))).toString(),
+              },
+          }
 
+          ppList.push(ppObject);
 
+        });
+      let value = this.subtotal.toString() +'.00';
+      console.log(ppList);
+      this.initConfig(value.toString(), ppList);
+   
   }
 
-  ngAfterViewInit(): void {
+  private initConfig(val:any,cartcheck:any): void {
+    this.payPalConfig = {
+        currency: 'USD',
+        // Sandbox
+        clientId: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
+       // Prod
+       // clientId: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS',
+        createOrderOnClient: (data) => < ICreateOrderRequest > {
+            intent: 'CAPTURE',
+            purchase_units: [{
+                amount: {
+                    currency_code: 'USD',
+                    value: val,
+                    breakdown: {
+                        item_total: {
+                            currency_code: 'USD',
+                            value: val
+                        }
+                    }
+                },
+               // items: this.cartCheck
+              //   items: [{
+              //       name: 'Enterprise Subscription',
+              //       quantity: '1',
+              //       category: 'DIGITAL_GOODS',
+              //       unit_amount: {
+              //           currency_code: 'USD',
+              //           value: '9.99',
+              //       },
+              //   },
+              //   {
+              //     name: 'Enterprise Subscription',
+              //     quantity: '1',
+              //     category: 'DIGITAL_GOODS',
+              //     unit_amount: {
+              //         currency_code: 'USD',
+              //         value: '9.99',
+              //     },
+              //   }
+              // ]
+            }]
+        },
+        advanced: {
+            commit: 'true'
+        },
+        style: {
+            label: 'paypal',
+            layout: 'vertical'
+        },
+        onApprove: (data, actions) => {
+            console.log('onApprove - transaction was approved, but not authorized', data, actions);
+            actions.order.get().then((details:any) => {
+                console.log('onApprove - you can get full order details inside onApprove: ', details);
+            });
 
-    if(this.cartCheck){
-      if (!this.addScript) {
-        this.addPaypalScript().then(() => {
-          paypal.Button.render(this.paypalConfig, '#paypal-button-container');
-          this.paypalLoad = false;
-      //    console.log(this.paypalConfig);  
-        })
-      }
-    }
-    
+        },
+        onClientAuthorization: (data) => {
+            console.log('onClientAuthorization - you should probably inform your server about completed transaction at this point', data);
+        //    this.showSuccess = true;
+        },
+        onCancel: (data, actions) => {
+            console.log('OnCancel', data, actions);
+         //   this.showCancel = true;
 
-  }  // End of ngAfterViewInit
-
-  addPaypalScript() {
-    this.addScript = true;
-    return new Promise((resolve, reject) => {
-      let scripttagElement = document.createElement('script');    
-      scripttagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
-      scripttagElement.onload = resolve;
-      document.body.appendChild(scripttagElement);
-   //   console.log(scripttagElement);
-    })
-  } // End of AddPaypalScript
-
-
-  paypalConfig = {
-    env: 'sandbox',
-  //  env: 'production',
-    client: {
-      sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
-  //    production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
-    },
-    style: {
-      shape: 'rect',
-      color: 'gold',
-      layout: 'vertical',
-      label: 'paypal',
-    },
-    commit: true,
-    payment: (data:any, actions:any) => {
-      return actions.payment.create({
-        payment: {
-          transactions: [ 
-            {
-              "amount": {
-                "total": (this.subtotal + this.tax),
-                "currency": "USD",
-                "details": {
-                  "subtotal": this.subtotal,
-                  "tax": this.tax
-                }
-              },
-              "description": "NVBA Website Payment.", 
-              "item_list": {
-                "items": this.cartCheck
-              }  
-            }
-          ]
+        },
+        onError: err => {
+            console.log('OnError', err);
+         //   this.showError = true;
+        },
+        onClick: (data, actions) => {
+            console.log('onClick', data, actions);
+          //  this.resetStatus();
         }
-      });
-    },
-    onAuthorize: (data:any, actions:any) => {
-      return actions.payment.execute().then((payment:any) => {
-        let paymentTrans = {...payment};
+    };
+}
 
-        //Do something when payment is successful.
-         console.log(payment);
-         console.log(this.member);
-         
 
-         this.toastr.success('Your payment is successful.');
-        
-         if(this.member.email){
+  // ngAfterViewInit(): void {
 
-            if(!this.member.payments){
-              this.member.payments = [];
-              console.log('First Time');
-            }
-            this.member.payments.unshift(paymentTrans);
-            this.updateMemberDetailsFun(payment);
-            if(!this.member.purchase){
-                this.member.purchase = [];
-            //   console.log('First Time purchase');
-            }
-            this.member.purchase.unshift(this.cartCheck);
-            this.mds.UpdateMember(this.member.id,this.member);
-        //    this.mds.addPayments(payment) ;
-         }
-         else{
-          console.log('in Else');
-       //   this.mds.addPayments(payment) ;
-         }
-        
-     
-           this.cart.clearCart();
-           this.cleanup();
-          // this.router.navigate(['/durgapuja2020']);
 
-          setTimeout(()=>{                           
-            this.router.navigate(['/home']);
-          }, 6000);
-          
+  // }  // End of ngAfterViewInit
 
-      })
-    }
-  };
+
+
 
   goBack(){
       this.location.back();
   }
 
-  cleanup(){
-    this.cartCheck = [];
-    this.subtotal = 0;
-    this.tax= 0;
-    this.emptyCart= true;
-  }
+  // cleanup(){
+  //   this.cartCheck = [];
+  //   this.subtotal = 0;
+  //   this.tax= 0;
+  //   this.emptyCart= true;
+  // }
 
-
-  updateMemberDetailsFun(payment:any){
-    // Add Membership Details Start
-      if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
-          let newdate;
-          if(this.member.expires){
-      //   newdate = new Date(new Date().setFullYear(new Date(this.member.expires).getFullYear() + 1))
-           newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-       //     alert('If = '+newdate);
-          }
-          else{
-          newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-       //   alert('else = '+newdate);
-          }
-          this.member.expires = newdate.toISOString().split('T')[0];
-          this.member.membershipstatus = 'Valid';
-      } // Add Membership Details End
-
-          // Add Non-Membership Ticket Details 
-          if( payment.transactions[0].item_list.items[0].name == 'Non-Member Concert ticket' ){
-
-            this.member.nonmemberpogramticket = "paid";
-            
-        } // Add Non-Membership Ticket Details
-  }
 
 
 }

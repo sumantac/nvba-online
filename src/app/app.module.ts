@@ -35,10 +35,12 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { AuthService } from "./shared/services/auth.service";
 import { ProfileComponent } from './helper/dashboard/profile/profile.component';
 import { CartmemberComponent } from './helper/dashboard/cartmember/cartmember.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 
 import { ToastrModule } from 'ngx-toastr';
+import { NgxPayPalModule } from 'ngx-paypal';
+import { CartticketsComponent } from './helper/dashboard/carttickets/carttickets.component';
 
 
 @NgModule({
@@ -63,6 +65,8 @@ import { ToastrModule } from 'ngx-toastr';
     CartmemberComponent,
     CheckoutComponent,
     ProfileComponent,
+    CartticketsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -75,7 +79,9 @@ import { ToastrModule } from 'ngx-toastr';
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot()
+    FormsModule,
+    ToastrModule.forRoot(),
+    NgxPayPalModule
   ],
   providers: [GetjsonfileService, AuthService ],
   bootstrap: [AppComponent]

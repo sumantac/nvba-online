@@ -52,7 +52,7 @@ export class MemberService {
   }
   /* Update member */
   UpdateMember(id: number, memb: any) {
-    console.log(id,memb)
+ //   console.log(id,memb)
     // this.memberRef
     //   .update(member)
     //   .catch((error) => {

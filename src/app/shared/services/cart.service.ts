@@ -7,7 +7,7 @@ import { BehaviorSubject, from } from 'rxjs';
 })
 export class CartService {
 
-  items = [];
+  items: any = [];
 
   constructor(  private http: HttpClient ) {}
 
@@ -20,12 +20,13 @@ export class CartService {
   // }
 
   addToCart(product:any) { // console.log(product);
- let p = product;
+    console.log(product);
     // this.items.forEach( (item, index) => {
     //   if(item.category === product.category) this.items.splice(index,1);
     // });
 
-    this.items = {...this.items, ...product};
+    this.items = [...this.items, ...product];
+    console.log(this.items);
     this.cartvalue.next(this.items);
   }
 
