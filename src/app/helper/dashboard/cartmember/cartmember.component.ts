@@ -7,6 +7,7 @@ import { AuthService } from './../../../shared/services/auth.service';
 import { MemberService } from './../../../shared/member/member.service';
 
 // declare var paypal;
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-cartmember',
@@ -19,6 +20,9 @@ export class CartmemberComponent implements OnInit {
   expired:any;
   currentDate:any;
   parts:any;
+  oldUser:boolean = true;
+
+  memberValidity : boolean = false;
 
   ticketData : any=[];
   dataObject :any=[];
@@ -29,7 +33,7 @@ export class CartmemberComponent implements OnInit {
 
   private  memberCart = [{
     "name": "NVBA Annual Membership",
-    "description": "NVBA Annual Membership Fee",
+    "description": "NVBA Annual Membership Fee - 2022",
     "quantity": 1,
     "price": 20,
     "tax": 0,
@@ -45,117 +49,49 @@ export class CartmemberComponent implements OnInit {
   ) { 
     this.cs.currentCart.subscribe( cartCheck => this.cartCheck = cartCheck);
     this.dataObject = this.memberCart;
+
   }
 
 
   ngOnInit(): void {
-    this.auth.cast.subscribe( m => {
-      this.member = m;
-    //  console.log('this.member page');
-    //  console.log(this.member);
+
+    this.member = this.auth.cast.subscribe((m)=>{this.member=JSON.stringify(m)});
+    console.log(this.member);
+    
+      console.log('this member'+ this.member);
+      let current = moment();
+
       if(this.member.expires){
-      this.parts =this.member.expires.split('-');
-      var mydate = new Date(this.parts[0], this.parts[1] - 1, this.parts[2]); 
-      this.expired = mydate;
-    //  console.log(mydate);
-      this.expired = new Date(this.expired); 
-      this.currentDate =  new Date(this.expired) <= new Date() ? 'Expire': 'Valid';
-      this.member.membershipstatus = this.currentDate;
+        
+        if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires)){
+          this.memberValidity = false;
+          this.member.membershipstatus = 'Expire';
+        }
+        else{
+          this.memberValidity = true;
+          this.member.membershipstatus = 'Valid';
+        }
+
+      }
+      else{
+        this.member.expires = current.format('M-D-YYYY');
+        this.member.membershipstatus = 'Expire';
+        this.member.joined = current.format('M-D-YYYY');
+        this.oldUser = false;
+      }
+
       this.memberservice.UpdateMember(this.member.id, this.member);
+      console.log('this member'+ this.member);
+      console.log(this.member);
 
-      this.expired = this.expired.toDateString();
-      }  
-      // console.log(this.member.expires);
-      // console.log(this.expired);
-      // console.log(this.currentDate);
-      this.findTicketDetails();
-   }) ;
-  }
+   } 
 
-
-
-
-
-  addToCartobj(){
+   addToCartobj(){
     this.cs.items = [];
  ///   this.memberCart.tax  = parseFloat(this.memberCart.tax ).toFixed(2);
     this.cs.addToCart(this.memberCart); 
     console.log(this.memberCart);
     this.router.navigate(['/checkout']);
   }
-
-
-
-  ngAfterViewChecked(): void {
-
-  }
-  
-
- kkHeadCount:number=0;
- kkHeadCountkid:number=0;
- nonHeadCount:number=0;
- vegHeadCount:number=0;
- kidHeadCount:number=0;
- generalSeat:number=0;
-
- addMoreKK:boolean=false;
- addtoCartBtn: boolean = true;
- kkticket:boolean = false;
-
-  findTicketDetails(){
-    this.kkHeadCount =0;
-    this.kkHeadCountkid =0;
-    this.nonHeadCount=0;
-    this.vegHeadCount=0;
-    this.kidHeadCount=0;
-    this.generalSeat=0;
-
-    [...this.member.purchase].forEach(ex => {
-    [...ex].forEach(e => {
-      console.log(e);
-      let n = e.name.replace(/\s+/g, '');
-      if(n =='All3days' ){
-
-          
-          if(e.sku.includes("NON")){
-              this.nonHeadCount += e.quantity ;
-              this.generalSeat  +=e.quantity;
-              console.log('element.quantity'+e.quantity);
-          }
-          if(e.sku.includes("VEG")){
-              this.vegHeadCount += e.quantity ;
-              this.generalSeat  +=e.quantity;
-          }
-          if(e.sku.includes("KID")){
-              this.kidHeadCount += e.quantity ;
-          }
-        }    
-          if(e.sku === 'DP2021EBKKS01'){
-              this.kkHeadCount += e.quantity ;
-                console.log(e.quantity);
-          }
-          if(e.sku === 'DP2021EBKKS02'){ 
-              this.kkHeadCountkid += e.quantity ;
-                console.log(e.quantity);
-          }
-      
-    });
-  });
-
-  
-  //  this.generalSeat = this.nonHeadCount + this.vegHeadCount;
-      console.log('Adult Count -'+ this.generalSeat );
-      console.log('Kids Count -'+this.kidHeadCount  );
-      console.log('KK Count -'+this.kkHeadCount  );
-      console.log('KK kids Count -'+this.kkHeadCountkid  );
-
-      if(this.kkHeadCount<this.generalSeat){
-        this.addMoreKK = true;
-        console.log('true'+this.generalSeat);
-      }
-  }
- 
- 
-
 
 }

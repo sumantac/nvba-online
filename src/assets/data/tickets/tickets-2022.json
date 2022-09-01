@@ -1,5 +1,14 @@
 [
     {
+        "name": "NVBA Annual Membership",
+        "description": "NVBA Annual Membership Fees - 2022",
+        "quantity": 1,
+        "price": 20,
+        "tax": 0,
+        "sku": "MM2022YY",
+        "currency": "USD" 
+      },
+    {
       "name": "Saturday Adult Non-Veg",
       "description": "Non-Veg ( Chicken Cutlet, Peas Pulao, Chicken Rezala, Chum Chum )",
       "quantity": 0,

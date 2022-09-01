@@ -59,8 +59,9 @@ export class MemberService {
     //     this.errorMgmt(error);
     //   });
 
-    this.db.object('/Members/' + memb.id).update( memb).catch(error => {
+    this.db.object('/Members/' + memb.id).update( JSON.parse( JSON.stringify(memb ) )).catch(error => {
       this.errorMgmt(error);
+      console.log(error);
     }).then( c => {
       console.log("success Update");
     });

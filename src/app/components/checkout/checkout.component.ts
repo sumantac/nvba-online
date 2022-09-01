@@ -64,8 +64,25 @@ export class CheckoutComponent implements OnInit {
           this.subtotal +=(( parseFloat(i.price)) * (parseFloat(i.quantity)));
           this.emptyCart = true;
         });
-        console.log( moment(this.member.expires).format('LL') );
-        console.log( this.member.expires );
+        // console.log( moment(this.member.expires).format('LL') );
+        // console.log( 'Line 68 - expires date=> '+ this.member.expires );
+
+        // var current = moment();
+        // console.log(current.toString());
+
+        // console.log( moment(this.member.expires).isSame(current)); // true
+        // console.log( moment(this.member.expires).isAfter(current)); // false
+        
+        // if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
+        //   console.log(moment(current).add(1, 'years').format('M-D-YYYY'));
+        //   this.member.expires = moment(current).add(1, 'years').format('M-D-YYYY');
+        // }
+        // else{
+        //  console.log( moment(current).add(1, 'years').format('M-D-YYYY') );
+        //   this.member.expires = moment(this.member.expires).add(1, 'years').format('M-D-YYYY');
+        //   console.log( this.member.expires );
+        // }
+
   }
 
 
@@ -138,39 +155,60 @@ export class CheckoutComponent implements OnInit {
           //Do something when payment is successful.
            console.log(payment);
            console.log(this.member);
-           
-  
+
+           //Adjust Expiretion Date
+           if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
+              
+              let current = moment(); 
+              console.log( moment(this.member.expires).isSame(current)); // true
+              console.log( moment(this.member.expires).isAfter(current)); // false
+              
+              if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
+                this.member.expires = moment(current).add(1, 'years').format('M-D-YYYY');
+              }
+              else{
+                this.member.expires = moment(this.member.expires).add(1, 'years').format('M-D-YYYY')
+              }
+            }
+
+
+           if((!this.member.payments) && (!this.member.purchase) ){ 
+            console.log('First Time');
+            this.member.payments = [];
+            this.member.purchase = [];
+           }
+           else 
+            console.log('regular Member');
+
+           this.member.payments.unshift(paymentTrans);
+           this.member.purchase.unshift(this.cartCheck);
+           console.log(this.member);
+           this.mds.UpdateMember(this.member.id, this.member);
+           console.log('update done');
         //   this.toastr.success('Your payment is successful.');
           
-           if(this.member.email){
-            console.log(this.member.email);
-              if(!this.member.payments){
-                console.log('!this.member.payments');
-                this.member.payments = [];
-                console.log('First Time');
-              }
-              this.member.payments.unshift(paymentTrans);
-              console.log('this.member.payments.unshift(paymentTrans);');
-            //  this.updateMemberDetailsFun(payment);
-
-
-
-
-              console.log(this.member.purchase);
-              if(!this.member.purchase){
-                  this.member.purchase = [];
-              //   console.log('First Time purchase');
-              }
-              this.member.purchase.unshift(this.cartCheck);
-         //     this.mds.updateCustomer(this.member);
-        //      this.mds.addPayments(payment) ;
-           }
-           else{
-            console.log('in Else');
-         //   this.mds.addPayments(payment) ;
-           }
+        //    if(this.member.email){
+  
+        //       if(!this.member.payments){
+        //         this.member.payments = [];
+        //         console.log('First Time');
+        //       }
+        //       this.member.payments.unshift(paymentTrans);
+        //       this.updateMemberDetailsFun(payment);
+        //       if(!this.member.purchase){
+        //           this.member.purchase = [];
+        //       //   console.log('First Time purchase');
+        //       }
+        //       this.member.purchase.unshift(this.cartCheck);
+        //       this.mds.UpdateMember(this.member.id, this.member);
+        //     //  this.mds.addPayments(payment) ;
+        //    }
+        //    else{
+        //     console.log('in Else');
+        //  //   this.mds.addPayments(payment) ;
+        //    }
           
-           this.mds.UpdateMember( this.member.id, this.member );
+       
              this.cart.clearCart();
              this.cleanup();
             // this.router.navigate(['/durgapuja2020']);
@@ -223,7 +261,7 @@ export class CheckoutComponent implements OnInit {
               
           // } // Add Non-Membership Ticket Details
 
-
+        return true;
     }  
 
 
