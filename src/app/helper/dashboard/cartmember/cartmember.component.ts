@@ -49,36 +49,39 @@ export class CartmemberComponent implements OnInit {
   ) { 
     this.cs.currentCart.subscribe( cartCheck => this.cartCheck = cartCheck);
     this.dataObject = this.memberCart;
-
+    // this.member = this.auth.cast.subscribe((m)=>{this.member=m});
+    // console.log(this.member);
   }
 
 
   ngOnInit(): void {
 
-    this.member = this.auth.cast.subscribe((m)=>{this.member=JSON.stringify(m)});
-    console.log(this.member);
-    
-      console.log('this member'+ this.member);
+    this.auth.cast.subscribe( m => {
+      this.member = m;
+      console.log(this.member);
       let current = moment();
 
-      if(this.member.expires){
-        
-        if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires)){
-          this.memberValidity = false;
-          this.member.membershipstatus = 'Expire';
-        }
-        else{
-          this.memberValidity = true;
-          this.member.membershipstatus = 'Valid';
-        }
-
+      if(moment(this.member.expires).isAfter(current)){
+        this.memberValidity = true;
+        this.member.membershipstatus = 'Valid';
       }
       else{
-        this.member.expires = current.format('M-D-YYYY');
+        this.memberValidity = false;
         this.member.membershipstatus = 'Expire';
-        this.member.joined = current.format('M-D-YYYY');
-        this.oldUser = false;
       }
+
+
+    });
+
+   
+
+      // }
+      // else{
+      //   this.member.expires = current.format('M-D-YYYY');
+      //   this.member.membershipstatus = 'Expire';
+      //   this.member.joined = current.format('M-D-YYYY');
+      //   this.oldUser = false;
+      // }
 
       this.memberservice.UpdateMember(this.member.id, this.member);
       console.log('this member'+ this.member);

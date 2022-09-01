@@ -15,7 +15,7 @@
 
       <app-cartmember></app-cartmember>
       <!-- <a href=" " class="btn btn-primary">Edit profile</a> -->
-      <app-carttickets></app-carttickets>
+      
     </div>
     
   </div>
@@ -128,7 +128,7 @@
  <button (click)="showMyContainer=!showMyContainer" *ngIf="!showMyContainer" class="btn btn-sm btn-primary" >Show All Orders</button>
  <button (click)="showMyContainer=!showMyContainer" *ngIf="showMyContainer" class="btn btn-sm btn-primary" >Hide All Orders</button>
   <div *ngIf="showMyContainer">
-        <div class="pl-lg-4 mt-3">
+        <div class="mt-3">
           <div class="form-group focused">
             <label>Recent Order</label>
             <div *ngFor="let items of member?.purchase " >

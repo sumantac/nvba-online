@@ -18,15 +18,16 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 
 const routes: Routes = [
 //  { path: "", component: HomeComponent, pathMatch: 'full' }, 
-  { path: "home", component: HomeComponent },
+  { path: "home", component: HomeComponent, pathMatch: 'full'  },
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
   { path: "constitution", component: ConstitutionComponent, pathMatch: 'full'  },
   { path: "contactus", component: ContactusComponent, pathMatch: 'full'  },
 
-  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
+  { path: '',  component: HomeComponent, pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
+  { path: 'login-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
-  { path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard] },
+  { path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard] }, 
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'checkout', component: CheckoutComponent },
