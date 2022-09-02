@@ -40,6 +40,14 @@
     },
     {
         "pageId": "3",
+        "pageName": "Dashboard",
+        "pageLink": "dashboard",
+        "tag": "",
+        "description": "",
+        "child": null
+    },
+    {
+        "pageId": "4",
         "pageName": "Gallery",
         "pageLink": "#",
         "tag": "",
@@ -63,14 +71,7 @@
             }
         ]
     },
-    {
-        "pageId": "4",
-        "pageName": "Membership",
-        "pageLink": "user",
-        "tag": "",
-        "description": "",
-        "child": null
-    },
+    
     {
         "pageId": "5",
         "pageName": "Archive",
