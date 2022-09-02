@@ -7,9 +7,18 @@
         </div>
       </div>
       <div class="row d-flex">
-        <div class="col-md-4 d-flex ftco-animate" *ngFor="let sponser of sponsers " >
-            <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url('{{sponser.image}}');">
+         <div class="col-md-3 m-2 shadow d-flex ftco-animate" *ngFor="let sponser of sponsers " >
+
+            
+              <div class="client-logo">
+                <a href="http://www.c-mci.com/corporate/" target="_blank">
+                  <img src="{{sponser.image}}" class="img-fluid" alt="CMCI"> 
+                </a>
+              </div>
+            
+
+            <!-- <div class="blog-entry align-self-stretch">
+            <a href="" class="block-20" style="background-image: url('{{sponser.image}}');">
             </a>
             <div class="text p-4 d-block">
                 <div class="meta mb-3">
@@ -20,8 +29,10 @@
               <h3 class="heading mt-3"><a href="#">{{sponser.name}}</a></h3>
             
             </div>
-          </div>
-        </div>
+          </div> -->
+        </div> 
+
+
 
         
       </div>

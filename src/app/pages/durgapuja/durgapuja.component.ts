@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetjsonfileService } from './../../services/getjsonfile.service';
 
 @Component({
   selector: 'app-durgapuja',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./durgapuja.component.scss']
 })
 export class DurgapujaComponent implements OnInit {
+  sliderImage : any;
 
-  constructor() { }
+  constructor( private jsonFile:GetjsonfileService) {}
 
   ngOnInit(): void {
+    this.jsonFile.pageData('durgapujaSliderImage').subscribe(data => {
+   //   console.log(data);
+      this.sliderImage = data;
+    });
+
+
   }
 
 }
