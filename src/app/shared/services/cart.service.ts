@@ -19,10 +19,10 @@ export class CartService {
   //   this.cartvalue.next(prod);
   // }
 
-  addToCart(product:any) { // //console.log(product);
-    //console.log(product);
+  addToCart(product:any) { // console.log(product);
+    console.log(product);
     this.items = [...product];
- //   //console.log(this.items);
+ //   console.log(this.items);
     this.cartvalue.next(this.items);
   }
 
@@ -32,7 +32,7 @@ export class CartService {
 
   clearCart() {
     this.items = [];
-  //  //console.log(" Clean Cart "+this.items);
+  //  console.log(" Clean Cart "+this.items);
     return this.items;
   }
 
