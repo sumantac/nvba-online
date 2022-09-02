@@ -13,7 +13,7 @@ export class SponsersComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonFile.pageData('sponsers').subscribe(data => {
-      console.log(data);
+      //console.log(data);
       this.sponsers = data;
     });
   }

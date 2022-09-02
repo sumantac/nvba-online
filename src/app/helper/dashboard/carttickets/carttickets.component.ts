@@ -27,7 +27,7 @@ export class CartticketsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getJSON().subscribe(data => {
-      console.log(data);
+      //console.log(data);
       this.dataObject = data;
       this.checkData();
      });
@@ -47,8 +47,8 @@ export class CartticketsComponent implements OnInit {
      });
       
    });
-//   console.log('this.dataObject - Check data');
-//   console.log(this.dataObject);
+//   //console.log('this.dataObject - Check data');
+//   //console.log(this.dataObject);
   }
 
   ngAfterViewChecked(): void {
@@ -63,27 +63,27 @@ export class CartticketsComponent implements OnInit {
   }
 
   addToCartobj(){
-    console.log(this.dataObject);
-    console.log(this.cs.items);
+    //console.log(this.dataObject);
+    //console.log(this.cs.items);
     this.cs.items = [];
-    console.log(this.cs.items);
+    //console.log(this.cs.items);
     this.dataObject.forEach((value:any) => {
-  //    console.log(value.quantity);
-    //  console.log(value);
+  //    //console.log(value.quantity);
+    //  //console.log(value);
       if(value.quantity > 0){ 
        // this.cs.addToCart(value);
-        console.log(value.quantity);
+        //console.log(value.quantity);
         this.cs.items.push(value);
       //  this.totalCost += (parseFloat(value.price) * parseFloat(value.quantity));
         // value.tax = (value.price * value.quantity) * 0.00; 
         // value.tax = parseFloat(value.tax).toFixed(2);
        // this.cs.addToCart(value);
        
-        console.log(value);
+        //console.log(value);
      //   this.checkObject.push(value);
      } 
     });
-    console.log(this.cs.items);
+    //console.log(this.cs.items);
     this.cs.addToCart(this.cs.items);
     
  //   this.cs.addToCart(this.checkObject);

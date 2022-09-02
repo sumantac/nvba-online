@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonFile.pageData('homeSliderImage').subscribe(data => {
-   //   console.log(data);
+   //   //console.log(data);
       this.sliderImage = data;
     });
 

@@ -50,7 +50,7 @@ export class CartmemberComponent implements OnInit {
     this.cs.currentCart.subscribe( cartCheck => this.cartCheck = cartCheck);
     this.dataObject = this.memberCart;
     // this.member = this.auth.cast.subscribe((m)=>{this.member=m});
-    // console.log(this.member);
+    // //console.log(this.member);
   }
 
 
@@ -58,7 +58,7 @@ export class CartmemberComponent implements OnInit {
 
     this.auth.cast.subscribe( m => {
       this.member = m;
-      console.log(this.member);
+      //console.log(this.member);
       let current = moment();
 
       if(moment(this.member.expires).isAfter(current)){
@@ -84,8 +84,8 @@ export class CartmemberComponent implements OnInit {
       // }
 
       this.memberservice.UpdateMember(this.member.id, this.member);
-      console.log('this member'+ this.member);
-      console.log(this.member);
+      //console.log('this member'+ this.member);
+      //console.log(this.member);
 
    } 
 
@@ -93,7 +93,7 @@ export class CartmemberComponent implements OnInit {
     this.cs.items = [];
  ///   this.memberCart.tax  = parseFloat(this.memberCart.tax ).toFixed(2);
     this.cs.addToCart(this.memberCart); 
-    console.log(this.memberCart);
+    //console.log(this.memberCart);
     this.router.navigate(['/checkout']);
   }
 

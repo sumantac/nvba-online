@@ -42,6 +42,11 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { CartticketsComponent } from './helper/dashboard/carttickets/carttickets.component';
+import { DurgapujaComponent } from './pages/durgapuja/durgapuja.component';
+import { HistoryComponent } from './pages/aboutus/history/history.component';
+import { GalleryComponent } from './pages/gallery/gallery/gallery.component';
+import { PastteamsComponent } from './pages/archive/pastteams/pastteams.component';
+import { MagazinesComponent } from './pages/archive/magazines/magazines.component';
 
 
 @NgModule({
@@ -67,6 +72,11 @@ import { CartticketsComponent } from './helper/dashboard/carttickets/carttickets
     CheckoutComponent,
     ProfileComponent,
     CartticketsComponent,
+    DurgapujaComponent,
+    HistoryComponent,
+    GalleryComponent,
+    PastteamsComponent,
+    MagazinesComponent,
 
   ],
   imports: [
@@ -83,7 +93,7 @@ import { CartticketsComponent } from './helper/dashboard/carttickets/carttickets
     ReactiveFormsModule,
     FormsModule,
     ToastrModule.forRoot(),
-    NgxPayPalModule
+    NgxPayPalModule,
   ],
   providers: [GetjsonfileService, AuthService ],
   bootstrap: [AppComponent]
