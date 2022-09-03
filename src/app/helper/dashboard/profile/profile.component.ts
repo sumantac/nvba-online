@@ -40,14 +40,14 @@ export class ProfileComponent implements OnInit {
     
     this.as.cast.subscribe( m => {
       this.member = m;
-      console.log(this.member);
+    //  console.log(this.member);
       this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
     });
   }
 
   createForm(id: any, firstname: any, lastname: any, photoURL: any, address1: any, address2: any, city: any, state: any, country: any, zipcode: any) {
 
-console.log(id);
+//console.log(id);
     this.profileForm = this.fb.group({
         id: [id, Validators.required],
         firstname: [firstname, Validators.required ],

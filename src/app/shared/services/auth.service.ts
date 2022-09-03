@@ -163,9 +163,9 @@ export class AuthService  {
               newuser = false;
               this.memberData = e;
                this.member.next({...e,...this.userData});
-              console.log(this.memberData);
-              console.log('this.member');
-              console.log(this.member.value);
+              // console.log(this.memberData);
+              // console.log('this.member');
+              // console.log(this.member.value);
             }
             
          })

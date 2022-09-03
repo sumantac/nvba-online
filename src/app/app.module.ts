@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -34,7 +35,19 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
 import { ProfileComponent } from './helper/dashboard/profile/profile.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { CartmemberComponent } from './helper/dashboard/cartmember/cartmember.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+
+import { ToastrModule } from 'ngx-toastr';
+import { NgxPayPalModule } from 'ngx-paypal';
+import { CartticketsComponent } from './helper/dashboard/carttickets/carttickets.component';
+import { DurgapujaComponent } from './pages/durgapuja/durgapuja.component';
+import { HistoryComponent } from './pages/aboutus/history/history.component';
+import { GalleryComponent } from './pages/gallery/gallery/gallery.component';
+import { PastteamsComponent } from './pages/archive/pastteams/pastteams.component';
+import { MagazinesComponent } from './pages/archive/magazines/magazines.component';
+
 
 @NgModule({
   declarations: [
@@ -55,10 +68,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    ProfileComponent
+    CartmemberComponent,
+    CheckoutComponent,
+    ProfileComponent,
+    CartticketsComponent,
+    DurgapujaComponent,
+    HistoryComponent,
+    GalleryComponent,
+    PastteamsComponent,
+    MagazinesComponent,
+
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     //fire
@@ -68,6 +91,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     ReactiveFormsModule,
+    FormsModule,
+    ToastrModule.forRoot(),
+    NgxPayPalModule,
   ],
   providers: [GetjsonfileService, AuthService ],
   bootstrap: [AppComponent]

@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonFile.pageData('header').subscribe(data => {
-         this.dataObject = data;
+         this.dataObject = JSON.parse( JSON.stringify(data ) )
        });
   }
 
