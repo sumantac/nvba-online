@@ -13,6 +13,8 @@ import { GetjsonfileService } from './../../services/getjsonfile.service';
 export class HeaderComponent implements OnInit {
 
   dataObject :any={};
+  navbarCollapsed : any;
+  isCollapsed = false;
 
   private _jsonURL = '/assets/data/pages/header.json';
 
@@ -24,5 +26,10 @@ export class HeaderComponent implements OnInit {
          this.dataObject = JSON.parse( JSON.stringify(data ) )
        });
   }
+
+  // closedropdown(e:Event){
+    
+  //   e.stopPropagation();
+  // }
 
 }
