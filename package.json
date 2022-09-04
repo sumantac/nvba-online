@@ -1,6 +1,6 @@
 {
   "name": "nvba-online",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.5",
-    "@angular/cli": "~14.0.5",
+    "@angular/cli": "~14.2.1",
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.1.0",
