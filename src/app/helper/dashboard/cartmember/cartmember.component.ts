@@ -51,10 +51,6 @@ export class CartmemberComponent implements OnInit {
     this.dataObject = this.memberCart;
     // this.member = this.auth.cast.subscribe((m)=>{this.member=m});
     // console.log(this.member);
-  }
-
-
-  ngOnInit(): void {
 
     this.auth.member.subscribe( m => {
       this.member = m;
@@ -77,19 +73,10 @@ export class CartmemberComponent implements OnInit {
 
     });
 
-   
+  }
 
-      // }
-      // else{
-      //   this.member.expires = current.format('M-D-YYYY');
-      //   this.member.membershipstatus = 'Expire';
-      //   this.member.joined = current.format('M-D-YYYY');
-      //   this.oldUser = false;
-      // }
 
-      
-
-   } 
+  ngOnInit(): void { } 
 
    addToCartobj(){
     this.cs.items = [];
