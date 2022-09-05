@@ -1,27 +1,41 @@
 [
     {
         "homeSliderImageId": "1",
-        "name": "care-1.jpg",
+        "name": "durgapuja-2022-1.jpg",
         "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-1.jpg",
         "tag": "",
         "description": ""
     },
     {
         "homeSliderImageId": "2",
-        "homeSliderImage": "111.jpg",
-        "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-1.jpg",
+        "homeSliderImage": "durgapuja-2022-2.jpg",
+        "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-2.jpg",
         "tag": "",
         "description": ""
     },{
         "homeSliderImageId": "3",
-        "homeSliderImage": "bg_3.jpg",
-        "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-1.jpg",
+        "homeSliderImage": "durgapuja-2022-3.jpg",
+        "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-3.jpg",
         "tag": "",
         "description": ""
     },{
         "homeSliderImageId": "4",
-        "homeSliderImage": "1.jpg",
-        "imageLink": "./../../../assets/images/gallery/common/images-2016/1.jpg",
+        "homeSliderImage": "durgapuja-2022-4.jpg",
+        "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-4.jpg",
+        "tag": "",
+        "description": ""
+    },
+    {
+        "homeSliderImageId": "5",
+        "homeSliderImage": "durgapuja-2022-5.jpg",
+        "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-5.jpg",
+        "tag": "",
+        "description": ""
+    },
+    {
+        "homeSliderImageId": "6",
+        "homeSliderImage": "durgapuja-2022-6.jpg",
+        "imageLink": "./../../../assets/images/gallery/dp/durgapuja-2022-6.jpg",
         "tag": "",
         "description": ""
     }
