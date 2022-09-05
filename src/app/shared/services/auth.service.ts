@@ -17,7 +17,7 @@ import { MemberService } from './../member/member.service';
 export class AuthService  {
   userData: any; // Save logged in user data
   public memberData:any;
-  member = new BehaviorSubject(null);
+  member = new BehaviorSubject<any>(null);
   cast = this.member.asObservable();
   
   

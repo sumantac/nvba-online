@@ -56,7 +56,7 @@ export class CartmemberComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.auth.cast.subscribe( m => {
+    this.auth.member.subscribe( m => {
       this.member = m;
       console.log(this.member);
       let current = moment();
@@ -69,6 +69,10 @@ export class CartmemberComponent implements OnInit {
         this.memberValidity = false;
         this.member.membershipstatus = 'Expire';
       }
+
+      this.memberservice.UpdateMember(this.member.id, this.member);
+      console.log('this member'+ this.member);
+      console.log(this.member);
 
 
     });
@@ -83,9 +87,7 @@ export class CartmemberComponent implements OnInit {
       //   this.oldUser = false;
       // }
 
-      this.memberservice.UpdateMember(this.member.id, this.member);
-      console.log('this member'+ this.member);
-      console.log(this.member);
+      
 
    } 
 
