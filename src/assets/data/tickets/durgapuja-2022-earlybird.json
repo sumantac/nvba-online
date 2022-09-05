@@ -19,7 +19,7 @@
     },
     {
       "name": "All 3 days",
-      "description": "Kids [ 11 to 18 years ] Non-Veg - Please bring your Student ID",
+      "description": "Kids [ 11 to 18 years ] Non-Veg ",
       "quantity": 0,
       "price": 50,
       "tax": 0.00,
@@ -28,7 +28,7 @@
     },
     {
       "name": "All 3 days",
-      "description": "Kids [ 11 to 18 years ] Veg - Please bring your Student ID",
+      "description": "Kids [ 11 to 18 years ] Veg",
       "quantity": 0,
       "price": 50,
       "tax": 0.00,
@@ -37,7 +37,7 @@
     },
   {
     "name": "All 3 days ",
-    "description": "kids [ 0 to 10 years ] - Please bring your Student ID",
+    "description": "kids [ 0 to 10 years ]",
     "quantity": 0,
     "price": 0,
     "tax": 0.00,
