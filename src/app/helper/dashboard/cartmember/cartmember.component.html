@@ -1,10 +1,10 @@
 <div class="mt-4"  >
     
-    <div *ngIf="member.membershipstatus == 'Expire'" >
+    <div *ngIf="member?.membershipstatus == 'Expire'" >
         <div  class="redExpired" > Membership Expired : {{ this.member?.expires }}</div>
         <button (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" > Renew Annual Membership ($20) & Enjoy All Programs </button>
         <div class="flex-column row ">
-            <div style="font-weight: bold; font-size: 1.3em;color: #cccccc; text-align: center;" ><span class="red">*</span><b>Membership Benefits:</b> </div>
+            <div style="font-weight: bold; font-size: 1.3em;color: #cccccc; text-align: center;" ><span class=" text-primary ">*</span><b>Membership Benefits:</b> </div>
             <ul  style=" color: #cccccc; text-align: center;"> 
                 <li>
                     Access to year round member only events like kobi pronam, nobo borsho celebrations, annual picnic etc.
@@ -24,7 +24,7 @@
             </ul>
         </div>
     </div>
-    <div *ngIf="member.membershipstatus == 'Valid'" >
+    <div *ngIf="member?.membershipstatus == 'Valid'" >
         <div  class=" " style="text-align: center;" >Membership Expiration Date : {{this.member.expires}}</div>
         <!-- <button (click)="addToCartobj()" class="btn-get-started w-100 mb-5 mt-2" > Renew Annual Membership</button> -->
 
