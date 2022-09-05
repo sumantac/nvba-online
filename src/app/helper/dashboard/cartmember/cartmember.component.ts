@@ -97,4 +97,8 @@ export class CartmemberComponent implements OnInit {
     this.router.navigate(['/checkout']);
   }
 
+  ngOnDestroy(): void {
+      this.member;
+  }
+
 }
