@@ -46,31 +46,7 @@
         "description": "",
         "child": null
     },
-    {
-        "pageId": "4",
-        "pageName": "Gallery",
-        "pageLink": "#",
-        "tag": "",
-        "description": "",
-        "child": [
-            {
-                "pageId": "31",
-                "pageName": "Image Gallery",
-                "pageLink": "imagegallery",
-                "tag": "",
-                "description": "",
-                "child": null
-            },
-            {
-                "pageId": "32",
-                "pageName": "Ameyaa 2020",
-                "pageLink": "ameyaa2020",
-                "tag": "",
-                "description": "",
-                "child": null
-            }
-        ]
-    },
+    
     
     {
         "pageId": "5",
@@ -78,7 +54,24 @@
         "pageLink": "archive",
         "tag": "",
         "description": "",
-        "child": null
+        "child": [
+            {
+                "pageId": "51",
+                "pageName": "Team 2020-21",
+                "pageLink": "pastteams",
+                "tag": "",
+                "description": "",
+                "child": null
+            },
+            {
+                "pageId": "52",
+                "pageName": "Magazines",
+                "pageLink": "magazines",
+                "tag": "",
+                "description": "",
+                "child": null
+            }
+        ]
     },
     {
         "pageId": "6",
