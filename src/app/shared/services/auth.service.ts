@@ -10,6 +10,7 @@ import { Observable, BehaviorSubject, observable } from 'rxjs';
 import { Member } from './../member/member';
 import { Router } from '@angular/router';
 import { MemberService } from './../member/member.service';
+import * as moment from 'moment';
 
 @Injectable({
   providedIn: 'root',
@@ -164,6 +165,14 @@ export class AuthService  {
             if(e.email == this.userData.email){
               newuser = false;
               this.memberData = e;
+
+              let current = moment();
+              if(moment(e.expires).isAfter(current)){
+                e.membershipstatus = 'Valid';
+              }
+              else{
+                e.membershipstatus = 'Expire';
+              }
                this.member.next({...e,...this.userData});
               // console.log(this.memberData);
               // console.log('this.member');
