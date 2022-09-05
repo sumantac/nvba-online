@@ -142,7 +142,9 @@ export class AuthService  {
   SignOut() {
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
+      localStorage.setItem('user', 'null');
       this.router.navigate(['sign-in']);
+      this.member.next(null);
     });
   }
 
@@ -184,6 +186,9 @@ export class AuthService  {
       return this.memberData;
   }
 
+  ngOnDestroy(): void {
+      this.member;
+  }
 
 
 

@@ -215,7 +215,7 @@ export class CheckoutComponent implements OnInit {
   
             setTimeout(()=>{                           
               this.router.navigate(['/durgapuja']);
-            }, 6000);
+            }, 2000);
             
   
         })
