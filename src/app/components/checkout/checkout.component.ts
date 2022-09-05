@@ -165,9 +165,11 @@ export class CheckoutComponent implements OnInit {
               
               if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
                 this.member.expires = moment(current).add(1, 'years').format('M-D-YYYY');
+                this.member.membershipstatus = 'Valid';
               }
               else{
-                this.member.expires = moment(this.member.expires).add(1, 'years').format('M-D-YYYY')
+                this.member.expires = moment(this.member.expires).add(1, 'years').format('M-D-YYYY');
+                this.member.membershipstatus = 'Valid';
               }
             }
 
