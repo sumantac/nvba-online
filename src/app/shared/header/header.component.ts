@@ -27,9 +27,12 @@ export class HeaderComponent implements OnInit {
        });
   }
 
-  // closedropdown(e:Event){
-    
-  //   e.stopPropagation();
-  // }
+  toggle(){
+
+    let element:HTMLElement = document.getElementById('nvbaMenu') as HTMLElement;
+
+    element.click();
+    console.log('click');
+  }
 
 }

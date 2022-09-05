@@ -1,3 +1,4 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 @import 'bootstrap/bootstrap'; 
 @import 'bootstrap/variables'; 
 
@@ -2388,3 +2389,22 @@ textarea.form-control {
 .align-content-center{
 	margin: 0 auto;
 }
+
+.accordion-toggle button {
+  box-shadow: none;
+  color: $primary;
+  text-decoration: none;
+  font-size: 1.2rem;
+  :hover{
+    color: $primary;
+    text-decoration: overline;
+  }
+}
+
+.tickets{
+	tbody tr th{
+		font-size: 1rem;
+		font-weight: 400;
+	}
+  }
+
