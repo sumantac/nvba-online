@@ -6,13 +6,13 @@
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         </div>
       </div>
-      <div class="row d-flex">
-         <div class="col-md-3 m-2 shadow d-flex ftco-animate" *ngFor="let sponser of sponsers " >
+      <div class="row flex-row flex-wrap">
+         <div class="col-md-3 m-2 shadow text-center justify-content-center ftco-animate " *ngFor="let sponser of sponsers " >
 
             
-              <div class="client-logo">
-                <a href="http://www.c-mci.com/corporate/" target="_blank">
-                  <img src="{{sponser.image}}" class="img-fluid" alt="CMCI"> 
+              <div class="client-logo  text-center justify-content-center p-2 ">
+                <a href="" target="_blank">
+                  <img src="{{sponser.image}}" class="img-fluid" alt="{{sponser.name}}"> 
                 </a>
               </div>
             
