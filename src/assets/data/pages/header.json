@@ -40,8 +40,8 @@
     },
     {
         "pageId": "3",
-        "pageName": "Dashboard",
-        "pageLink": "dashboard",
+        "pageName": "Membership",
+        "pageLink": "membership",
         "tag": "",
         "description": "",
         "child": null

@@ -276,6 +276,7 @@ export class CheckoutComponent implements OnInit {
     this.tax= 0;
     this.emptyCart= true;
   }
+  
 
 
 

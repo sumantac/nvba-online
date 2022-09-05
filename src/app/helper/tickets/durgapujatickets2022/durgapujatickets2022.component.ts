@@ -39,6 +39,7 @@ export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterVi
       this.dataObject = data;
       this.checkData();
      });
+     
    }
    
    ngOnInit(): void {
@@ -79,40 +80,6 @@ export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterVi
       if(value.quantity > 0){ 
         tc += (value.price * value.quantity);
       }
-
-      // Ticket Logic
-      let n = value.name.replace(/\s+/g, '');
-      if(n === 'All3days' ){
-        if(value.sku =='DP2021EBALL06KID' ){
-          this.kidsCount += value.quantity;
-      //    console.log('addKids');
-        }
-        else{
-          this.headCount += value.quantity;
-        }
-      }
-
-      if(n === 'KavitaKrishnamurtiConcert' ){
-        if(value.sku =='DP2021EBKKS02' ){
-          kidsTicketKK += value.quantity;
-        }
-        else{
-          ticketCount += value.quantity;
-          if(value.quantity){
-            this.kkticket = true ;
-          }
-          else{
-            this.kkticket = false;
-          }
-          
-        }
-        
-      }
-
-      
-      
-
-    
      
     });
 
@@ -124,28 +91,11 @@ export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterVi
       this.addtoCartBtn = true;
     }
 
-    if(kidsTicketKK>this.kidsCount){
-      this.addtoCartBtn = false;
-    }
 
     this.totalCost = tc;
     this.cdr.detectChanges();
   }
 
-  maxValue(sku:string){
-    let v: number = 0;
-    
-    if(sku == 'DP2021EBKKS02'){
-      v = this.kidsCount;
-    //  console.log(sku );
-    }
-    if(sku == 'DP2021EBKKS01'){
-      v = this.headCount;
-    //  console.log(sku );
-    }
-  //  console.log(v);
-    return v;
-  }
   
   addToCartobj(){
     console.log(this.dataObject);
@@ -170,7 +120,7 @@ export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterVi
     });
     console.log(this.cs.items);
     this.cs.addToCart(this.cs.items);
-    
+
  //   this.cs.addToCart(this.checkObject);
     this.router.navigate(['/checkout']);
  //   this.router.navigate(['/heroes', { id: itemId }]);
@@ -184,6 +134,8 @@ export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterVi
       value.quantity = 0;
     });
   }
+
+
 
 
 }
