@@ -1,5 +1,7 @@
 <div class="mt-4"  >
-    
+    <div>
+        <h1>{{auth.member.value?.membershipstatus}}</h1>
+    </div>
     <div *ngIf="auth.member.value?.membershipstatus != 'Valid'" >
         <div  class="redExpired" > Membership Expired : {{ this.member?.expires }}</div>
         <button (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" > Renew Annual Membership ($20) & Enjoy All Programs </button>

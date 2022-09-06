@@ -52,7 +52,7 @@ export class CartmemberComponent implements OnInit {
     this.cs.currentCart.subscribe( cartCheck => this.cartCheck = cartCheck);
     this.dataObject = this.memberCart;
     // this.member = this.auth.cast.subscribe((m)=>{this.member=m});
-    // console.log(this.member);
+    // //console.log(this.member);
 
   }
 
@@ -61,25 +61,25 @@ export class CartmemberComponent implements OnInit {
 
     this.auth.member.subscribe( m => {
       this.member = m;
-      console.log(this.member);
+      //console.log(this.member);
       
 
       if(moment(this.member.expires).isAfter(this.current) ){
        this.memberValidity = true;
         this.member.membershipstatus = 'Valid';
-        console.log('CartMember IF');
-        console.log(this.member);
+        //console.log('CartMember IF');
+        //console.log(this.member);
       }
       else{
         this.memberValidity = false;
         this.member.membershipstatus = 'Expire';
-        console.log('CartMember Else');
-        console.log(this.member);
+        //console.log('CartMember Else');
+        //console.log(this.member);
       }
 
       // this.memberservice.UpdateMember(this.member.id, this.member);
-      console.log('this member'+ this.member);
-      console.log(this.member);
+      //console.log('this member'+ this.member);
+      //console.log(this.member);
 
 
     });
@@ -90,12 +90,12 @@ export class CartmemberComponent implements OnInit {
     this.cs.items = [];
  ///   this.memberCart.tax  = parseFloat(this.memberCart.tax ).toFixed(2);
     this.cs.addToCart(this.memberCart); 
-    console.log(this.memberCart);
+    //console.log(this.memberCart);
     this.router.navigate(['/checkout']);
   }
 
   ngOnDestroy(): void {
-      this.member;
+      this.auth.member.unsubscribe();
   }
 
 }

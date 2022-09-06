@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit {
     let element:HTMLElement = document.getElementById('nvbaMenu') as HTMLElement;
 
     element.click();
-    console.log('click');
+    //console.log('click');
   }
 
   signout(){
@@ -44,13 +44,13 @@ export class HeaderComponent implements OnInit {
     .then((res) => {
       this.auth.cast.subscribe(m=> {
         this.member = m;
-        console.log(this.member);
+        //console.log(this.member);
       });
    //   this.memberService.UpdateMember(this.member.id, this.member);
   //    this.location.back();
   //      localStorage.setItem('user', 'null');
     }, (error) => {
-      console.log("Logout error", error);
+      //console.log("Logout error", error);
     });
     this.toggle();
   }

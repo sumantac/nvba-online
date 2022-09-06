@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
               ) {
                 this.authService.cast.subscribe( m => {
                   this.member = m;
-                  console.log(this.member);
+                  //console.log(this.member);
                 });
 
 
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
   //    this.location.back();
   //      localStorage.setItem('user', 'null');
     }, (error) => {
-      console.log("Logout error", error);
+      //console.log("Logout error", error);
     });
   }
 
