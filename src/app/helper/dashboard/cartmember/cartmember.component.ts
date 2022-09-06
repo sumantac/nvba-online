@@ -31,8 +31,6 @@ export class CartmemberComponent implements OnInit {
   totalCost: number = 0;
   cartCheck: any;
 
-  current = moment();
-
   private  memberCart = [{
     "name": "NVBA Annual Membership",
     "description": "NVBA Annual Membership Fee - 2022",
@@ -44,7 +42,7 @@ export class CartmemberComponent implements OnInit {
   }];
 
   constructor(
-    public auth: AuthService, 
+    private auth: AuthService, 
     private memberservice:MemberService,
     private cs: CartService, 
     public router: Router
@@ -54,37 +52,31 @@ export class CartmemberComponent implements OnInit {
     // this.member = this.auth.cast.subscribe((m)=>{this.member=m});
     // //console.log(this.member);
 
-  }
-
-
-  ngOnInit(): void { 
-
     this.auth.member.subscribe( m => {
       this.member = m;
-      //console.log(this.member);
-      
+      //console.log(moment(this.member.expires));
 
-      if(moment(this.member.expires).isAfter(this.current) ){
-       this.memberValidity = true;
-        this.member.membershipstatus = 'Valid';
-        //console.log('CartMember IF');
-        //console.log(this.member);
-      }
-      else{
-        this.memberValidity = false;
-        this.member.membershipstatus = 'Expire';
-        //console.log('CartMember Else');
-        //console.log(this.member);
-      }
+      this.currentDate = moment();
 
-      // this.memberservice.UpdateMember(this.member.id, this.member);
-      //console.log('this member'+ this.member);
-      //console.log(this.member);
-
+      if(moment(this.member.expires).isAfter(this.currentDate) ){
+        this.memberValidity = true;
+         this.member.membershipstatus = 'Valid';
+         ////console.log('CartMember IF');
+         ////console.log(this.member);
+       }
+       else{
+         this.memberValidity = false;
+         this.member.membershipstatus = 'Expire';
+         ////console.log('CartMember Else');
+         ////console.log(this.member);
+       }
 
     });
 
-  } 
+  }
+
+
+  ngOnInit(): void { } 
 
    addToCartobj(){
     this.cs.items = [];
@@ -95,7 +87,7 @@ export class CartmemberComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-      this.auth.member.unsubscribe();
+      this.member;
   }
 
 }
