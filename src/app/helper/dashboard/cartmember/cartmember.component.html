@@ -1,8 +1,6 @@
 <div class="mt-4"  >
-    <div>
-        <h1>{{auth.member.value?.membershipstatus}}</h1>
-    </div>
-    <div *ngIf="auth.member.value?.membershipstatus != 'Valid'" >
+    
+    <div *ngIf="!memberValidity" >
         <div  class="redExpired" > Membership Expired : {{ this.member?.expires }}</div>
         <button (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" > Renew Annual Membership ($20) & Enjoy All Programs </button>
         <div class="flex-column row ">
@@ -26,9 +24,9 @@
             </ul>
         </div>
     </div>
-    <div *ngIf="auth.member.value?.membershipstatus == 'Valid'" >
+    <div *ngIf="memberValidity" >
         <div  class=" " style="text-align: center;" >Membership Expiration Date : {{this.member.expires}}</div>
-        <!-- <button (click)="addToCartobj()" class="btn-get-started w-100 mb-5 mt-2" > Renew Annual Membership</button> -->
+        <!-- <button (click)="addToCartobj()" class="btn-get-started w-100 mb-5 mt-2" > Renew Annual Membership</button> --> 
 
         <div class=" text-center "  >
             <!-- <button class="btn-get-userpage text-center "   routerLink="/ordertickets" >Register for Durga Puja 2021</button> -->

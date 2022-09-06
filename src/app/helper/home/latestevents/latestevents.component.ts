@@ -13,7 +13,7 @@ export class LatesteventsComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonFile.pageData('events').subscribe(data => {
-      //console.log(data);
+      ////console.log(data);
       this.events = data;
     });
   }

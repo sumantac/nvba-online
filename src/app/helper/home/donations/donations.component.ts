@@ -12,7 +12,7 @@ export class DonationsComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonFile.pageData('donors').subscribe(data => {
-      //console.log(data);
+      ////console.log(data);
       this.donors = data;
     });
   }
