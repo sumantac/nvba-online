@@ -93,7 +93,7 @@ export class AuthService  {
       });
   }
   // Returns true when user is looged in and email is verified
-  get isLoggedIn(): boolean { console.log('is-Log');
+  get isLoggedIn(): boolean { //console.log('is-Log');
     const user = JSON.parse(localStorage.getItem('user')!);
     if(user !== null && user.emailVerified !== false ? true : false){
       this.memberDetail();
@@ -159,7 +159,7 @@ export class AuthService  {
   memberDetail(){
      let newuser:boolean = true;
      let idCount = 0;
-      console.log('Auth.services->memberDetail()');
+      //console.log('Auth.services->memberDetail()');
       this.memberService.GetMembersList().subscribe(mlist => {
          mlist.forEach((e,index)=>{
           idCount++;
@@ -175,9 +175,9 @@ export class AuthService  {
                 e.membershipstatus = 'Expire';
               }
                this.member.next({...e,...this.userData});
-              // console.log(this.memberData);
-              // console.log('this.member');
-              // console.log(this.member.value);
+              // //console.log(this.memberData);
+              // //console.log('this.member');
+              // //console.log(this.member.value);
             }
             
          })
@@ -185,12 +185,12 @@ export class AuthService  {
          let con = JSON.parse(localStorage.getItem('user')!) ;
           
           let newMember = {id:idCount, email:con.email};
-          console.log( newMember );
+          //console.log( newMember );
           this.memberService.AddMember(newMember)
          // this.member.next(con);
          }
          
-         console.log(this.member.value);
+         //console.log(this.member.value);
       })
       this.memberData = { ...this.memberData, ...this.userData}
       return this.memberData;

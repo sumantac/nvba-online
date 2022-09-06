@@ -13,7 +13,7 @@ export class TeamComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonFile.pageData('ecm').subscribe(data => {
-         console.log(data);
+         //console.log(data);
          this.nvbaTeam = data;
        });
   }

@@ -49,38 +49,38 @@ export class CheckoutComponent implements OnInit {
 
       this.userService.cast.subscribe( m => {
         this.member = m;
-        console.log(this.member);
+        //console.log(this.member);
       });
 
     this.cart.currentCart.subscribe( (cartCheck) => this.cartCheck = cartCheck);
-    console.log(this.cartCheck.length);
-    console.log(this.cart.getItems());
+    //console.log(this.cartCheck.length);
+    //console.log(this.cart.getItems());
 
     }
 
   ngOnInit(): void {
         this.cartCheck.forEach((i:any)=>{
-        //  console.log(parseFloat(i.price) * parseFloat(i.quantity));
+        //  //console.log(parseFloat(i.price) * parseFloat(i.quantity));
           this.subtotal +=(( parseFloat(i.price)) * (parseFloat(i.quantity)));
           this.emptyCart = true;
         });
-        // console.log( moment(this.member.expires).format('LL') );
-        // console.log( 'Line 68 - expires date=> '+ this.member.expires );
+        // //console.log( moment(this.member.expires).format('LL') );
+        // //console.log( 'Line 68 - expires date=> '+ this.member.expires );
 
         // var current = moment();
-        // console.log(current.toString());
+        // //console.log(current.toString());
 
-        // console.log( moment(this.member.expires).isSame(current)); // true
-        // console.log( moment(this.member.expires).isAfter(current)); // false
+        // //console.log( moment(this.member.expires).isSame(current)); // true
+        // //console.log( moment(this.member.expires).isAfter(current)); // false
         
         // if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
-        //   console.log(moment(current).add(1, 'years').format('M-D-YYYY'));
+        //   //console.log(moment(current).add(1, 'years').format('M-D-YYYY'));
         //   this.member.expires = moment(current).add(1, 'years').format('M-D-YYYY');
         // }
         // else{
-        //  console.log( moment(current).add(1, 'years').format('M-D-YYYY') );
+        //  //console.log( moment(current).add(1, 'years').format('M-D-YYYY') );
         //   this.member.expires = moment(this.member.expires).add(1, 'years').format('M-D-YYYY');
-        //   console.log( this.member.expires );
+        //   //console.log( this.member.expires );
         // }
 
   }
@@ -94,7 +94,7 @@ export class CheckoutComponent implements OnInit {
         this.addPaypalScript().then(() => {
           paypal.Button.render(this.paypalConfig, '#paypal-button-container');
           this.paypalLoad = false;
-           console.log(this.paypalConfig);  
+           //console.log(this.paypalConfig);  
         })
       }
     }
@@ -107,7 +107,7 @@ export class CheckoutComponent implements OnInit {
       scripttagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
       scripttagElement.onload = resolve;
       document.body.appendChild(scripttagElement);
-   //   console.log(scripttagElement);
+   //   //console.log(scripttagElement);
     })
   } // End of AddPaypalScript
 
@@ -153,15 +153,15 @@ export class CheckoutComponent implements OnInit {
           let paymentTrans = {...payment};
   
           //Do something when payment is successful.
-           console.log(payment);
-           console.log(this.member);
+           //console.log(payment);
+           //console.log(this.member);
 
            //Adjust Expiretion Date
            if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
               
               let current = moment(); 
-              console.log( moment(this.member.expires).isSame(current)); // true
-              console.log( moment(this.member.expires).isAfter(current)); // false
+              //console.log( moment(this.member.expires).isSame(current)); // true
+              //console.log( moment(this.member.expires).isAfter(current)); // false
               
               if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
                 this.member.expires = moment(current).add(1, 'years').format('M-D-YYYY');
@@ -175,38 +175,38 @@ export class CheckoutComponent implements OnInit {
 
 
            if((!this.member.payments) && (!this.member.purchase) ){ 
-            console.log('First Time');
+            //console.log('First Time');
             this.member.payments = [];
             this.member.purchase = [];
            }
            else 
-            console.log('regular Member');
+            //console.log('regular Member');
 
            this.member.payments.unshift(paymentTrans);
            this.member.purchase.unshift(this.cartCheck);
-           console.log(this.member);
+           //console.log(this.member);
            this.mds.UpdateMember(this.member.id, this.member);
-           console.log('update done');
+           //console.log('update done');
         //   this.toastr.success('Your payment is successful.');
           
         //    if(this.member.email){
   
         //       if(!this.member.payments){
         //         this.member.payments = [];
-        //         console.log('First Time');
+        //         //console.log('First Time');
         //       }
         //       this.member.payments.unshift(paymentTrans);
         //       this.updateMemberDetailsFun(payment);
         //       if(!this.member.purchase){
         //           this.member.purchase = [];
-        //       //   console.log('First Time purchase');
+        //       //   //console.log('First Time purchase');
         //       }
         //       this.member.purchase.unshift(this.cartCheck);
         //       this.mds.UpdateMember(this.member.id, this.member);
         //     //  this.mds.addPayments(payment) ;
         //    }
         //    else{
-        //     console.log('in Else');
+        //     //console.log('in Else');
         //  //   this.mds.addPayments(payment) ;
         //    }
           
@@ -226,23 +226,23 @@ export class CheckoutComponent implements OnInit {
 
 
     updateMemberDetailsFun(payment:any){
-      console.log(payment.transactions[0].item_list.items[0].name);
+      //console.log(payment.transactions[0].item_list.items[0].name);
       // Add Membership Details Start
         if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
-          console.log('Inside If');
+          //console.log('Inside If');
             let newdate;
             let date = moment();
             let expiredDate = moment(this.member.expires);
-            console.log(expiredDate);
+            //console.log(expiredDate);
 
             if(this.member.expires){
         //   newdate = new Date(new Date().setFullYear(new Date(this.member.expires).getFullYear() + 1))
              newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
              date = moment( new Date(new Date().setFullYear(new Date().getFullYear() + 1)));
-             console.log('If = '+ newdate);
-             console.log(newdate);
-             console.log('If = '+ date);
-             console.log(date.format('MMMM Do YYYY, h:mm:ss'));
+             //console.log('If = '+ newdate);
+             //console.log(newdate);
+             //console.log('If = '+ date);
+             //console.log(date.format('MMMM Do YYYY, h:mm:ss'));
             }
             else{
             newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));

@@ -13,8 +13,8 @@ export class ContactusComponent implements OnInit {
 
   ngOnInit(): void {
       this.member = JSON.parse(localStorage.getItem('user')!);
-      console.log(this.member);
-      console.log(this.member.uid);
+      //console.log(this.member);
+      //console.log(this.member.uid);
   this.datafind();
   this.datafind1(); 
   }
@@ -22,29 +22,29 @@ export class ContactusComponent implements OnInit {
  datafind(){
     // this.memberService.memberRef.snapshotChanges().subscribe(m =>{
     //    let d =  m.payload.toJSON();
-    //   console.log(d);
+    //   //console.log(d);
     // })
-    console.log(this.member.email);
+    //console.log(this.member.email);
     this.memberService.GetMember("198").snapshotChanges().subscribe(m =>{
       let memberData = m.payload.toJSON()
-      console.log(memberData);
+      //console.log(memberData);
       this.member = memberData;
-      console.log('this.member - ');
-      console.log(this.member.email);
+      //console.log('this.member - ');
+      //console.log(this.member.email);
     })
     this.memberService.GetMemberbyEmail(this.member.email).snapshotChanges().subscribe(mm =>{
       let md = mm.forEach(mmd=>{
        let s =  mmd.payload.toJSON()
-       console.log( s?.valueOf())
+       //console.log( s?.valueOf())
       
         // if( s.email == this.member.email){
 
         // }
       })
-      // console.log(memberData);
+      // //console.log(memberData);
       // this.member = memberData;
-      // console.log('this.member - ');
-      // console.log(this.member);
+      // //console.log('this.member - ');
+      // //console.log(this.member);
     })
 
 
@@ -52,7 +52,7 @@ export class ContactusComponent implements OnInit {
 
    async datafind1(){
    
-     //  console.log( await this.auth.memberDetail());
+     //  //console.log( await this.auth.memberDetail());
    
    }
 
