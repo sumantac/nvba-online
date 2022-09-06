@@ -77,7 +77,7 @@ export class CartmemberComponent implements OnInit {
         console.log(this.member);
       }
 
-      this.memberservice.UpdateMember(this.member.id, this.member);
+      // this.memberservice.UpdateMember(this.member.id, this.member);
       console.log('this member'+ this.member);
       console.log(this.member);
 

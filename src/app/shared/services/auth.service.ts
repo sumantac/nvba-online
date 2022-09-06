@@ -154,6 +154,7 @@ export class AuthService  {
   //   const user = JSON.parse(localStorage.getItem('user'));
   //   return (user !== null && user.emailVerified !== false) ? true : false;
   // }
+  current = moment();
 
   memberDetail(){
      let newuser:boolean = true;
@@ -166,8 +167,8 @@ export class AuthService  {
               newuser = false;
               this.memberData = e;
 
-              let current = moment();
-              if(moment(e.expires).isAfter(current)){
+              
+              if(moment(e.expires).isAfter(this.current)){
                 e.membershipstatus = 'Valid';
               }
               else{
