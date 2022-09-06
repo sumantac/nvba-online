@@ -44,7 +44,7 @@ export class CartmemberComponent implements OnInit {
   }];
 
   constructor(
-    private auth: AuthService, 
+    public auth: AuthService, 
     private memberservice:MemberService,
     private cs: CartService, 
     public router: Router
