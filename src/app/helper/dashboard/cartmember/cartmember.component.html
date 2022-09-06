@@ -1,7 +1,13 @@
 <div class="mt-4"  >
     
     <div *ngIf="!memberValidity" >
-        <div  class="redExpired" > Membership Expired : {{ this.member?.expires }}</div>
+        
+        <p class=" text-center ">
+            Only valid members, can purchase tickets for Durgapuja.
+        </p>
+
+        <div  class="redExpired" *ngIf="this.member?.expires"  > Membership Expired : {{ this.member?.expires }}</div>
+        
         <button *ngIf="this.member?.expires" (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" > Renew Annual Membership ($20) & Enjoy All Programs </button>
         <button *ngIf="!this.member?.expires" (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" >Purchase Membership ($20) & Enjoy All Programs </button>
         <div class="flex-column row ">
