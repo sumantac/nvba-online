@@ -183,14 +183,21 @@ export class CheckoutComponent implements OnInit {
             this.member.payments = [];
             this.member.purchase = [];
            }
-           else 
-            ////console.log('regular Member');
+           else {
+            console.log('regular Member');
+           }
+            
+            console.log(paymentTrans);
+            console.log(...this.cartCheck);
+            console.log( this.member.payments);
 
-           this.member.payments.unshift(paymentTrans);
+          //  this.member.payments = paymentTrans.con
+
+         //  this.member.payments.unshift(paymentTrans);
            this.member.purchase.unshift(this.cartCheck);
-           ////console.log(this.member);
+           console.log(this.member);
            this.mds.UpdateMember(this.member.id, this.member);
-           ////console.log('update done');
+           console.log('update done');
         //   this.toastr.success('Your payment is successful.');
           
         //    if(this.member.email){
