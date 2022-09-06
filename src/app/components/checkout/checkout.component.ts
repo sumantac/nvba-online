@@ -160,20 +160,20 @@ export class CheckoutComponent implements OnInit {
            if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
               
               let current = moment(); 
-              ////console.log( moment(this.member.expires).isSame(current)); // true
-              ////console.log( moment(this.member.expires).isAfter(current)); // false
+              ////console.log( moment(this.member.expires).isSame(current)); ////  true
+              ////console.log( moment(this.member.expires).isAfter(current)); ////  false
               
               if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
-                this.member.expires = moment(current).add(1, 'years');
+                this.member.expires = moment(current).add(1, 'years'); 
                 this.member.membershipstatus = 'Valid';
               }
               else{
-                this.member.expires = moment(this.member.expires).add(1, 'years');
-                this.member.membershipstatus = 'Valid';
+                this.member.expires = moment(this.member.expires).add(1, 'years'); 
+                this.member.membershipstatus = 'Valid'; 
               }
 
               if(!this.member.expires){
-                this.member.expires = moment(current).add(1, 'years');
+                this.member.expires = moment(current).add(1, 'years'); 
               }
             }
 
