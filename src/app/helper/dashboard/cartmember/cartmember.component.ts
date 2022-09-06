@@ -57,14 +57,16 @@ export class CartmemberComponent implements OnInit {
       console.log(this.member);
       let current = moment();
 
-      if(moment(this.member.expires).isSame(current) ||  moment(this.member.expires).isAfter(current) ){
+      if(moment(this.member.expires).isAfter(current) ){
        this.memberValidity = true;
         this.member.membershipstatus = 'Valid';
+        console.log('CartMember IF');
         console.log(this.member);
       }
       else{
         this.memberValidity = false;
         this.member.membershipstatus = 'Expire';
+        console.log('CartMember Else');
         console.log(this.member);
       }
 
