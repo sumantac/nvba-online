@@ -31,6 +31,8 @@ export class CartmemberComponent implements OnInit {
   totalCost: number = 0;
   cartCheck: any;
 
+  current = moment();
+
   private  memberCart = [{
     "name": "NVBA Annual Membership",
     "description": "NVBA Annual Membership Fee - 2022",
@@ -52,12 +54,17 @@ export class CartmemberComponent implements OnInit {
     // this.member = this.auth.cast.subscribe((m)=>{this.member=m});
     // console.log(this.member);
 
+  }
+
+
+  ngOnInit(): void { 
+
     this.auth.member.subscribe( m => {
       this.member = m;
       console.log(this.member);
-      let current = moment();
+      
 
-      if(moment(this.member.expires).isAfter(current) ){
+      if(moment(this.member.expires).isAfter(this.current) ){
        this.memberValidity = true;
         this.member.membershipstatus = 'Valid';
         console.log('CartMember IF');
@@ -77,10 +84,7 @@ export class CartmemberComponent implements OnInit {
 
     });
 
-  }
-
-
-  ngOnInit(): void { } 
+  } 
 
    addToCartobj(){
     this.cs.items = [];
