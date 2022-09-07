@@ -3,8 +3,8 @@
     { 
         "eventId":1,
         "eventName": "Durga Puja",
-        "eventDate": "September 30th, 2022 - October 2st, 2022",
-        "eventEndDate": "October 2st, 2022",
+        "eventDate": "September 30th, 2022 - October 2nd, 2022",
+        "eventEndDate": "October 2nd, 2022",
         "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
         "timming": "10AM - 10PM",
         "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
