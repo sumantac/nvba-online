@@ -52,6 +52,7 @@ import { GalleryComponent } from './pages/gallery/gallery/gallery.component';
 import { PastteamsComponent } from './pages/archive/pastteams/pastteams.component';
 import { MagazinesComponent } from './pages/archive/magazines/magazines.component';
 import { Durgapujatickets2022Component } from './helper/tickets/durgapujatickets2022/durgapujatickets2022.component';
+import { TicketsComponent } from './components/tickets/tickets.component';
 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { Durgapujatickets2022Component } from './helper/tickets/durgapujatickets
     PastteamsComponent,
     MagazinesComponent,
     Durgapujatickets2022Component,
+    TicketsComponent,
 
   ],
   imports: [
