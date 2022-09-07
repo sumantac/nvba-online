@@ -13,12 +13,12 @@
             </a>
             <div class="text p-4 d-block">
                 <div class="meta mb-3">
-                <div><a routerLink="#">{{event.eventDate}}</a></div>
+                <div><a routerLink="{{event.pageLink}}">{{event.eventDate}}</a></div>
                 <!-- <div><a routerLink="#">Admin</a></div>
                 <div><a routerLink="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
               </div>
-              <h3 class="heading mb-4"><a routerLink="#">{{event.eventName}}</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{event.timming}}</span> <span><i class="icon-map-o"></i> {{event.venue}}</span></p>
+              <h3 class="heading mb-4"><a routerLink="{{event.pageLink}}">{{event.eventName}}</a></h3>
+              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{event.timming}}</span> <a href="{{event.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{event.venue}}</span></a></p>
               <p>{{event.description}}</p>
               <p><a routerLink="{{event.pageLink}}">Join {{event.eventName}} <i class="ion-ios-arrow-forward"></i></a></p>
             </div>

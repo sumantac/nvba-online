@@ -3,7 +3,7 @@
     <div *ngIf="!memberValidity" >
         
         <p class=" text-center ">
-            Only valid members, can purchase tickets for Durgapuja.
+            Only paid registered members, can purchase tickets for Durgapuja.
         </p>
 
         <div  class="redExpired" *ngIf="this.member?.expires"  > Membership Expired : {{ this.member?.expires }}</div>
