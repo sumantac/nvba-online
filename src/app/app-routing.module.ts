@@ -34,6 +34,7 @@ const routes: Routes = [
   { path: "durgapuja", component: DurgapujaComponent, pathMatch: 'full'  },
   { path: "gallery", component: GalleryComponent, pathMatch: 'full'  },
   { path: "magazines", component: MagazinesComponent, pathMatch: 'full'  },
+  { path: "pastteam", component: PastteamsComponent, pathMatch: 'full'  },
 
 
   { path: 'sign-in', component: SignInComponent },

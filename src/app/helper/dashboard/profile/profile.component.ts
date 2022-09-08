@@ -67,6 +67,7 @@ export class ProfileComponent implements OnInit {
     let merge = {...this.member, ...this.profileForm.value };
     ////console.log(merge);
     this.ms.UpdateMember(this.member.id, this.profileForm.value);
+    alert('Your profile updated.');
 //     this.saveBtn = false;
 //  //   ////console.log(this.newUserCheck);
     

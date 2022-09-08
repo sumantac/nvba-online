@@ -2,14 +2,14 @@
     
     { 
         "eventId":1,
-        "eventName": "Durga Puja",
+        "eventName": "Sarbojanin Durga Utsav 2022",
         "eventDate": "September 30th, 2022 - October 2nd, 2022",
         "eventEndDate": "October 2nd, 2022",
         "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
-        "timming": "10AM - 10PM",
+        "timming": "September 30th - 6 pm to 10 pm. October 1st and 2nd - 9am to 10 pm.",
         "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
         "pageLink": "/durgapuja",
-        "description": "NVBA is proud to host Durga Puja 2022 For Blissful Three Days Of Puja Celebration.",
+        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
         "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
     }
     
