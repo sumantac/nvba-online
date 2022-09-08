@@ -40,8 +40,8 @@ body {
 	background: $white;
 	font-size: 1rem;
 	line-height: 1.8;
-	font-weight: 300;
-	color: lighten($black,50%);
+	font-weight: 400;
+	color: lighten($black,30%);
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
