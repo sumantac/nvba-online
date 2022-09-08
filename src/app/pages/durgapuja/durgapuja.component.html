@@ -32,16 +32,19 @@
   </div>  -->
 
     <div   >
-
+      <div style="z-index: 2000; position: absolute; top: 80px; right: 20px; cursor: pointer;"  >
+        <i id="play-pause-button" [ngClass]="playAudio?'icon-play-circle':'icon-pause-circle' "  (click)="soundplay()" ></i>
+      </div>
+      
       <div style="width: 100vw; height: 80vh; " >
         <div style="width: 100%; height: 100%; "  class="cb-slideshow-overlay" >
             <ul class="cb-slideshow">
-                <li><span></span><div><h3>Ya devi sarvabhuteshu vishnu-mayeti sadbita </h3></div></li>
-                <li><span></span><div><h3>Namas tasyai, namas tasyai, namas tasyai namo namah</h3></div></li>
-                <li><span></span><div><h3>Ya devi sarvabhuteshu shakti - rupena samsthita</h3></div></li>
-                <li><span></span><div><h3>Namas tasyai, namas tasyai, namas tasyai namo namah</h3></div></li>
-                <li><span></span><div><h3>Ya devi sarvabhuteshu bhakti - rupena samsthita</h3></div></li>
-                <li><span></span><div><h3>Namas tasyai, namas tasyai, namas tasyai namo namah</h3></div></li>
+                <li><span></span><div><h3>Ya devi sarva bhutesu vishnu mayeti sabdita</h3></div></li>
+                <li><span></span><div><h3>Namas thasyai namas thasyai namas thasyai namo namah</h3></div></li>
+                <li><span></span><div><h3>Ya devi sarva bhutesu chetanety abhidhiyathe</h3></div></li>
+                <li><span></span><div><h3>Namas thasyai namas thasyai namas thasyai namo namah</h3></div></li>
+                <li><span></span><div><h3>Ya devi sarva bhutesu buddhi rupena samsthitha</h3></div></li>
+                <li><span></span><div><h3>Namas thasyai namas thasyai namas thasyai namo namah</h3></div></li>
             </ul>
         </div>
       </div>  
@@ -51,7 +54,7 @@
 
     <section class="ftco-section">
     	<div class="container">
-        <div class="row d-flex mb-3">
+        <div class="row d-flex mb-3"> 
             <div class="col-md-6 flex ftco-animate">
               <h2 class="mb-4 ">Venue:  </h2>
                 <div class="" >
@@ -129,13 +132,13 @@ They are well known in Kolkata, Delhi and Mumbai and have recently started touri
 
     
 
-      <section class="ftco-section">
+      <!-- <section class="ftco-section">
         <div class="container">
           <div class="row d-flex">
             <app-cartmember></app-cartmember>
           </div>
         </div>
-      </section>        
+      </section>         -->
     
     </div>
 

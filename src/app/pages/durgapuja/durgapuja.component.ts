@@ -8,7 +8,8 @@ import { GetjsonfileService } from './../../services/getjsonfile.service';
 })
 export class DurgapujaComponent implements OnInit {
   sliderImage : any;
-
+  playAudio: boolean = false;
+  audio = new Audio('./../assets/media/durga.mp3');
   constructor( private jsonFile:GetjsonfileService) {}
 
   ngOnInit(): void {
@@ -16,8 +17,18 @@ export class DurgapujaComponent implements OnInit {
    //   ////console.log(data);
       this.sliderImage = data;
     });
+    this.soundplay();
+  }
 
-
+  soundplay(){
+    if(this.playAudio===false){
+      this.audio.play();
+      this.playAudio = true;
+    }
+    else{
+      this.audio.pause();
+      this.playAudio = false;
+    }
   }
 
 }
