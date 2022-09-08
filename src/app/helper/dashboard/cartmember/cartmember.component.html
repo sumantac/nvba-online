@@ -1,9 +1,9 @@
-<div class="mt-4"  >
+<div class="mt-4 row"  >
     
-    <div *ngIf="!memberValidity" >
+    <div *ngIf="!memberValidity" class="col-md-6 " style="margin-left: auto;"  >
         
         <p class=" text-center ">
-            Only paid registered members, can purchase tickets for Durgapuja.
+            Only paid registered members can purchase tickets for Durgapuja.
         </p>
 
         <div  class="redExpired" *ngIf="this.member?.expires"  > Membership Expired : {{ this.member?.expires }}</div>
