@@ -21,12 +21,15 @@ export class DurgapujaComponent implements OnInit {
   }
 
   soundplay(){
+    console.log(this.audio);
     if(this.playAudio===false){
       this.audio.play();
+      console.log('Play');
       this.playAudio = true;
     }
     else{
       this.audio.pause();
+      console.log('Pause');
       this.playAudio = false;
     }
   }
