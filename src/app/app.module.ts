@@ -40,6 +40,10 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 
 import { ToastrModule } from 'ngx-toastr';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+
 import { NgxPayPalModule } from 'ngx-paypal';
 import { CartticketsComponent } from './helper/dashboard/carttickets/carttickets.component';
 import { DurgapujaComponent } from './pages/durgapuja/durgapuja.component';
@@ -47,6 +51,8 @@ import { HistoryComponent } from './pages/aboutus/history/history.component';
 import { GalleryComponent } from './pages/gallery/gallery/gallery.component';
 import { PastteamsComponent } from './pages/archive/pastteams/pastteams.component';
 import { MagazinesComponent } from './pages/archive/magazines/magazines.component';
+import { Durgapujatickets2022Component } from './helper/tickets/durgapujatickets2022/durgapujatickets2022.component';
+import { TicketsComponent } from './components/tickets/tickets.component';
 
 
 @NgModule({
@@ -77,6 +83,8 @@ import { MagazinesComponent } from './pages/archive/magazines/magazines.componen
     GalleryComponent,
     PastteamsComponent,
     MagazinesComponent,
+    Durgapujatickets2022Component,
+    TicketsComponent,
 
   ],
   imports: [
@@ -92,7 +100,10 @@ import { MagazinesComponent } from './pages/archive/magazines/magazines.componen
     AngularFireDatabaseModule,
     ReactiveFormsModule,
     FormsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot(), // ToastrModule added
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
+    AccordionModule.forRoot(),
     NgxPayPalModule,
   ],
   providers: [GetjsonfileService, AuthService ],

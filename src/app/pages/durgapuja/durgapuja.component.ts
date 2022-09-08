@@ -13,7 +13,7 @@ export class DurgapujaComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonFile.pageData('durgapujaSliderImage').subscribe(data => {
-   //   console.log(data);
+   //   ////console.log(data);
       this.sliderImage = data;
     });
 

@@ -14,6 +14,7 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { TicketsComponent } from './components/tickets/tickets.component';
 
 import { DurgapujaComponent } from './pages/durgapuja/durgapuja.component';
 import { GalleryComponent } from './pages/gallery/gallery/gallery.component';
@@ -33,19 +34,22 @@ const routes: Routes = [
   { path: "durgapuja", component: DurgapujaComponent, pathMatch: 'full'  },
   { path: "gallery", component: GalleryComponent, pathMatch: 'full'  },
   { path: "magazines", component: MagazinesComponent, pathMatch: 'full'  },
+  { path: "pastteam", component: PastteamsComponent, pathMatch: 'full'  },
 
 
   { path: 'sign-in', component: SignInComponent },
-  { path: 'login-in', component: SignInComponent },
+  { path: 'login', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate:[AuthGuard] }, 
+  { path: 'membership', component: DashboardComponent, canActivate:[AuthGuard] }, 
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
-  { path: 'checkout', component: CheckoutComponent },
+  { path: 'checkout', component: CheckoutComponent, canActivate:[AuthGuard] },
+  { path: 'tickets', component:TicketsComponent, canActivate:[AuthGuard] },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration:'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

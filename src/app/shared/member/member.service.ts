@@ -29,9 +29,9 @@ export class MemberService {
     //     this.errorMgmt(error);
     //   });
     this.db.object('/Members/'+member.id).set({ ...member }).catch(error => {
-      console.log(error);
+      ////console.log(error);
     }).then( c => {
-      console.log("Success Create.");
+      ////console.log("Success Create.");
     });
   }
   /* Get member */
@@ -52,7 +52,8 @@ export class MemberService {
   }
   /* Update member */
   UpdateMember(id: number, memb: any) {
- //   console.log(id,memb)
+    // console.log(id);
+    // console.log(memb);
     // this.memberRef
     //   .update(member)
     //   .catch((error) => {
@@ -76,6 +77,6 @@ export class MemberService {
   // }
   // Error management
   private errorMgmt(error: any) {
-    console.log(error);
+    ////console.log(error);
   }
 }

@@ -22,14 +22,6 @@
             "child": null
         },
         {
-            "pageId": "22",
-            "pageName": "History",
-            "pageLink": "history",
-            "tag": "",
-            "description": "",
-            "child": null
-        },
-        {
             "pageId": "23",
             "pageName": "Our Constitution",
             "pageLink": "constitution",
@@ -40,37 +32,13 @@
     },
     {
         "pageId": "3",
-        "pageName": "Dashboard",
-        "pageLink": "dashboard",
+        "pageName": "Membership",
+        "pageLink": "membership",
         "tag": "",
         "description": "",
         "child": null
     },
-    {
-        "pageId": "4",
-        "pageName": "Gallery",
-        "pageLink": "#",
-        "tag": "",
-        "description": "",
-        "child": [
-            {
-                "pageId": "31",
-                "pageName": "Image Gallery",
-                "pageLink": "imagegallery",
-                "tag": "",
-                "description": "",
-                "child": null
-            },
-            {
-                "pageId": "32",
-                "pageName": "Ameyaa 2020",
-                "pageLink": "ameyaa2020",
-                "tag": "",
-                "description": "",
-                "child": null
-            }
-        ]
-    },
+    
     
     {
         "pageId": "5",
@@ -78,7 +46,24 @@
         "pageLink": "archive",
         "tag": "",
         "description": "",
-        "child": null
+        "child": [
+            {
+                "pageId": "51",
+                "pageName": "Team 2020-21",
+                "pageLink": "pastteam",
+                "tag": "",
+                "description": "",
+                "child": null
+            },
+            {
+                "pageId": "52",
+                "pageName": "Magazines",
+                "pageLink": "magazines",
+                "tag": "",
+                "description": "",
+                "child": null
+            }
+        ]
     },
     {
         "pageId": "6",

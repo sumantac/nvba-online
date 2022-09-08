@@ -18,7 +18,7 @@ export class DashboardComponent implements OnInit {
               ) {
                 this.authService.cast.subscribe( m => {
                   this.member = m;
-                  console.log(this.member);
+                  ////console.log(this.member);
                 });
 
 
@@ -31,7 +31,21 @@ export class DashboardComponent implements OnInit {
   }
 
 
-  
+  signout(){
+    this.authService.SignOut()
+    .then((res) => {
+   //   this.memberService.UpdateMember(this.member.id, this.member);
+  //    this.location.back();
+  //      localStorage.setItem('user', 'null');
+    }, (error) => {
+      ////console.log("Logout error", error);
+    });
+  }
+
+  ngOnDestroy(): void {
+  //  this.subscription.unsubscribe();
+    this.member;
+  }
 
 
 }

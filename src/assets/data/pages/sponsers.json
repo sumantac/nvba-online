@@ -2,29 +2,37 @@
     {
         "name" : "CMCI",
         "image" : "assets/images/gallery/sponsors/CMCI.png",
+        "url": "https://www.c-mci.com/corporate/",
         "dateofDonation" : "Donated Just now",
         "amount" : "30,000",
-        "cause" : "Children Needs Food"
+        "cause" : "Puja Sponser",
+        "type" : "Platinam"
     },
     {
-        "name" : "Synchronisys",
-        "image" : "assets/images/gallery/sponsors/sync.png",
+        "name" : "Brite Group Inc. ",
+        "image" : "assets/images/gallery/sponsors/thebritegroup.png",
+        "url": "https://www.thebritegroup.com/",
         "dateofDonation" : "Donated Just now",
         "amount" : "20,000",
-        "cause" : "Children Needs Food"
+        "cause" : "Puja Sponser",
+        "type" : "Gold"
     },
     {
         "name" : "Synergy",
         "image" : "assets/images/gallery/sponsors/synergy.png",
+        "url": "https://www.synergybis.com/",
         "dateofDonation" : "Donated Just now",
         "amount" : "25,000",
-        "cause" : "Children Needs Food"
+        "cause" : "Puja Sponser",
+        "type" : "Silver"
     },
     {
         "name" : "Long and Foster -Reema Raju",
         "image" : "assets/images/gallery/sponsors/realtor.png",
+        "url": "https://www.facebook.com/shailaja.raju.3",
         "dateofDonation" : "Donated Just now",
         "amount" : "25,000",
-        "cause" : "Children Needs Food"
+        "cause" : "Puja Sponser",
+        "type" : "Silver"
     }
 ]

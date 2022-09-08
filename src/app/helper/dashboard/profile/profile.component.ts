@@ -40,14 +40,14 @@ export class ProfileComponent implements OnInit {
     
     this.as.cast.subscribe( m => {
       this.member = m;
-    //  console.log(this.member);
+    //  ////console.log(this.member);
       this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
     });
   }
 
   createForm(id: any, firstname: any, lastname: any, photoURL: any, address1: any, address2: any, city: any, state: any, country: any, zipcode: any) {
 
-//console.log(id);
+//////console.log(id);
     this.profileForm = this.fb.group({
         id: [id, Validators.required],
         firstname: [firstname, Validators.required ],
@@ -63,17 +63,18 @@ export class ProfileComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.profileForm.value);
+    ////console.log(this.profileForm.value);
     let merge = {...this.member, ...this.profileForm.value };
-    console.log(merge);
+    ////console.log(merge);
     this.ms.UpdateMember(this.member.id, this.profileForm.value);
+    alert('Your profile updated.');
 //     this.saveBtn = false;
-//  //   console.log(this.newUserCheck);
+//  //   ////console.log(this.newUserCheck);
     
 //   //  this.memberDetails.updateCustomer(this.profileForm);
-// //   console.log(this.profileForm);
+// //   ////console.log(this.profileForm);
 //     let v = {...this.member, ...this.profileForm.value };
-// //    console.log(v);
+// //    ////console.log(v);
 //     if(this.newUserCheck){
 //       this.memberDetails.createCustomer(v);
 //     }
@@ -84,11 +85,11 @@ export class ProfileComponent implements OnInit {
   }
 
   save(){ 
-       console.log();
+       ////console.log();
       //  this.userService.updateCurrentUser(value)
       //  .then(res => {
-      //    console.log(res);
-      //  }, err => console.log(err))
+      //    ////console.log(res);
+      //  }, err => ////console.log(err))
    
      }
 
