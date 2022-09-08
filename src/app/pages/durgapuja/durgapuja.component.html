@@ -32,7 +32,9 @@
   </div>  -->
 
     <div   >
-      
+      <div style="z-index: 2000; position: absolute; top: 80px; right: 20px; cursor: pointer;"  >
+        <i id="play-pause-button" class="icon " [ngClass]="playAudio?'icon-play-circle':'icon-pause-circle' "  (click)="soundplay()" ></i>
+      </div>
       
       <div style="width: 100vw; height: 80vh; " >
         <div style="width: 100%; height: 100%; "  class="cb-slideshow-overlay" >
@@ -125,6 +127,16 @@ They are well known in Kolkata, Delhi and Mumbai and have recently started touri
                         </p>
     			</div>
     		</div>
+
+        <div class="row d-flex mb-3" >
+          <div class="col-md-6 flex ftco-animate">
+            <h2 class="mb-4 text-center ">Our Food  </h2>
+            <div>
+              <img src="./../../../assets/images/gallery/dp/food-2022.png" class=" embed-responsive "  >
+            </div>
+          </div>  
+        </div>
+
     	</div>
     </section>
 
