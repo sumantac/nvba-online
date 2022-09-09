@@ -9,7 +9,7 @@ import { GetjsonfileService } from './../../services/getjsonfile.service';
 export class DurgapujaComponent implements OnInit {
   sliderImage : any;
   playAudio: boolean = false;
-  audio = new Audio('./../../assets/media/durga.mp3');
+  audio = new Audio('https://dhrubajyoti.com/nvba/media/durga.mp3');
   constructor( private jsonFile:GetjsonfileService) {}
 
   ngOnInit(): void {
