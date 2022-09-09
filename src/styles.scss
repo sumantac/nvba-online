@@ -2,6 +2,8 @@
 $font-primary: 'Overpass',Arial, sans-serif;
 $font-secondary: 'Dosis',Arial, sans-serif;
 
+@import '~ngx-toastr/toastr';
+
 #myTab{
    a.nav-link{
     font-size: 0.9rem;

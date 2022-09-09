@@ -15,6 +15,7 @@ import {
 import * as moment from 'moment';
 declare let paypal:any;
 
+
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -198,7 +199,7 @@ export class CheckoutComponent implements OnInit {
            console.log(this.member);
            this.mds.UpdateMember(this.member.id, this.member);
            console.log('update done');
-        //   this.toastr.success('Your payment is successful.');
+          this.toastr.success('Your payment is successful.','Payment Process');
           
         //    if(this.member.email){
   
