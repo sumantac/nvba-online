@@ -100,7 +100,12 @@ import { TicketsComponent } from './components/tickets/tickets.component';
     AngularFireDatabaseModule,
     ReactiveFormsModule,
     FormsModule,
-    ToastrModule.forRoot(), // ToastrModule added
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-top-center',
+      closeButton: true,
+      preventDuplicates: true,
+    }), // ToastrModule added
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     AccordionModule.forRoot(),
