@@ -20,6 +20,8 @@ import { DurgapujaComponent } from './pages/durgapuja/durgapuja.component';
 import { GalleryComponent } from './pages/gallery/gallery/gallery.component';
 import { PastteamsComponent } from './pages/archive/pastteams/pastteams.component';
 import { MagazinesComponent } from './pages/archive/magazines/magazines.component';
+import { ReportsComponent } from './components/admin/reports/reports.component';
+import { AlldetailsComponent } from './components/admin/alldetails/alldetails.component';
 
 
 
@@ -46,6 +48,9 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'checkout', component: CheckoutComponent, canActivate:[AuthGuard] },
   { path: 'tickets', component:TicketsComponent, canActivate:[AuthGuard] },
+
+  { path: 'admin/reports', component:ReportsComponent, canActivate:[AuthGuard] },
+  { path: 'admin/alldetails', component:AlldetailsComponent, canActivate:[AuthGuard] },
 ];
 
 @NgModule({
