@@ -53,6 +53,10 @@ import { PastteamsComponent } from './pages/archive/pastteams/pastteams.componen
 import { MagazinesComponent } from './pages/archive/magazines/magazines.component';
 import { Durgapujatickets2022Component } from './helper/tickets/durgapujatickets2022/durgapujatickets2022.component';
 import { TicketsComponent } from './components/tickets/tickets.component';
+import { ReportsComponent } from './components/admin/reports/reports.component';
+
+import { AgGridModule } from 'ag-grid-angular';
+import { AlldetailsComponent } from './components/admin/alldetails/alldetails.component';
 
 
 @NgModule({
@@ -85,6 +89,8 @@ import { TicketsComponent } from './components/tickets/tickets.component';
     MagazinesComponent,
     Durgapujatickets2022Component,
     TicketsComponent,
+    ReportsComponent,
+    AlldetailsComponent,
 
   ],
   imports: [
@@ -110,6 +116,7 @@ import { TicketsComponent } from './components/tickets/tickets.component';
     ModalModule.forRoot(),
     AccordionModule.forRoot(),
     NgxPayPalModule,
+    AgGridModule
   ],
   providers: [GetjsonfileService, AuthService ],
   bootstrap: [AppComponent]

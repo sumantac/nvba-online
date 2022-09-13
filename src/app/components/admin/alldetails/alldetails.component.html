@@ -1,0 +1,185 @@
+<div class="wrapper" >
+    
+        
+    <div class="container p-3 pt-5" >
+        <div class="row no-gutters  align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }" style="filter: grayscale(100%) opacity(200%)" >
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> / <span>admin/alldetails</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Admin Reports - All Details</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" >
+        <p>Total Membership of 2022 =>  {{MM2022YY}}</p> 
+        <!-- {{rowData}} -->
+        <div>
+            <table class="table table-bordered " >
+              <tr>
+                <th></th>
+                <th>All 3 Days</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+              <tr>
+                <th>Adult</th>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBALL01NON}}</div>
+                        <div class="green">{{DP2022EBALL02VEG}}</div>
+                   </div> 
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBFRI01NON}}</div>
+                        <div class="green">{{DP2022EBFRI02VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSAT01NON}}</div>
+                        <div class="green">{{DP2022EBSAT02VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSUN01NON}}</div>
+                        <div class="green">{{DP2022EBSUN02VEG}}</div>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th>Kids [ 11 to 18 years ]</th>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBALL03NON}}</div>
+                        <div class="green">{{DP2022EBALL04VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBFRI03NON}}</div>
+                        <div class="green">{{DP2022EBFRI04VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSAT03NON}}</div>
+                        <div class="green">{{DP2022EBSAT04VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSUN03NON}}</div>
+                        <div class="green">{{DP2022EBSUN04VEG}}</div>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th>Kids [ 0 to 10 years ]</th>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBALL05KID}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBFRI05KID}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSAT05KID}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSUN05KID}}</div>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th>Students and Visiting Parents </th>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBALL06NON}}</div>
+                        <div class="green">{{DP2022EBALL07VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBFRI06NON}}</div>
+                        <div class="green">{{DP2022EBFRI07VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSAT06NON}}</div>
+                        <div class="green">{{DP2022EBSAT07VEG}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSUN06NON}}</div>
+                        <div class="green">{{DP2022EBSUN07VEG}}</div>
+                    </div>
+                </td>
+              </tr>
+              <tr class=" bg-light " >
+                <th>Total</th>
+                  <th>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBALL01NON + DP2022EBALL03NON + DP2022EBALL06NON +DP2022EBALL05KID }}</div>
+                        <div class="green">{{DP2022EBALL02VEG + DP2022EBALL04VEG + DP2022EBALL07VEG}}</div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBFRI01NON + DP2022EBFRI03NON + DP2022EBFRI05KID + DP2022EBFRI06NON }}</div>
+                        <div class="green">{{DP2022EBFRI02VEG + DP2022EBFRI04VEG + DP2022EBFRI07VEG}}</div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSAT01NON + DP2022EBSAT03NON + DP2022EBSAT05KID + DP2022EBSAT06NON }}</div>
+                        <div class="green">{{DP2022EBSAT02VEG + DP2022EBSAT04VEG + DP2022EBSAT07VEG}}</div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="d-flex justify-content-around ">
+                        <div class="red" >{{DP2022EBSUN01NON + DP2022EBSUN03NON + DP2022EBSUN05KID + DP2022EBSUN06NON }}</div>
+                        <div class="green">{{DP2022EBSUN02VEG + DP2022EBSUN04VEG + DP2022EBSUN07VEG}}</div>
+                    </div>
+                  </th>
+              </tr>
+            </table>
+          </div>
+        
+        
+    </div>
+
+    <div class=" container " >
+        
+        <div class=" col-12 mb-3 border-rounded table-bordered" >
+            <ag-grid-angular
+                style="height:500px; "
+                class="ag-theme-alpine table-light table-responsive agGridTable"
+                #agGrid
+                
+                id="myGrid"
+                class="ag-theme-alpine"
+                (gridReady)="onGridReady($event)"
+                [rowData]="memberList"
+                [columnDefs]="columnDefs"
+                [animateRows]="true"
+                 >
+            </ag-grid-angular>
+      </div>
+      <div class=" d-flex justify-content-end mb-5 " >
+        <button (click)="onBtnExport()" class=" btn-get-started " > Export CSV File </button>
+      </div>
+
+    </div>
+
+</div>    
