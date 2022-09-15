@@ -8,7 +8,7 @@ import { GetjsonfileService } from './../../../services/getjsonfile.service';
   styleUrls: ['./latestevents.component.scss']
 })
 export class LatesteventsComponent implements OnInit {
-  events: any;
+  events: any = [];
   constructor(private jsonFile:GetjsonfileService) { }
 
   ngOnInit(): void {
