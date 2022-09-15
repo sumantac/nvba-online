@@ -15,8 +15,8 @@ export class DurgapujaComponent implements OnInit {
   isLog: boolean = true;
 //  audio = new Audio('https://dhrubajyoti.com/nvba/media/durga.mp3');
   constructor( private jsonFile:GetjsonfileService, public auth: AuthService ) {
-      this.isLog = auth.isLoggedIn;
-      console.log(this.isLog);
+      
+      console.log(this.auth.isLoggedIn.valueOf());
   }
 
   ngOnInit(): void {
