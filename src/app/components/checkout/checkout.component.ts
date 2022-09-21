@@ -15,6 +15,7 @@ import {
 import * as moment from 'moment';
 declare let paypal:any;
 
+
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -198,29 +199,8 @@ export class CheckoutComponent implements OnInit {
            console.log(this.member);
            this.mds.UpdateMember(this.member.id, this.member);
            console.log('update done');
-        //   this.toastr.success('Your payment is successful.');
-          
-        //    if(this.member.email){
-  
-        //       if(!this.member.payments){
-        //         this.member.payments = [];
-        //         ////console.log('First Time');
-        //       }
-        //       this.member.payments.unshift(paymentTrans);
-        //       this.updateMemberDetailsFun(payment);
-        //       if(!this.member.purchase){
-        //           this.member.purchase = [];
-        //       //   ////console.log('First Time purchase');
-        //       }
-        //       this.member.purchase.unshift(this.cartCheck);
-        //       this.mds.UpdateMember(this.member.id, this.member);
-        //     //  this.mds.addPayments(payment) ;
-        //    }
-        //    else{
-        //     ////console.log('in Else');
-        //  //   this.mds.addPayments(payment) ;
-        //    }
-          
+          this.toastr.success('Your payment is successful.','Payment Process');
+   
        
              this.cart.clearCart();
              this.cleanup();
@@ -235,47 +215,6 @@ export class CheckoutComponent implements OnInit {
       }
     };
 
-
-    updateMemberDetailsFun(payment:any){
-      ////console.log(payment.transactions[0].item_list.items[0].name);
-      // Add Membership Details Start
-        if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
-          ////console.log('Inside If');
-            let newdate;
-            let date = moment();
-            let expiredDate = moment(this.member.expires);
-            ////console.log(expiredDate);
-
-            if(this.member.expires){
-        //   newdate = new Date(new Date().setFullYear(new Date(this.member.expires).getFullYear() + 1))
-             newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-             date = moment( new Date(new Date().setFullYear(new Date().getFullYear() + 1)));
-             ////console.log('If = '+ newdate);
-             ////console.log(newdate);
-             ////console.log('If = '+ date);
-             ////console.log(date.format('MMMM Do YYYY, h:mm:ss'));
-            }
-            else{
-            newdate = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-       //     alert('else = '+newdate);
-            }
-            
-           this.member.expires = newdate.toISOString().split('T')[0];
-           this.member.expires = date;
-          
-            this.member.membershipstatus = 'Valid';
-            this.mds.UpdateMember( this.member.id, this.member );
-        } // Add Membership Details End
-  
-          //   // Add Non-Membership Ticket Details 
-          //   if( payment.transactions[0].item_list.items[0].name == 'Non-Member Concert ticket' ){
-  
-          //     this.member.nonmemberpogramticket = "paid";
-              
-          // } // Add Non-Membership Ticket Details
-
-        return true;
-    }  
 
 
 

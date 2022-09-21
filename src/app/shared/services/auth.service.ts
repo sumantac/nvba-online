@@ -10,6 +10,7 @@ import { Observable, BehaviorSubject, observable } from 'rxjs';
 import { Member } from './../member/member';
 import { Router } from '@angular/router';
 import { MemberService } from './../member/member.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root',
@@ -26,7 +27,8 @@ export class AuthService  {
     public afAuth: AngularFireAuth, // Inject Firebase auth service
     public router: Router,
     public ngZone: NgZone, // NgZone service to remove outside scope warning
-    public memberService : MemberService
+    public memberService : MemberService,
+    private toastr: ToastrService
   ) {
     /* Saving user data in localstorage when 
     logged in and setting up null when logged out */
@@ -55,7 +57,8 @@ export class AuthService  {
         });
       })
       .catch((error) => {
-        window.alert(error.message);
+        this.toastr.warning(error.message,'Log In');
+        console.log(error.message);
       });
   }
   // Sign up with email/password
@@ -69,7 +72,8 @@ export class AuthService  {
         this.SetUserData(result.user);
       })
       .catch((error) => {
-        window.alert(error.message);
+        this.toastr.warning(error.message,'Sign Up');
+        console.log(error.message);
       });
   }
   // Send email verfificaiton when new user sign up
@@ -85,10 +89,12 @@ export class AuthService  {
     return this.afAuth
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {
-        window.alert('Password reset email sent, check your inbox.');
+        this.toastr.success('Password reset email sent, check your inbox.','Reset Forggot Password');
+        console.log('Password reset email sent, check your inbox.');
       })
       .catch((error) => {
-        window.alert(error);
+        this.toastr.error(error,'Reset Forggot Password');
+        console.log(error);
       });
   }
   // Returns true when user is looged in and email is verified
@@ -145,6 +151,7 @@ export class AuthService  {
       localStorage.setItem('user', 'null');
       this.router.navigate(['sign-in']);
       this.member.next(null);
+      this.toastr.success('Successfully Sign out.',' Sign out');
     });
   }
 

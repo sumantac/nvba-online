@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { GetjsonfileService } from './../../services/getjsonfile.service';
+import { AuthService } from './../../shared/services/auth.service';
 
 @Component({
   selector: 'app-durgapuja',
@@ -11,8 +12,12 @@ export class DurgapujaComponent implements OnInit {
 
   sliderImage : any;
   playAudio: boolean = true;
+  isLog: boolean = true;
 //  audio = new Audio('https://dhrubajyoti.com/nvba/media/durga.mp3');
-  constructor( private jsonFile:GetjsonfileService) {}
+  constructor( private jsonFile:GetjsonfileService, public auth: AuthService ) {
+      
+      console.log(this.auth.isLoggedIn.valueOf());
+  }
 
   ngOnInit(): void {
     this.jsonFile.pageData('durgapujaSliderImage').subscribe(data => {
