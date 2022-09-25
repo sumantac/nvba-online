@@ -52,3 +52,11 @@ div{
     height: 20px;
     width: 20px;
   }
+
+  .table .col {
+    flex: 1;        /* distributes space on the line equally among items */
+  }
+
+  #activities tr td:first-child {
+    font-weight: 800;
+  }
