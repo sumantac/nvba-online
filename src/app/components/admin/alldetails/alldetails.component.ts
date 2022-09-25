@@ -72,6 +72,9 @@ export class AlldetailsComponent implements OnInit {
   vegCountFri:number =0;
   kidCountFri:number =0;
 
+  customAdult:number =0;
+  customKid:number =0;
+
 
   user: { index:number; email: string; firstname: string; lastname: string; expires: string; phone:string } | undefined;
 
@@ -96,43 +99,89 @@ export class AlldetailsComponent implements OnInit {
 		{ field: 'firstname', sortable: true, resizable: true, filter: true , cellClass: 'center' },
 		{ field: 'lastname', sortable: true, resizable: true, filter: true, cellClass: 'center' },
     { field: 'expires', sortable: true, resizable: true, filter: true },
-    { field: 'phone', sortable: true, resizable: true, filter: true },
 
     { field: 'MM2022YY', headerName:'Membership', sortable: true, resizable: true },
 
-    { field: 'DP2022EBALL01NON', headerName:'EBALL01NON', sortable: true, resizable: true },
-    { field: 'DP2022EBALL02VEG', headerName:'EBALL02VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBALL03NON', headerName:'EBALL03NON', sortable: true, resizable: true },
-    { field: 'DP2022EBALL04VEG', headerName:'EBALL04VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBALL05KID', headerName:'EBALL05KID', sortable: true, resizable: true },
-    { field: 'DP2022EBALL06NON', headerName:'EBALL06NON', sortable: true, resizable: true },
-    { field: 'DP2022EBALL07VEG', headerName:'EBALL07VEG', sortable: true, resizable: true },
+    { field: 'DP2022EBALL01NON', headerName:'Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL02VEG', headerName:'Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL03NON', headerName:'Kids [ 11 to 18 years ] Non-Veg ', sortable: true, resizable: true },
+    { field: 'DP2022EBALL04VEG', headerName:'Kids [ 11 to 18 years ] Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL05KID', headerName:'Kids [ 0 to 10 years ]', sortable: true, resizable: true },
+    { field: 'DP2022EBALL06NON', headerName:'Students and Visiting Parents - Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL07VEG', headerName:'Students and Visiting Parents - Veg', sortable: true, resizable: true },
 
-    { field: 'DP2022EBFRI01NON', headerName:'EBFRI01NON', sortable: true, resizable: true },
-    { field: 'DP2022EBFRI02VEG', headerName:'EBFRI02VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBFRI03NON', headerName:'EBFRI03NON', sortable: true, resizable: true },
-    { field: 'DP2022EBFRI04VEG', headerName:'EBFRI04VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBFRI05KID', headerName:'EBFRI05KID', sortable: true, resizable: true },
-    { field: 'DP2022EBFRI06NON', headerName:'EBFRI06NON', sortable: true, resizable: true },
-    { field: 'DP2022EBFRI07VEG', headerName:'EBFRI07VEG', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI01NON', headerName:'Friday - Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI02VEG', headerName:'Friday - Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI03NON', headerName:'Friday - Kids [ 11 to 18 years ] Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI04VEG', headerName:'Friday - Kids [ 11 to 18 years ] Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI05KID', headerName:'Friday - Kids[ 0 to 10years]', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI06NON', headerName:'Friday - Students and Visiting Parents - Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI07VEG', headerName:'Friday - Students and Visiting Parents - Veg', sortable: true, resizable: true },
 
-    { field: 'DP2022EBSAT01NON', headerName:'EBSAT01NON', sortable: true, resizable: true },
-    { field: 'DP2022EBSAT02VEG', headerName:'EBSAT02VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBSAT03NON', headerName:'EBSAT03NON', sortable: true, resizable: true },
-    { field: 'DP2022EBSAT04VEG', headerName:'EBSAT04VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBSAT05KID', headerName:'EBSAT05KID', sortable: true, resizable: true },
-    { field: 'DP2022EBSAT06NON', headerName:'EBSAT06NON', sortable: true, resizable: true },
-    { field: 'DP2022EBSAT07VEG', headerName:'EBSAT07VEG', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT01NON', headerName:'Saturday - Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT02VEG', headerName:'Saturday - Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT03NON', headerName:'Saturday - Kids [ 11 to 18 years ] - Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT04VEG', headerName:'Saturday - Kids [ 11 to 18 years ] - Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT05KID', headerName:'Saturday - Kids [ 0 to 10 years ]', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT06NON', headerName:'Saturday - Students and Visiting Parents Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT07VEG', headerName:'Saturday - Students and Visiting Parents Veg', sortable: true, resizable: true },
 
-    { field: 'DP2022EBSUN01NON', headerName:'EBSUN01NON', sortable: true, resizable: true },
-    { field: 'DP2022EBSUN02VEG', headerName:'EBSUN02VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBSUN03NON', headerName:'EBSUN03NON', sortable: true, resizable: true },
-    { field: 'DP2022EBSUN04VEG', headerName:'EBSUN04VEG', sortable: true, resizable: true },
-    { field: 'DP2022EBSUN05KID', headerName:'EBSUN05KID', sortable: true, resizable: true },
-    { field: 'DP2022EBSUN06NON', headerName:'EBSUN06NON', sortable: true, resizable: true },
-    { field: 'DP2022EBSUN07VEG', headerName:'EBSUN07VEG', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN01NON', headerName:'Sunday - Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN02VEG', headerName:'Sunday - Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN03NON', headerName:'Sunday - Kids [ 11 to 18 years ] Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN04VEG', headerName:'Sunday - Kids [ 11 to 18 years ] Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN05KID', headerName:'Sunday - Kids [ 0 to 10 years ]', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN06NON', headerName:'Sunday - Students and Visiting Parents Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN07VEG', headerName:'Sunday - Students and Visiting Parents Veg', sortable: true, resizable: true },
 
+    { field: 'phone', sortable: true, resizable: true, filter: true },
 	];
+
+
+
+  columnDefsTickets = [
+    { field: 'index',  sortable: true, resizable: true,  cellClass: 'id-class center' },
+    { field: 'email', sortable: true, resizable: true, filter: true },
+		{ field: 'firstname', sortable: true, resizable: true, filter: true , cellClass: 'center' },
+		{ field: 'lastname', sortable: true, resizable: true, filter: true, cellClass: 'center' },
+    
+    { field: 'DP2022EBALL01NON', headerName:'Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL02VEG', headerName:'Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL03NON', headerName:'Kids [ 11 to 18 years ] Non-Veg ', sortable: true, resizable: true },
+    { field: 'DP2022EBALL04VEG', headerName:'Kids [ 11 to 18 years ] Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL05KID', headerName:'Kids [ 0 to 10 years ]', sortable: true, resizable: true },
+    { field: 'DP2022EBALL06NON', headerName:'Students and Visiting Parents - Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBALL07VEG', headerName:'Students and Visiting Parents - Veg', sortable: true, resizable: true },
+
+    { field: 'DP2022EBFRI01NON', headerName:'Friday - Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI02VEG', headerName:'Friday - Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI03NON', headerName:'Friday - Kids [ 11 to 18 years ] Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI04VEG', headerName:'Friday - Kids [ 11 to 18 years ] Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI05KID', headerName:'Friday - Kids[ 0 to 10years]', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI06NON', headerName:'Friday - Students and Visiting Parents - Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBFRI07VEG', headerName:'Friday - Students and Visiting Parents - Veg', sortable: true, resizable: true },
+
+    { field: 'DP2022EBSAT01NON', headerName:'Saturday - Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT02VEG', headerName:'Saturday - Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT03NON', headerName:'Saturday - Kids [ 11 to 18 years ] - Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT04VEG', headerName:'Saturday - Kids [ 11 to 18 years ] - Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT05KID', headerName:'Saturday - Kids [ 0 to 10 years ]', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT06NON', headerName:'Saturday - Students and Visiting Parents Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSAT07VEG', headerName:'Saturday - Students and Visiting Parents Veg', sortable: true, resizable: true },
+
+    { field: 'DP2022EBSUN01NON', headerName:'Sunday - Adult Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN02VEG', headerName:'Sunday - Adult Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN03NON', headerName:'Sunday - Kids [ 11 to 18 years ] Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN04VEG', headerName:'Sunday - Kids [ 11 to 18 years ] Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN05KID', headerName:'Sunday - Kids [ 0 to 10 years ]', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN06NON', headerName:'Sunday - Students and Visiting Parents Non-Veg', sortable: true, resizable: true },
+    { field: 'DP2022EBSUN07VEG', headerName:'Sunday - Students and Visiting Parents Veg', sortable: true, resizable: true },
+    { field: 'expires', sortable: true, resizable: true, filter: true },
+    { field: 'phone', sortable: true, resizable: true, filter: true },
+    { field: 'MM2022YY', headerName:'Membership', sortable: true, resizable: true },
+	];
+
+
 
   checkDetails(){
     let couter = 0;
@@ -184,6 +233,9 @@ export class AlldetailsComponent implements OnInit {
     this.DP2022EBSUN06NON= 0;
     this.DP2022EBSUN07VEG= 0;
 
+    this.customAdult = 0;
+    this.customKid = 0;
+  
     
 
   //  console.log(this.rowData);
@@ -195,6 +247,7 @@ export class AlldetailsComponent implements OnInit {
          
          [...m.purchase].forEach(element => {
           const userTicket = {};
+          const customTicket = {};
           this.newPurches = false;
       //     console.log(element);
       //     console.log(element.sku);
