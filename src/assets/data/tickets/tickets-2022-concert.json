@@ -1,0 +1,31 @@
+[
+    {
+        "name": "NVBA Presents Chandrabindoo ",
+        "description": "Chandrabindoo - Friday September 30, 2022 at 7pm",
+        "quantity": 0,
+        "price": 30,
+        "tax": 0,
+        "sku": "DP2022CTFRIDAY",
+        "currency": "USD" 
+      },
+    {
+      "name": "NVBA Presents Sourendro-Soumyojit ",
+      "description": " Sourendro Mullick & Soumyojit Das - Saturday October 1st, 2022 at 7pm",
+      "quantity": 0,
+      "price": 30,
+      "tax": 0.00,
+      "sku": "DP2022CTSATURDAY",
+      "currency": "USD"
+    },
+    {
+        "name": "NVBA Presents Shovan-Trisha",
+        "description": " Shovan-Trisha - Sunday October 2nd, 2022 at 7pm",
+        "quantity": 0,
+        "price": 30,
+        "tax": 0.00,
+        "sku": "DP2022CTSUNDAY",
+        "currency": "USD"
+    }
+    
+      
+]    
