@@ -114,11 +114,11 @@ export class EventscheckoutComponent implements OnInit {
 
 
   paypalConfig = {
-      env: 'sandbox',
-     // env: 'production',
+     // env: 'sandbox',
+      env: 'production',
       client: {
-        sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
-     //  production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
+      //  sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
+        production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
       },
       style: {
         shape: 'rect',
@@ -158,46 +158,47 @@ export class EventscheckoutComponent implements OnInit {
            ////console.log(this.member);
 
            //Adjust Expiretion Date
-           if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
+          //  if( payment.transactions[0].item_list.items[0].name == 'NVBA Annual Membership' ){
               
-              let current = moment(); 
-              ////console.log( moment(this.member.expires).isSame(current)); ////  true
-              ////console.log( moment(this.member.expires).isAfter(current)); ////  false
+          //     let current = moment(); 
+          //     ////console.log( moment(this.member.expires).isSame(current)); ////  true
+          //     ////console.log( moment(this.member.expires).isAfter(current)); ////  false
               
-              if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
-                this.member.expires = moment(current).add(1, 'years'); 
-                this.member.membershipstatus = 'Valid';
-              }
-              else{
-                this.member.expires = moment(this.member.expires).add(1, 'years'); 
-                this.member.membershipstatus = 'Valid'; 
-              }
+          //     if(moment(this.member.expires).isSame(current) ||  moment(current).isAfter(this.member.expires) ){
+          //       this.member.expires = moment(current).add(1, 'years'); 
+          //       this.member.membershipstatus = 'Valid';
+          //     }
+          //     else{
+          //       this.member.expires = moment(this.member.expires).add(1, 'years'); 
+          //       this.member.membershipstatus = 'Valid'; 
+          //     }
 
-              if(!this.member.expires){
-                this.member.expires = moment(current).add(1, 'years'); 
-              }
-            }
+          //     if(!this.member.expires){
+          //       this.member.expires = moment(current).add(1, 'years'); 
+          //     }
+          //   }
 
 
-           if((!this.member.payments) && (!this.member.purchase) ){ 
-            ////console.log('First Time');
-            this.member.payments = [];
-            this.member.purchase = [];
-           }
-           else {
-            console.log('regular Member');
-           }
+          //  if((!this.member.payments) && (!this.member.purchase) ){ 
+          //   ////console.log('First Time');
+          //   this.member.payments = [];
+          //   this.member.purchase = [];
+          //  }
+          //  else {
+          //   console.log('regular Member');
+          //  }
             
-            console.log(paymentTrans);
-            console.log(...this.cartCheck);
-            console.log( this.member.payments);
+        //     console.log(paymentTrans);
+        //     console.log(...this.cartCheck);
+        //     console.log( this.member.payments);
 
-          //  this.member.payments = paymentTrans.con
+        //   //  this.member.payments = paymentTrans.con
 
-         //  this.member.payments.unshift(paymentTrans);
-           this.member.purchase.unshift(this.cartCheck);
-           console.log(this.member);
-           this.mds.UpdateMember(this.member.id, this.member);
+        //  //  this.member.payments.unshift(paymentTrans);
+        //    this.member.purchase.unshift(this.cartCheck);
+        //    console.log(this.member);
+        //    this.mds.UpdateMember(this.member.id, this.member);
+          this.mds.concert(payment);
            console.log('update done');
           this.toastr.success('Your payment is successful.','Payment Process');
    
