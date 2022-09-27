@@ -6,12 +6,11 @@ import { Router } from '@angular/router';
 import { timestamp } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-durgapujatickets2022',
-  templateUrl: './durgapujatickets2022.component.html',
-  styleUrls: ['./durgapujatickets2022.component.scss']
+  selector: 'app-concert',
+  templateUrl: './concert.component.html',
+  styleUrls: ['./concert.component.scss']
 })
-
-export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterViewChecked {
+export class ConcertComponent implements OnInit, OnChanges, AfterViewChecked {
 
   dataObject :any=[];
   checkObject :any=[];
@@ -31,7 +30,7 @@ export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterVi
   // headCount: number = 0;
 
 
-  private _jsonURLcart = '/assets/data/tickets/durgapuja-2022-regular.json';
+  private _jsonURLcart = '/assets/data/tickets/tickets-2022-concert.json';
    constructor(private http: HttpClient, private cs: CartService, public router: Router, private cdr: ChangeDetectorRef) {
     this.cs.currentCart.subscribe( cartCheck => this.cartCheck = cartCheck);
     this.getJSON().subscribe(data => {
@@ -122,7 +121,7 @@ export class Durgapujatickets2022Component implements OnInit, OnChanges, AfterVi
     this.cs.addToCart(this.cs.items);
 
  //   this.cs.addToCart(this.checkObject);
-    this.router.navigate(['/checkout']);
+    this.router.navigate(['/concertcheckout']);
  //   this.router.navigate(['/heroes', { id: itemId }]);
 
  //   item.count = 
