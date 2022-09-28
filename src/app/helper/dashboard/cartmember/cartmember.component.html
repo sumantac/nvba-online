@@ -1,17 +1,21 @@
 <div class="mt-4 row"  >
     
-    <div *ngIf="!memberValidity" class="col-md-6 " id="cartmember"  >
+    <div *ngIf="!memberValidity" class="col-md-12 " id="cartmember"  >
         
         <p class=" text-center ">
-            Only paid registered members can purchase tickets for Durgapuja.
+
+            We suspend our purchase tickets online as well as at Venue. Due to overwhelming response of our Members and Guests. 
+            Only online pre purchase ticket owners are allow at Venue. <br />
+            Sorry for the inconvenience.
+
         </p>
 
         <div  class="redExpired" *ngIf="this.member?.expires"  > Membership Expired : {{ this.member?.expires }}</div>
 
-        <button *ngIf="this.member?.expires" (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" > Renew Annual Membership ($20) & Enjoy All Programs </button>
+        <button *ngIf="this.member?.expires" (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" > Renew Annual Membership</button>
 
         <button *ngIf="!this.member?.expires" (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" >
-            For Durga Puja Tickets and Membership - Click here</button>
+            NVBA Annual Membership</button>
         <div class="flex-column row ">
             <div style="font-weight: bold; font-size: 1.3em;color: #cccccc; text-align: center;" ><span class=" text-primary ">*</span><b>Membership Benefits:</b> </div>
             <ul  style=" color: #cccccc; text-align: center;"> 
@@ -28,9 +32,9 @@
                     Registered members have voting rights at the elections.
                 </li>
             </ul>
-            <p class=" text-center ">
+            <!-- <p class=" text-center ">
                <b> Helpline number :- +1 (512) 412-9841 [ Call or SMS ] </b>
-            </p>
+            </p> -->
         </div>
     </div>
     <div *ngIf="memberValidity" >
@@ -49,9 +53,9 @@
 
     </div>
 
-    <div class="flex-center mb-3">
+    <!-- <div class="flex-center mb-3">
         <a class="btn-get-started btn-get-started-dark text-center w-100 "  routerLink="/concert"   >Concert Tickets</a>             
-      </div>
+      </div> -->
     
 </div>
 
