@@ -1,8 +1,8 @@
 [
     {
         "name": "NVBA Presents Chandrabindoo ",
-        "description": "Chandrabindoo Concert - Friday September 30, 2022",
-        "quantity": 1,
+        "description": "Chandrabindoo - Friday September 30, 2022 at 8:30pm",
+        "quantity": 0,
         "price": 30,
         "tax": 0,
         "sku": "DP2022CTFRIDAY",
@@ -10,7 +10,7 @@
       },
     {
       "name": "NVBA Presents Sourendro-Soumyojit ",
-      "description": " Sourendro Mullick & Soumyojit Das in Concert - Saturday October 1st, 2022",
+      "description": " Sourendro Mullick & Soumyojit Das - Saturday October 1st, 2022 at 8:30pm",
       "quantity": 0,
       "price": 30,
       "tax": 0.00,
@@ -19,7 +19,7 @@
     },
     {
         "name": "NVBA Presents Shovan-Trisha",
-        "description": " Shovan-Trisha in Concert - Sunday October 2nd, 2022",
+        "description": " Shovan-Trisha - Sunday October 2nd, 2022 at 8pm",
         "quantity": 0,
         "price": 30,
         "tax": 0.00,

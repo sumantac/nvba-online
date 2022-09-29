@@ -1,7 +1,7 @@
 <div class="wrapper"  >
 
   <audio #playA id="myAudio"  loop onload="soundplay()" >
-    <source src="https://dhrubajyoti.com/nvba/media/durga.mp3" type="audio/mpeg" autoplay loop onload="soundplay()" >
+    <source src="https://dhrubajyoti.com/nvba/media/durga.mp3" type="audio/mpeg" autoplay play loop onload="soundplay()" >
     <!-- <source src="./../../../assets/media/durga.mp3" type="audio/mpeg" autoplay loop onload="soundplay()" > -->
     Your browser does not support the audio element.
   </audio>
@@ -55,7 +55,7 @@
   
     <section>
       <div class="container mb-3">
-        <div class="row d-flex mb-3"> 
+        <!-- <div class="row d-flex mb-3"> 
           <div class="flex-center text-center mt-3 ">
             <h3 class="text-center">মহালয়া | Mahalaya (Mahishasura Mardini) | Birendra Krishna Bhadra</h3>
           </div>
@@ -63,7 +63,7 @@
             <source src="https://dhrubajyoti.com/nvba/media/mahalaya.mp3" type="audio/mpeg">
           Your browser does not support the audio element. 
           </audio>
-        </div>
+        </div> -->
         <div class="row d-flex mb-3"> 
           <div class="flex-center text-center mt-3 ">
             <h3 class="text-center">NVBA Durga Utsav 2022 - Lots of activities planned</h3>
@@ -147,15 +147,28 @@ Event timing: Sunday, October 2nd, 3pm - 5pm
                 <img src="./../../../assets/images/gallery/dp/tickets-2022.jpg" style="width:100%" >
               </div> -->
 
-                <div class="flex-center text-center mt-4 ">
+                <!-- <div class="flex-center text-center mt-4 ">
                   <h5 >Only concert tickets available!</h5>   
                   <p class=" errorText " >
                     &ast;  Book your ticket now, before closing!</p> 
+                </div> -->
+
+                <p class=" text-center ">
+
+                  We suspend our purchase tickets online as well as at Venue. Due to overwhelming response of our Members and Guests. 
+                  Only online pre purchase ticket owners are allow at Venue. <br />
+                  Sorry for the inconvenience.
+      
+              </p>
+
+                <!-- <div class="flex-center mb-3">
+                  <a class="btn-get-started btn-get-started-dark text-center w-100 " style="background-color: #ff5d00;"  routerLink="/concert"   >Concert Tickets</a>             
+                </div> -->
+
+                <div class="flex-center">
+                  <a class="btn-get-started btn-get-started-dark text-center w-100 " href="https://mcusercontent.com/71b8b228056801a92f04f6000/files/c90ee371-cef7-b6eb-eb7f-1e68857812e3/Durgostav_2022_Flier_Light_2.pdf" target="_blank" style="background-color: #ff8d00;"  >Timings of Durga Utsav 2022</a>             
                 </div>
 
-                <div class="flex-center mb-3">
-                  <a class="btn-get-started btn-get-started-dark text-center w-100 "  routerLink="/concert"   >Concert Tickets</a>             
-                </div>
 
                 <!-- facebook concert -->
                 <div class="flex-center">
@@ -173,11 +186,11 @@ Event timing: Sunday, October 2nd, 3pm - 5pm
             </div>
         </div>
         <!-- Ticket link-->
-        <!-- <div class="row d-flex mb-3">
+        <div class="row d-flex mb-3">
           <div class="flex-center">
             <app-cartmember></app-cartmember>
           </div>
-        </div>   -->
+        </div>  
         
     		<div class="row d-flex">
     			<div class="col-md-6 flex ftco-animate ">
