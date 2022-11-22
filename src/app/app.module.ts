@@ -59,6 +59,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { AlldetailsComponent } from './components/admin/alldetails/alldetails.component';
 import { ConcertComponent } from './components/events/concert/concert.component';
 import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
+import { AgmComponent } from './pages/aboutus/agm/agm.component';
 
 
 @NgModule({
@@ -95,6 +96,7 @@ import { EventscheckoutComponent } from './components/events/eventscheckout/even
     AlldetailsComponent,
     ConcertComponent,
     EventscheckoutComponent,
+    AgmComponent,
 
   ],
   imports: [
