@@ -2,6 +2,7 @@
     
     { 
         "eventId":1,
+        "eventType": "past",
         "eventName": "Sarbojanin Durga Utsav 2022",
         "eventDate": "September 30th, 2022 - October 2nd, 2022",
         "eventEndDate": "October 2nd, 2022",
@@ -11,6 +12,32 @@
         "pageLink": "/durgapuja",
         "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
         "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
+    },
+    { 
+        "eventId":2,
+        "eventType": "coming",
+        "eventName": "Annual General Meeting (AGM) 2022",
+        "eventDate": "December 3th, 2022 - Saturday",
+        "eventEndDate": "December 3th, 2022 - Saturday",
+        "eventImage": "./../../../assets/images/stocks/agm.jpg",
+        "timming": "4 pm - 6 pm",
+        "venue": "Chantilly Regional Library  4000 Stringfellow Rd, Chantilly, VA 20151",
+        "pageLink": "/agm",
+        "description": "Your participation is highly appreciated.",
+        "mapUrl": "https://www.google.com/maps/place/Chantilly+Regional+Library/@38.8826348,-77.4103814,17z/data=!4m5!3m4!1s0x89b645d93e9c74d7:0xea49f7691dcdee5f!8m2!3d38.8826348!4d-77.4081927"
+    },
+    { 
+        "eventId":3,
+        "eventType": "coming",
+        "eventName": "Break fast with Firefighter  2022",
+        "eventDate": "December 4th, 2022 - Sunday",
+        "eventEndDate": "December 4th, 2022 - Sunday",
+        "eventImage": "./../../../assets/images/stocks/firefighters.jpg",
+        "timming": "6 am - 8 am",
+        "venue": "Northern Virginia",
+        "pageLink": "/",
+        "description": "Break fast with Firefighter  ",
+        "mapUrl": ""
     }
     
 ]

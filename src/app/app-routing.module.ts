@@ -6,6 +6,7 @@ import { TeamComponent } from './pages/aboutus/team/team.component';
 import { ConstitutionComponent } from './pages/aboutus/constitution/constitution.component';
 import { HistoryComponent } from './pages/aboutus/history/history.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
+import { AgmComponent } from './pages/aboutus/agm/agm.component';
 
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: "gallery", component: GalleryComponent, pathMatch: 'full'  },
   { path: "magazines", component: MagazinesComponent, pathMatch: 'full'  },
   { path: "pastteam", component: PastteamsComponent, pathMatch: 'full'  },
+  { path: "agm", component: AgmComponent, pathMatch: 'full'  },
 
 
   { path: 'sign-in', component: SignInComponent },
