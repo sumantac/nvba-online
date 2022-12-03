@@ -1,18 +1,4 @@
 [
-    
-    { 
-        "eventId":1,
-        "eventType": "past",
-        "eventName": "Sarbojanin Durga Utsav 2022",
-        "eventDate": "September 30th, 2022 - October 2nd, 2022",
-        "eventEndDate": "October 2nd, 2022",
-        "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
-        "timming": "September 30th - 6 pm to 10 pm. October 1st and 2nd - 9am to 10 pm.",
-        "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
-        "pageLink": "/durgapuja",
-        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
-        "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
-    },
     { 
         "eventId":2,
         "eventType": "coming",
@@ -38,6 +24,32 @@
         "pageLink": "/",
         "description": "Break fast with Firefighter  ",
         "mapUrl": ""
+    },
+    { 
+        "eventId":4,
+        "eventType": "coming",
+        "eventName": "Saraswati Pujo 2023",
+        "eventDate": "28th January, 2023 - Saturday ",
+        "eventEndDate": "28th January, 2023 - Saturday",
+        "eventImage": "./../../../assets/images/stocks/2022/SaraswatiPujo2023.png",
+        "timming": "YTD",
+        "venue": "Mercer Middle School",
+        "pageLink": "/",
+        "description": "Saraswati Pujo 2023",
+        "mapUrl": "https://www.google.com/maps/dir//Mercer+Middle+School,+42149+Greenstone+Dr,+Aldie,+VA+20105/@38.9247839,-77.549134,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b641c3ba822e23:0xf3d318eb03789316!2m2!1d-77.5469453!2d38.9247839!3e0"
+    },
+    { 
+        "eventId":1,
+        "eventType": "past",
+        "eventName": "Sarbojanin Durga Utsav 2022",
+        "eventDate": "September 30th, 2022 - October 2nd, 2022",
+        "eventEndDate": "October 2nd, 2022",
+        "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
+        "timming": "September 30th - 6 pm to 10 pm. October 1st and 2nd - 9am to 10 pm.",
+        "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
+        "pageLink": "/durgapuja",
+        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
+        "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
     }
     
 ]
