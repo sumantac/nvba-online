@@ -1,21 +1,34 @@
 [
     
     { 
-        "eventId":1,
+        "eventId":4,
+        "eventType": "coming",
+        "eventName": "Saraswati Puja",
+        "eventDate": "January 28th, 2022 - Saturday",
+        "eventEndDate": "January 28th, 2022 - Saturday",
+        "eventImage": "./../../../assets/images/stocks/saraswati-2021.jpg",
+        "timming": "11 am - 5 pm",
+        "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
+        "pageLink": "/saraswatipuja",
+        "description": "Saraswati Puja   ",
+        "mapUrl": "https://goo.gl/maps/iUQvcV6htit6HW3e8"
+    },
+    { 
+        "eventId":3,
         "eventType": "past",
-        "eventName": "Sarbojanin Durga Utsav 2022",
-        "eventDate": "September 30th, 2022 - October 2nd, 2022",
-        "eventEndDate": "October 2nd, 2022",
-        "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
-        "timming": "September 30th - 6 pm to 10 pm. October 1st and 2nd - 9am to 10 pm.",
-        "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
-        "pageLink": "/durgapuja",
-        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
-        "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
+        "eventName": "Break fast with Firefighter  2022",
+        "eventDate": "December 4th, 2022 - Sunday",
+        "eventEndDate": "December 4th, 2022 - Sunday",
+        "eventImage": "./../../../assets/images/stocks/firefighters.jpg",
+        "timming": "6 am - 8 am",
+        "venue": "Northern Virginia",
+        "pageLink": "/",
+        "description": "Break fast with Firefighter  ",
+        "mapUrl": ""
     },
     { 
         "eventId":2,
-        "eventType": "coming",
+        "eventType": "past",
         "eventName": "Annual General Meeting (AGM) 2022",
         "eventDate": "December 3th, 2022 - Saturday",
         "eventEndDate": "December 3th, 2022 - Saturday",
@@ -27,17 +40,17 @@
         "mapUrl": "https://www.google.com/maps/place/Chantilly+Regional+Library/@38.8826348,-77.4103814,17z/data=!4m5!3m4!1s0x89b645d93e9c74d7:0xea49f7691dcdee5f!8m2!3d38.8826348!4d-77.4081927"
     },
     { 
-        "eventId":3,
-        "eventType": "coming",
-        "eventName": "Break fast with Firefighter  2022",
-        "eventDate": "December 4th, 2022 - Sunday",
-        "eventEndDate": "December 4th, 2022 - Sunday",
-        "eventImage": "./../../../assets/images/stocks/firefighters.jpg",
-        "timming": "6 am - 8 am",
-        "venue": "Northern Virginia",
-        "pageLink": "/",
-        "description": "Break fast with Firefighter  ",
-        "mapUrl": ""
+        "eventId":1,
+        "eventType": "past",
+        "eventName": "Sarbojanin Durga Utsav 2022",
+        "eventDate": "September 30th, 2022 - October 2nd, 2022",
+        "eventEndDate": "October 2nd, 2022",
+        "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
+        "timming": "September 30th - 6 pm to 10 pm. October 1st and 2nd - 9am to 10 pm.",
+        "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
+        "pageLink": "/durgapuja",
+        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
+        "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
     }
     
 ]
