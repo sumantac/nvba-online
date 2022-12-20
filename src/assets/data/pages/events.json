@@ -1,20 +1,21 @@
 [
+    
     { 
-        "eventId":2,
+        "eventId":4,
         "eventType": "coming",
-        "eventName": "Annual General Meeting (AGM) 2022",
-        "eventDate": "December 3th, 2022 - Saturday",
-        "eventEndDate": "December 3th, 2022 - Saturday",
-        "eventImage": "./../../../assets/images/stocks/agm.jpg",
-        "timming": "4 pm - 6 pm",
-        "venue": "Chantilly Regional Library  4000 Stringfellow Rd, Chantilly, VA 20151",
-        "pageLink": "/agm",
-        "description": "Your participation is highly appreciated.",
-        "mapUrl": "https://www.google.com/maps/place/Chantilly+Regional+Library/@38.8826348,-77.4103814,17z/data=!4m5!3m4!1s0x89b645d93e9c74d7:0xea49f7691dcdee5f!8m2!3d38.8826348!4d-77.4081927"
+        "eventName": "Saraswati Puja",
+        "eventDate": "January 28th, 2022 - Saturday",
+        "eventEndDate": "January 28th, 2022 - Saturday",
+        "eventImage": "./../../../assets/images/stocks/saraswati-2021.jpg",
+        "timming": "11 am - 5 pm",
+        "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
+        "pageLink": "/saraswatipuja",
+        "description": "Saraswati Puja   ",
+        "mapUrl": "https://goo.gl/maps/iUQvcV6htit6HW3e8"
     },
     { 
         "eventId":3,
-        "eventType": "coming",
+        "eventType": "past",
         "eventName": "Break fast with Firefighter  2022",
         "eventDate": "December 4th, 2022 - Sunday",
         "eventEndDate": "December 4th, 2022 - Sunday",
@@ -26,17 +27,17 @@
         "mapUrl": ""
     },
     { 
-        "eventId":4,
-        "eventType": "coming",
-        "eventName": "Saraswati Pujo 2023",
-        "eventDate": "28th January, 2023 - Saturday ",
-        "eventEndDate": "28th January, 2023 - Saturday",
-        "eventImage": "./../../../assets/images/stocks/2022/SaraswatiPujo2023.png",
-        "timming": "YTD",
-        "venue": "Mercer Middle School",
-        "pageLink": "/",
-        "description": "Saraswati Pujo 2023",
-        "mapUrl": "https://www.google.com/maps/dir//Mercer+Middle+School,+42149+Greenstone+Dr,+Aldie,+VA+20105/@38.9247839,-77.549134,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b641c3ba822e23:0xf3d318eb03789316!2m2!1d-77.5469453!2d38.9247839!3e0"
+        "eventId":2,
+        "eventType": "past",
+        "eventName": "Annual General Meeting (AGM) 2022",
+        "eventDate": "December 3th, 2022 - Saturday",
+        "eventEndDate": "December 3th, 2022 - Saturday",
+        "eventImage": "./../../../assets/images/stocks/agm.jpg",
+        "timming": "4 pm - 6 pm",
+        "venue": "Chantilly Regional Library  4000 Stringfellow Rd, Chantilly, VA 20151",
+        "pageLink": "/agm",
+        "description": "Your participation is highly appreciated.",
+        "mapUrl": "https://www.google.com/maps/place/Chantilly+Regional+Library/@38.8826348,-77.4103814,17z/data=!4m5!3m4!1s0x89b645d93e9c74d7:0xea49f7691dcdee5f!8m2!3d38.8826348!4d-77.4081927"
     },
     { 
         "eventId":1,

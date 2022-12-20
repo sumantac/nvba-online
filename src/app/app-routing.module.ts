@@ -26,6 +26,7 @@ import { AlldetailsComponent } from './components/admin/alldetails/alldetails.co
 
 import { ConcertComponent } from './components/events/concert/concert.component';
 import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
+import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: "constitution", component: ConstitutionComponent, pathMatch: 'full'  },
   { path: "contactus", component: ContactusComponent, pathMatch: 'full'  },
   { path: "durgapuja", component: DurgapujaComponent, pathMatch: 'full'  },
+  { path: "saraswatipuja", component: SaraswatiComponent, pathMatch: 'full'  },
   { path: "gallery", component: GalleryComponent, pathMatch: 'full'  },
   { path: "magazines", component: MagazinesComponent, pathMatch: 'full'  },
   { path: "pastteam", component: PastteamsComponent, pathMatch: 'full'  },

@@ -60,6 +60,7 @@ import { AlldetailsComponent } from './components/admin/alldetails/alldetails.co
 import { ConcertComponent } from './components/events/concert/concert.component';
 import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
 import { AgmComponent } from './pages/aboutus/agm/agm.component';
+import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
 
 
 @NgModule({
@@ -97,6 +98,7 @@ import { AgmComponent } from './pages/aboutus/agm/agm.component';
     ConcertComponent,
     EventscheckoutComponent,
     AgmComponent,
+    SaraswatiComponent,
 
   ],
   imports: [
