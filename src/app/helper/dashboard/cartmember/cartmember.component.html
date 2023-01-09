@@ -2,13 +2,13 @@
     
     <div *ngIf="!memberValidity" class="col-md-12 " id="cartmember"  >
         
-        <p class=" text-center ">
+        <!-- <p class=" text-center ">
 
             We suspend our purchase tickets online as well as at Venue. Due to overwhelming response of our Members and Guests. 
             Only online pre purchase ticket owners are allow at Venue. <br />
             Sorry for the inconvenience.
 
-        </p>
+        </p> -->
 
         <div  class="redExpired" *ngIf="this.member?.expires"  > Membership Expired : {{ this.member?.expires }}</div>
 
@@ -39,17 +39,21 @@
     </div>
     <div *ngIf="memberValidity" >
         <div  class=" " style="text-align: center;" >Membership Expiration Date : {{this.member.expires}}</div>
+        <app-eventtickets></app-eventtickets>
         <!-- <button (click)="addToCartobj()" class="btn-get-started w-100 mb-5 mt-2" > Renew Annual Membership</button> --> 
-
-        <div class=" text-center "  >
-            <!-- <button class="btn-get-userpage text-center "   routerLink="/ordertickets" >Register for Durga Puja 2021</button> -->
+ 
+        <!-- <div class=" text-center "  > -->
+             <!-- <button class="btn-get-userpage text-center "   routerLink="/tickets" >Saraswati Puja Tickets</button>  -->
             <!-- <button *ngIf="addMoreKK"  class="btn-get-userpage text-center" routerLink="/addmoretickets" >Add Kavita Krishnamurti Tickets</button>  -->
             <br />
             <!-- Registration closed for Durga Puja.  -->
             <!-- <button class="btn-get-userpage text-center "   routerLink="/ordertickets" >Register for Durga Puja 2021 Darshan & Buy Kavita Krishnamurti Concert Tickets</button> -->
             
             <!-- <app-durgapujatickets2022></app-durgapujatickets2022> -->
-        </div>
+
+            
+            
+        <!-- </div> -->
 
     </div>
 

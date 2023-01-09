@@ -27,6 +27,7 @@ import { AlldetailsComponent } from './components/admin/alldetails/alldetails.co
 import { ConcertComponent } from './components/events/concert/concert.component';
 import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
 import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
+import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
 
 
 const routes: Routes = [
@@ -52,7 +53,7 @@ const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'checkout', component: CheckoutComponent, canActivate:[AuthGuard] },
-  { path: 'tickets', component:TicketsComponent, canActivate:[AuthGuard] },
+  // { path: 'tickets', component:TicketsComponent, canActivate:[AuthGuard] },
 
   { path: 'admin/reports', component:ReportsComponent, canActivate:[AuthGuard] },
   { path: 'admin/alldetails', component:AlldetailsComponent, canActivate:[AuthGuard] },
@@ -60,6 +61,7 @@ const routes: Routes = [
   { path: 'concerttickets', component: ConcertComponent },
   { path: 'concert', component: ConcertComponent },
   { path: 'concertcheckout', component: EventscheckoutComponent },
+  { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },
   
 ];
 
