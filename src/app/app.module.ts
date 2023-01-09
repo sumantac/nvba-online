@@ -61,6 +61,7 @@ import { ConcertComponent } from './components/events/concert/concert.component'
 import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
 import { AgmComponent } from './pages/aboutus/agm/agm.component';
 import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
+import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
 
 
 @NgModule({
@@ -99,6 +100,7 @@ import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
     EventscheckoutComponent,
     AgmComponent,
     SaraswatiComponent,
+    EventticketsComponent,
 
   ],
   imports: [
