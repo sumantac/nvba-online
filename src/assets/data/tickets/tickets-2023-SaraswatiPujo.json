@@ -1,16 +1,25 @@
 [
     {
-        "name": "NVBA Saraswati Puja 2023 Ticket",
-        "description": "Saraswati Puja 2023 early birds - Saturday January 28, 2023",
+        "name": "NVBA Saraswati Puja 2023 Ticket Adults",
+        "description": "Early Birds - Adults",
         "quantity": 0,
         "price": 40,
         "tax": 0,
-        "sku": "SP2023NORMALEB",
+        "sku": "SP2023ADULTEB",
         "currency": "USD" 
       },
       {
-        "name": "NVBA Saraswati Puja 2023 - Kids Ticket",
-        "description": "Saraswati Puja 2023 - Kids [ 2 - 10 ] - Saturday January 28, 2023",
+        "name": "NVBA Saraswati Puja 2023 Ticket Subsidized",
+        "description": "Early Birds - Kids [ 11 to 18 years ] / Visiting Parents / Students",
+        "quantity": 0,
+        "price": 30,
+        "tax": 0,
+        "sku": "SP2023STUDENTEB",
+        "currency": "USD"
+      },
+      {
+        "name": "NVBA Saraswati Puja 2023 Ticket Free Kids",
+        "description": "Kids age group [ 0 - 10 years ] ",
         "quantity": 0,
         "price": 0,
         "tax": 0,
