@@ -53,7 +53,7 @@ const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'checkout', component: CheckoutComponent, canActivate:[AuthGuard] },
-  // { path: 'tickets', component:TicketsComponent, canActivate:[AuthGuard] },
+  { path: 'tickets', component:TicketsComponent, canActivate:[AuthGuard] },
 
   { path: 'admin/reports', component:ReportsComponent, canActivate:[AuthGuard] },
   { path: 'admin/alldetails', component:AlldetailsComponent, canActivate:[AuthGuard] },
@@ -61,7 +61,7 @@ const routes: Routes = [
   { path: 'concerttickets', component: ConcertComponent },
   { path: 'concert', component: ConcertComponent },
   { path: 'concertcheckout', component: EventscheckoutComponent },
-  { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },
+  // { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },
   
 ];
 

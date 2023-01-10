@@ -16,13 +16,13 @@
     { 
         "eventId":3,
         "eventType": "past",
-        "eventName": "Break fast with Firefighter  2022",
+        "eventName": "Breakfast with Firefighter  2022",
         "eventDate": "December 4th, 2022 - Sunday",
         "eventEndDate": "December 4th, 2022 - Sunday",
         "eventImage": "./../../../assets/images/stocks/firefighters.jpg",
         "timming": "6 am - 8 am",
         "venue": "Northern Virginia",
-        "pageLink": "/",
+        "pageLink": "/home",
         "description": "Break fast with Firefighter  ",
         "mapUrl": ""
     },
