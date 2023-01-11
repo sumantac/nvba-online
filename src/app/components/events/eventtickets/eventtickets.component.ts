@@ -121,11 +121,12 @@ export class EventticketsComponent implements OnInit, OnChanges, AfterViewChecke
     this.cs.addToCart(this.cs.items);
 
  //   this.cs.addToCart(this.checkObject);
-    this.router.navigate(['/concertcheckout']);
+    this.router.navigate(['/checkout']);
  //   this.router.navigate(['/heroes', { id: itemId }]);
 
  //   item.count = 
 //    this.cartService.addToCart();
+    
   }
 
   clearCart(){
