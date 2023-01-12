@@ -3,7 +3,7 @@
     
     <div class="col-lg-8 col-md-12 m-auto ">
       <h2 class=" text-black-50">Welcome, {{member?.firstname}}</h2>
-      <p *ngIf="member?.membershipstatus == 'Valid'" class="text-white mt-0 mb-5">Thanks for being part of the NVBA family. This is your account's profile page. You can see the membership details along with various updates.</p>
+      <p *ngIf="member?.membershipstatus == 'Valid'" class="text-gray mt-0 mb-5">Thanks for being part of the NVBA family. This is your account's profile page. You can see the membership details along with various updates.</p>
       <div class="alert alert-warning" role="alert" *ngIf="!member?.firstname" >
         Please update your details, on profile tab.
       </div>
