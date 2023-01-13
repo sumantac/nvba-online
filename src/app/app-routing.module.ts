@@ -28,6 +28,7 @@ import { ConcertComponent } from './components/events/concert/concert.component'
 import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
 import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
 import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
+import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presidentsdesk.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: "magazines", component: MagazinesComponent, pathMatch: 'full'  },
   { path: "pastteam", component: PastteamsComponent, pathMatch: 'full'  },
   { path: "agm", component: AgmComponent, pathMatch: 'full'  },
+  { path: 'frompresidentsdesk', component: PresidentsdeskComponent },
 
 
   { path: 'sign-in', component: SignInComponent },
