@@ -62,6 +62,7 @@ import { EventscheckoutComponent } from './components/events/eventscheckout/even
 import { AgmComponent } from './pages/aboutus/agm/agm.component';
 import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
 import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
+import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presidentsdesk.component';
 
 
 @NgModule({
@@ -101,6 +102,7 @@ import { EventticketsComponent } from './components/events/eventtickets/eventtic
     AgmComponent,
     SaraswatiComponent,
     EventticketsComponent,
+    PresidentsdeskComponent,
 
   ],
   imports: [
