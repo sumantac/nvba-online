@@ -5,42 +5,48 @@
         <div class="row no-gutters  align-items-center justify-content-center" data-scrollax-parent="true">
             <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }" style="filter: grayscale(100%) opacity(200%)" >
             <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> / <span>admin/alldetails</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Admin Reports - All Details</h1>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">All Details</h1>
             </div>
         </div>
     </div>
 
     <div class="container" >
 
-        <h3 class="text-center mt-3 mb-2 " >Tickets Details of 2022</h3>
+        <h3 class="text-center mt-3 mb-2 " >Tickets Details of 2023</h3>
 
         <!-- <p>Total Membership of 2022 =>  {{MM2022YY}}</p>  -->
         <!-- {{rowData}} -->
-        <div>
-            <table class="table table-bordered " >
+        <div class="mb-5">
+            <table class="table table-bordered mb-5" >
               <tr>
-                    <th>Total Annual Membership </th>
-                    <th>{{MM2022YY}}</th>
+                <td colspan="2" >
+                    <span class="red" >Red text = Non-Veg,</span>
+                    <span class="green">Green text = Veg</span>
+                </td>
+              </tr>  
+              <tr>
+                    <th>Total Annual Membership - 2023 </th>
+                    <th>{{MM2023YY}}</th>
+                    <!-- <th></th>
                     <th></th>
-                    <th></th>
-                    <th></th>
+                    <th></th> -->
               </tr>  
               <tr>
                 <th></th>
-                <th>All 3 Days</th>
-                <th>Friday</th>
+                <th>Counts</th>
+                <!-- <th>Friday</th>
                 <th>Saturday</th>
-                <th>Sunday</th>
+                <th>Sunday</th> -->
               </tr>
               <tr>
                 <th>Adult</th>
                 <td>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL01NON}}</div>
-                        <div class="green">{{DP2022EBALL02VEG}}</div>
+                        <div class="red" >{{SP2023AEBNON}}</div>
+                        <div class="green">{{SP2023AEBVEG}}</div>
                    </div> 
                 </td>
-                <td>
+                <!-- <td>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI01NON}}</div>
                         <div class="green">{{DP2022EBFRI02VEG}}</div>
@@ -57,17 +63,17 @@
                         <div class="red" >{{DP2022EBSUN01NON}}</div>
                         <div class="green">{{DP2022EBSUN02VEG}}</div>
                     </div>
-                </td>
+                </td> -->
               </tr>
               <tr>
-                <th>Kids [ 11 to 18 years ]</th>
+                <th>Kids [ 11 to 18 years ] / Students and Visiting Parents</th>
                 <td>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL03NON}}</div>
-                        <div class="green">{{DP2022EBALL04VEG}}</div>
+                        <div class="red" >{{SP2023STUDENTEBNON}}</div>
+                        <div class="green">{{SP2023STUDENTEBVEG}}</div>
                     </div>
                 </td>
-                <td>
+                <!-- <td>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI03NON}}</div>
                         <div class="green">{{DP2022EBFRI04VEG}}</div>
@@ -84,16 +90,16 @@
                         <div class="red" >{{DP2022EBSUN03NON}}</div>
                         <div class="green">{{DP2022EBSUN04VEG}}</div>
                     </div>
-                </td>
+                </td> -->
               </tr>
               <tr>
                 <th>Kids [ 0 to 10 years ]</th>
                 <td>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL05KID}}</div>
+                        <div class="red" >{{SP2023KIDS}}</div>
                     </div>
                 </td>
-                <td>
+                <!-- <td>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI05KID}}</div>
                     </div>
@@ -107,9 +113,9 @@
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBSUN05KID}}</div>
                     </div>
-                </td>
+                </td> -->
               </tr>
-              <tr>
+              <!-- <tr>
                 <th>Students and Visiting Parents </th>
                 <td>
                     <div class="d-flex justify-content-around ">
@@ -134,17 +140,17 @@
                         <div class="red" >{{DP2022EBSUN06NON}}</div>
                         <div class="green">{{DP2022EBSUN07VEG}}</div>
                     </div>
-                </td>
-              </tr>
+                </td> 
+              </tr> -->
               <tr class=" bg-light " >
-                <th>Total</th>
+                <th>Total - Saraswati Puja Tickets</th>
                   <th>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL01NON + DP2022EBALL03NON + DP2022EBALL06NON +DP2022EBALL05KID }}</div>
-                        <div class="green">{{DP2022EBALL02VEG + DP2022EBALL04VEG + DP2022EBALL07VEG}}</div>
+                        <div class="red mr-2 " >{{SP2023AEBNON + SP2023STUDENTEBNON }}</div>
+                        <div class="green ">{{SP2023AEBVEG + SP2023STUDENTEBVEG }}</div>
                     </div>
                   </th>
-                  <th>
+                  <!-- <th>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI01NON + DP2022EBFRI03NON + DP2022EBFRI05KID + DP2022EBFRI06NON }}</div>
                         <div class="green">{{DP2022EBFRI02VEG + DP2022EBFRI04VEG + DP2022EBFRI07VEG}}</div>
@@ -161,15 +167,26 @@
                         <div class="red" >{{DP2022EBSUN01NON + DP2022EBSUN03NON + DP2022EBSUN05KID + DP2022EBSUN06NON }}</div>
                         <div class="green">{{DP2022EBSUN02VEG + DP2022EBSUN04VEG + DP2022EBSUN07VEG}}</div>
                     </div>
-                  </th>
+                  </th> -->
+              </tr>
+              <tr>
+                <th>
+                    Sham-e-Ghajal Tickets
+                </th>
+                <th>
+                    <div class="d-flex justify-content-around ">
+                        {{SP2023CTSATURDAY}}
+                    </div>
+                </th>
               </tr>
             </table>
+            
           </div>
         
         
     </div>
 
-    <div class=" container mt-5 mb-3 " >
+    <!-- <div class=" container mt-5 mb-3 " >
 
         <h3 class="text-center " >Membership Details of 2022</h3>
         
@@ -192,6 +209,6 @@
         <button (click)="onBtnExport()" class=" btn-get-started " > Export CSV File </button>
       </div>
 
-    </div>
+    </div> -->
 
 </div>    
