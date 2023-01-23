@@ -205,9 +205,12 @@ export class AlldetailsComponent implements OnInit {
 
   checkConcertDetails(){
     [...this.concertTickets].forEach( ct =>{
-  //      console.log(' Each row ');
- //       console.log(ct.transactions[0].item_list.items[0].quantity        );
+        console.log(' Each row ');
+       console.log(ct.transactions[0].item_list.items[0].quantity        );
+       //"SP2023CTSATURDAY"
+       if(ct.transactions[0].item_list.items[0].sku == 'SP2023CTSATURDAY'){
         this.SP2023CTSATURDAY = this.SP2023CTSATURDAY + parseInt(ct.transactions[0].item_list.items[0].quantity );
+       }
 
      });
   }
