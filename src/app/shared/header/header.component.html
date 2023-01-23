@@ -37,10 +37,14 @@
                   </li>
                 </ul>
             </li>
-            <li class="nav-item"  >
-              <a class="nav-link" routerLink="/admin/alldetails" (click)="toggle()" *ngIf="auth.member.value?.usertype == 'admin' "  >
+            <li class="nav-item dropmenu "  >
+              <a class="nav-link" routerLink="/admin/reports" (click)="toggle()" *ngIf="auth.member.value?.usertype == 'admin' "  >
                  <span class=" text-secondary "  > Admin </span>
               </a>
+              <ul class="dropmenu-content">
+                <li><a routerlinkactive="active" routerLink="admin/reports">Reports</a></li>
+                <li><a  routerlinkactive="active" href="/admin/alldetails">Details</a></li>
+              </ul>
             </li>
           
           

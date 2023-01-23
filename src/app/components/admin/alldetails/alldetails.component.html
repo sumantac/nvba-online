@@ -16,31 +16,31 @@
 
         <!-- <p>Total Membership of 2022 =>  {{MM2022YY}}</p>  -->
         <!-- {{rowData}} -->
-        <div>
-            <table class="table table-bordered " >
+        <div class="mb-5">
+            <table class="table table-bordered mb-5" >
               <tr>
-                    <th>Total Annual Membership </th>
-                    <th>{{MM2022YY}}</th>
+                    <th>Total Annual Membership - 2023 </th>
+                    <th>{{MM2023YY}}</th>
+                    <!-- <th></th>
                     <th></th>
-                    <th></th>
-                    <th></th>
+                    <th></th> -->
               </tr>  
               <tr>
                 <th></th>
-                <th>All 3 Days</th>
-                <th>Friday</th>
+                <th>All  Days</th>
+                <!-- <th>Friday</th>
                 <th>Saturday</th>
-                <th>Sunday</th>
+                <th>Sunday</th> -->
               </tr>
               <tr>
                 <th>Adult</th>
                 <td>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL01NON}}</div>
-                        <div class="green">{{DP2022EBALL02VEG}}</div>
+                        <div class="red" >{{SP2023AEBNON}}</div>
+                        <div class="green">{{SP2023AEBVEG}}</div>
                    </div> 
                 </td>
-                <td>
+                <!-- <td>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI01NON}}</div>
                         <div class="green">{{DP2022EBFRI02VEG}}</div>
@@ -57,17 +57,17 @@
                         <div class="red" >{{DP2022EBSUN01NON}}</div>
                         <div class="green">{{DP2022EBSUN02VEG}}</div>
                     </div>
-                </td>
+                </td> -->
               </tr>
               <tr>
-                <th>Kids [ 11 to 18 years ]</th>
+                <th>Kids [ 11 to 18 years ] / Students and Visiting Parents</th>
                 <td>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL03NON}}</div>
-                        <div class="green">{{DP2022EBALL04VEG}}</div>
+                        <div class="red" >{{SP2023STUDENTEBNON}}</div>
+                        <div class="green">{{SP2023STUDENTEBVEG}}</div>
                     </div>
                 </td>
-                <td>
+                <!-- <td>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI03NON}}</div>
                         <div class="green">{{DP2022EBFRI04VEG}}</div>
@@ -84,16 +84,16 @@
                         <div class="red" >{{DP2022EBSUN03NON}}</div>
                         <div class="green">{{DP2022EBSUN04VEG}}</div>
                     </div>
-                </td>
+                </td> -->
               </tr>
               <tr>
                 <th>Kids [ 0 to 10 years ]</th>
                 <td>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL05KID}}</div>
+                        <div class="red" >{{SP2023KIDS}}</div>
                     </div>
                 </td>
-                <td>
+                <!-- <td>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI05KID}}</div>
                     </div>
@@ -107,9 +107,9 @@
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBSUN05KID}}</div>
                     </div>
-                </td>
+                </td> -->
               </tr>
-              <tr>
+              <!-- <tr>
                 <th>Students and Visiting Parents </th>
                 <td>
                     <div class="d-flex justify-content-around ">
@@ -134,17 +134,17 @@
                         <div class="red" >{{DP2022EBSUN06NON}}</div>
                         <div class="green">{{DP2022EBSUN07VEG}}</div>
                     </div>
-                </td>
-              </tr>
+                </td> 
+              </tr> -->
               <tr class=" bg-light " >
                 <th>Total</th>
                   <th>
                     <div class="d-flex justify-content-around ">
-                        <div class="red" >{{DP2022EBALL01NON + DP2022EBALL03NON + DP2022EBALL06NON +DP2022EBALL05KID }}</div>
-                        <div class="green">{{DP2022EBALL02VEG + DP2022EBALL04VEG + DP2022EBALL07VEG}}</div>
+                        <div class="red mr-2 " >{{SP2023AEBNON + SP2023STUDENTEBNON }}</div>
+                        <div class="green ">{{SP2023AEBVEG + SP2023STUDENTEBVEG }}</div>
                     </div>
                   </th>
-                  <th>
+                  <!-- <th>
                     <div class="d-flex justify-content-around ">
                         <div class="red" >{{DP2022EBFRI01NON + DP2022EBFRI03NON + DP2022EBFRI05KID + DP2022EBFRI06NON }}</div>
                         <div class="green">{{DP2022EBFRI02VEG + DP2022EBFRI04VEG + DP2022EBFRI07VEG}}</div>
@@ -161,7 +161,7 @@
                         <div class="red" >{{DP2022EBSUN01NON + DP2022EBSUN03NON + DP2022EBSUN05KID + DP2022EBSUN06NON }}</div>
                         <div class="green">{{DP2022EBSUN02VEG + DP2022EBSUN04VEG + DP2022EBSUN07VEG}}</div>
                     </div>
-                  </th>
+                  </th> -->
               </tr>
             </table>
           </div>
@@ -169,7 +169,7 @@
         
     </div>
 
-    <div class=" container mt-5 mb-3 " >
+    <!-- <div class=" container mt-5 mb-3 " >
 
         <h3 class="text-center " >Membership Details of 2022</h3>
         
@@ -192,6 +192,6 @@
         <button (click)="onBtnExport()" class=" btn-get-started " > Export CSV File </button>
       </div>
 
-    </div>
+    </div> -->
 
 </div>    
