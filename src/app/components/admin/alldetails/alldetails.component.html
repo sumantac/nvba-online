@@ -19,6 +19,12 @@
         <div class="mb-5">
             <table class="table table-bordered mb-5" >
               <tr>
+                <td colspan="2" >
+                    <span class="red" >Red text = Non-Veg,</span>
+                    <span class="green">Green text = Veg</span>
+                </td>
+              </tr>  
+              <tr>
                     <th>Total Annual Membership - 2023 </th>
                     <th>{{MM2023YY}}</th>
                     <!-- <th></th>
@@ -27,7 +33,7 @@
               </tr>  
               <tr>
                 <th></th>
-                <th>All  Days</th>
+                <th>Counts</th>
                 <!-- <th>Friday</th>
                 <th>Saturday</th>
                 <th>Sunday</th> -->
@@ -137,7 +143,7 @@
                 </td> 
               </tr> -->
               <tr class=" bg-light " >
-                <th>Total</th>
+                <th>Total - Saraswati Puja Tickets</th>
                   <th>
                     <div class="d-flex justify-content-around ">
                         <div class="red mr-2 " >{{SP2023AEBNON + SP2023STUDENTEBNON }}</div>
@@ -163,7 +169,18 @@
                     </div>
                   </th> -->
               </tr>
+              <tr>
+                <th>
+                    Sham-e-Ghajal Tickets
+                </th>
+                <th>
+                    <div class="d-flex justify-content-around ">
+                        {{SP2023CTSATURDAY}}
+                    </div>
+                </th>
+              </tr>
             </table>
+            
           </div>
         
         

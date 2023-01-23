@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { merge } from 'rxjs';
 import { MemberService } from './../../../shared/member/member.service';
+import { ConcertticketsService } from './../../../shared/services/tickets/concerttickets.service';
 import 'ag-grid-community';
 import * as moment from 'moment';
 
@@ -12,6 +13,7 @@ import * as moment from 'moment';
 export class AlldetailsComponent implements OnInit {
   members:any;
   rowData:any;
+  concertTickets:any;
   private gridApi:any;
   private gridColumnApi:any;
 
@@ -91,7 +93,7 @@ export class AlldetailsComponent implements OnInit {
   user: { index:number; email: string; firstname: string; lastname: string; expires: string; phone:string } | undefined;
 
 
-  constructor(private mds: MemberService) {
+  constructor(private mds: MemberService, private tds: ConcertticketsService ) {
 
     this.mds.GetMembersList().subscribe(m=>{
       this.members = m;
@@ -100,6 +102,13 @@ export class AlldetailsComponent implements OnInit {
    //   console.log(this.rowData);
       this.checkDetails();
     })
+
+    this.tds.GetTicketsList().subscribe(t => {
+      this.concertTickets = t;
+      console.log(t);
+      this.checkConcertDetails();
+    })
+
    }
 
   ngOnInit(): void {
@@ -192,6 +201,16 @@ export class AlldetailsComponent implements OnInit {
     { field: 'phone', sortable: true, resizable: true, filter: true },
     { field: 'MM2022YY', headerName:'Membership', sortable: true, resizable: true },
 	];
+
+
+  checkConcertDetails(){
+    [...this.concertTickets].forEach( ct =>{
+  //      console.log(' Each row ');
+ //       console.log(ct.transactions[0].item_list.items[0].quantity        );
+        this.SP2023CTSATURDAY = this.SP2023CTSATURDAY + parseInt(ct.transactions[0].item_list.items[0].quantity );
+
+     });
+  }
 
 
 
