@@ -1,7 +1,7 @@
 [
     {
-        "name": "NVBA Presents Sham-e-Ghajal",
-        "description": "Sham-e-Ghajal with Sachin Sharma [ Tickets only for Sham-e-Ghajal. ] - Saturday January 28, 2023 at 6:30pm",
+        "name": "NVBA Presents Sham-e-Ghazal",
+        "description": "Sham-e-Ghazal with Sachin Sharma [ Tickets only for Sham-e-Ghazal. ] - Saturday January 28, 2023 at 6:30pm",
         "quantity": 0,
         "price": 25,
         "tax": 0,
@@ -10,7 +10,7 @@
       },
       {
         "name": "NVBA Saraswati Puja 2023 Ticket Adults Non-Veg",
-        "description": "Non-Member Guest [ Tickets for Saraswati Puja, All Day Events, Lunch, Dinner & Sham-e-Ghajal. ] - Non-Veg",
+        "description": "Non-Member Guest [ Tickets for Saraswati Puja, All Day Events, Lunch, Dinner & Sham-e-Ghazal. ] - Non-Veg",
         "quantity": 0,
         "price": 50,
         "tax": 0,
@@ -19,7 +19,7 @@
       },
       {
         "name": "NVBA Saraswati Puja 2023 Ticket Adults Veg",
-        "description": "Non-Member Guest [ Tickets for Saraswati Puja, All Day Events, Lunch, Dinner & Sham-e-Ghajal. ] -  Veg",
+        "description": "Non-Member Guest [ Tickets for Saraswati Puja, All Day Events, Lunch, Dinner & Sham-e-Ghazal. ] -  Veg",
         "quantity": 0,
         "price": 50,
         "tax": 0,
