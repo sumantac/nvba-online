@@ -32,7 +32,7 @@ import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presiden
 
 
 const routes: Routes = [
-  { path: "", component: SaraswatiComponent, pathMatch: 'full' }, 
+  { path: "", component: HomeComponent, pathMatch: 'full' }, 
   { path: "home", component: HomeComponent, pathMatch: 'full'  },
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
   { path: "history", component: HistoryComponent, pathMatch: 'full'  },

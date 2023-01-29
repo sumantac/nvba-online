@@ -2,10 +2,10 @@
     
     { 
         "eventId":4,
-        "eventType": "coming",
+        "eventType": "past",
         "eventName": "Saraswati Puja",
-        "eventDate": "January 28th, 2022 - Saturday",
-        "eventEndDate": "January 28th, 2022 - Saturday",
+        "eventDate": "January 28th, 2023 - Saturday",
+        "eventEndDate": "January 28th, 2023 - Saturday",
         "eventImage": "./../../../assets/images/stocks/saraswati-2021.jpg",
         "timming": "11 am - 5 pm",
         "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
