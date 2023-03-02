@@ -22,7 +22,7 @@
             <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{event.timming}}</span></p>
             <p><a href="{{event.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{event.venue}}</span></a></p>
             <p>{{event.description}}</p>
-            <p><a routerLink="{{event.pageLink}}">Click here for more details</a></p>
+            <p *ngIf="event.pageLink" ><a routerLink="{{event.pageLink}}">Click here for more details</a></p>
           </div>
         </div>
       </div>
@@ -41,21 +41,21 @@
       </div>
       <div class="row">
 
-          <div class="col-md-4 d-flex ftco-animate" *ngFor="let event of events" >
-            <div class="blog-entry align-self-stretch w-100 " *ngIf="event.eventType=='past'" >
-            <a routerLink="blog-single.html" class="block-20" style="background-image: url({{event.eventImage}});">
+          <div class="col-md-4 d-flex ftco-animate" *ngFor="let pevent of events" >
+            <div class="blog-entry align-self-stretch w-100 " *ngIf="pevent.eventType=='past'" >
+            <a routerLink="blog-single.html" class="block-20" style="background-image: url({{pevent.eventImage}});">
             </a>
             <div class="text p-4 d-block">
                 <div class="meta mb-3">
-                <div><a routerLink="{{event.pageLink}}">{{event.eventDate}}</a></div>
+                <div><a routerLink="{{pevent.pageLink}}">{{pevent.eventDate}}</a></div>
                 <!-- <div><a routerLink="#">Admin</a></div>
                 <div><a routerLink="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
               </div>
-              <h3 class="heading mb-4"><a routerLink="{{event.pageLink}}">{{event.eventName}}</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{event.timming}}</span></p>
-              <p><a href="{{event.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{event.venue}}</span></a></p>
-              <p>{{event.description}}</p>
-              <p *ngIf="event.pageLink != '/' " ><a routerLink="{{event.pageLink}}">Click here for more details</a></p>
+              <h3 class="heading mb-4"><a routerLink="{{pevent.pageLink}}">{{pevent.eventName}}</a></h3>
+              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{pevent.timming}}</span></p>
+              <p><a href="{{pevent.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{pevent.venue}}</span></a></p>
+              <p>{{pevent.description}}</p>
+              <p *ngIf="pevent.pageLink != '/' " ><a routerLink="{{pevent.pageLink}}">Click here for more details</a></p>
             </div>
           </div>
         </div>
