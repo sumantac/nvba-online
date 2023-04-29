@@ -1,29 +1,16 @@
 [
     { 
-        "eventId":11,
-        "eventType": "coming",
-        "eventName": "Poila Boisakh",
-        "eventDate": "April 15th, 2023",
-        "eventEndDate": "April 15th, 2023",
-        "eventImage": "./../../../assets/images/gallery/common/poila-boisakh.jpg",
-        "timming": "April 15th - 10 am to 5pm",
-        "venue": "Washington Kali Temple",
-        "pageLink": "",
-        "description": "Come join us to celebrate our new year.",
-        "mapUrl": "https://goo.gl/maps/oK7kDeWN1RjXAZQRA"
-    },
-    { 
         "eventId":12,
         "eventType": "coming",
         "eventName": "Kobi Pronam",
         "eventDate": "June 10th, 2023",
         "eventEndDate": "June 10th, 2023",
         "eventImage": "./../../../assets/images/gallery/common/kobipronam.jpg",
-        "timming": "June 10th",
-        "venue": "TBD",
+        "timming": "7-10 PM",
+        "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
         "pageLink": "",
         "description": "Tribute for Kobi Pronam. As Bengalis we are always very proud of this unique event in honor of the poets who form the cornerstone of our Bengali culture.",
-        "mapUrl": ""
+        "mapUrl": "https://www.google.com/maps/dir//Mercer+Middle+School,+42149+Greenstone+Dr,+Aldie,+VA+20105/@38.9247839,-77.549134,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b641c3ba822e23:0xf3d318eb03789316!2m2!1d-77.5469453!2d38.9247839!3e0"
     },
     { 
         "eventId":13,
@@ -50,6 +37,19 @@
         "pageLink": "",
         "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
         "mapUrl": ""
+    },
+    { 
+        "eventId":11,
+        "eventType": "past",
+        "eventName": "Poila Boisakh",
+        "eventDate": "April 15th, 2023",
+        "eventEndDate": "April 15th, 2023",
+        "eventImage": "./../../../assets/images/gallery/common/poila-boisakh.jpg",
+        "timming": "April 15th - 10 am to 5pm",
+        "venue": "Washington Kali Temple",
+        "pageLink": "",
+        "description": "Come join us to celebrate our new year.",
+        "mapUrl": "https://goo.gl/maps/oK7kDeWN1RjXAZQRA"
     },
     
     { 
