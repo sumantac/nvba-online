@@ -23,6 +23,7 @@
             <p><a href="{{event.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{event.venue}}</span></a></p>
             <p>{{event.description}}</p>
             <p *ngIf="event.pageLink" ><a routerLink="{{event.pageLink}}">Click here for more details</a></p>
+            <p *ngIf="event.externalLink" ><a href="{{event.externalLink}}" target="_blank" >Click here for more details</a></p>
           </div>
         </div>
       </div>
