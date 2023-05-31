@@ -59,6 +59,13 @@ import { AgGridModule } from 'ag-grid-angular';
 import { AlldetailsComponent } from './components/admin/alldetails/alldetails.component';
 import { ConcertComponent } from './components/events/concert/concert.component';
 import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
+import { AgmComponent } from './pages/aboutus/agm/agm.component';
+import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
+import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
+import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presidentsdesk.component';
+import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
+import { FoodticketsComponent } from './components/foodcart/foodtickets/foodtickets.component';
+import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 
 
 @NgModule({
@@ -95,6 +102,13 @@ import { EventscheckoutComponent } from './components/events/eventscheckout/even
     AlldetailsComponent,
     ConcertComponent,
     EventscheckoutComponent,
+    AgmComponent,
+    SaraswatiComponent,
+    EventticketsComponent,
+    PresidentsdeskComponent,
+    KobipronamComponent,
+    FoodticketsComponent,
+    FoodcheckoutComponent,
 
   ],
   imports: [

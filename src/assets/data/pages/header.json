@@ -28,6 +28,22 @@
             "tag": "",
             "description": "",
             "child": null
+        },
+        {
+            "pageId": "24",
+            "pageName": "Annual General Meeting",
+            "pageLink": "agm",
+            "tag": "",
+            "description": "",
+            "child": null
+        },
+        {
+            "pageId": "25",
+            "pageName": "From President's Desk",
+            "pageLink": "frompresidentsdesk",
+            "tag": "",
+            "description": "",
+            "child": null
         }]
     },
     {
