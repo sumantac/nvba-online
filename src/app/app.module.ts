@@ -63,6 +63,9 @@ import { AgmComponent } from './pages/aboutus/agm/agm.component';
 import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
 import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
 import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presidentsdesk.component';
+import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
+import { FoodticketsComponent } from './components/foodcart/foodtickets/foodtickets.component';
+import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 
 
 @NgModule({
@@ -103,6 +106,9 @@ import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presiden
     SaraswatiComponent,
     EventticketsComponent,
     PresidentsdeskComponent,
+    KobipronamComponent,
+    FoodticketsComponent,
+    FoodcheckoutComponent,
 
   ],
   imports: [

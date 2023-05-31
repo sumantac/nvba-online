@@ -29,6 +29,8 @@ import { EventscheckoutComponent } from './components/events/eventscheckout/even
 import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
 import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
 import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presidentsdesk.component';
+import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
+import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 
 
 const routes: Routes = [
@@ -63,8 +65,9 @@ const routes: Routes = [
   { path: 'concerttickets', component: ConcertComponent },
   { path: 'concert', component: ConcertComponent },
   { path: 'concertcheckout', component: EventscheckoutComponent },
-  // { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },
-  
+  // { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },kobipronam
+  { path: 'kobipronam', component: KobipronamComponent },
+  { path: 'foodcheckout', component: FoodcheckoutComponent },
 ];
 
 @NgModule({
