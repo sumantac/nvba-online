@@ -19,7 +19,8 @@
                                         <!-- <a class="btn-get-started text-center " routerLink="/dashboard" >Membership Details Page</a> -->
                                     </div>
                                 </div> 
-                                <table class="table table-hover table-bordered" *ngIf="emptyCart"  >
+                                <div #cartElement >
+                                <table class="table table-hover table-bordered" *ngIf="emptyCart" border="1"  >
                                     <thead>
                                     <tr>
                                         <th scope="col">Items</th>
@@ -47,6 +48,7 @@
                                         </tr>
                                     </thead>
                                 </table>
+                                </div>
                                 <!-- <div class="float-right"><button class="btn btn-warning"  >Add to Cart</button></div> -->
                                 <!-- <div>
                                     {{ cartCheck | json }}
