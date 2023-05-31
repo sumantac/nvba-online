@@ -1,66 +1,67 @@
-<section class="ftco-section bg-light">
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <!-- <h2 class="mb-4">Upcoming Events</h2> -->
+        <h2 class="mb-4">Upcoming Events</h2>
+      </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-4 d-flex ftco-animate" *ngFor="let event of events" >
+          <div class="blog-entry align-self-stretch w-100 " *ngIf="event.eventType=='coming'" >
+          <a routerLink="{{event.pageLink}}" class="block-20" style="background-image: url({{event.eventImage}});">
+          </a>
+          <div class="text p-4 d-block">
+              <div class="meta mb-3">
+              <div><a routerLink="{{event.pageLink}}">{{event.eventDate}}</a></div>
+              <!-- <div><a routerLink="#">Admin</a></div>
+              <div><a routerLink="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <h3 class="heading mb-4"><a routerLink="{{event.pageLink}}">{{event.eventName}}</a></h3>
+            <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{event.timming}}</span></p>
+            <p><a href="{{event.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{event.venue}}</span></a></p>
+            <p>{{event.description}}</p>
+            <p *ngIf="event.pageLink" ><a routerLink="{{event.pageLink}}">Click here for more details</a></p>
+            <p *ngIf="event.externalLink" ><a href="{{event.externalLink}}" target="_blank" >Click here for more details</a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+ </section>
+  <section class="ftco-section bg-light">  
     <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
+      <div class="row justify-content-center pb-3">
         <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-4">Our Latest Events</h2>
+          <!-- <h2 class="mb-4">Upcoming Events</h2> -->
+          <h2 class="mb-4">Past Events</h2>
         </div>
       </div>
       <div class="row">
 
-          <div class="col-md-4 d-flex ftco-animate" *ngFor="let event of events" >
-            <div class="blog-entry align-self-stretch w-100 ">
-            <a routerLink="blog-single.html" class="block-20" style="background-image: url({{event.eventImage}});">
+          <div class="col-md-4 d-flex ftco-animate" *ngFor="let pevent of events" >
+            <div class="blog-entry align-self-stretch w-100 " *ngIf="pevent.eventType=='past'" >
+            <a routerLink="blog-single.html" class="block-20" style="background-image: url({{pevent.eventImage}});">
             </a>
             <div class="text p-4 d-block">
                 <div class="meta mb-3">
-                <div><a routerLink="#">{{event.eventDate}}</a></div>
+                <div><a routerLink="{{pevent.pageLink}}">{{pevent.eventDate}}</a></div>
                 <!-- <div><a routerLink="#">Admin</a></div>
                 <div><a routerLink="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
               </div>
-              <h3 class="heading mb-4"><a routerLink="#">{{event.eventName}}</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{event.timming}}</span> <span><i class="icon-map-o"></i> {{event.venue}}</span></p>
-              <p>{{event.description}}</p>
-              <p><a routerLink="{{event.pageLink}}">Join {{event.eventName}} <i class="ion-ios-arrow-forward"></i></a></p>
+              <h3 class="heading mb-4"><a routerLink="{{pevent.pageLink}}">{{pevent.eventName}}</a></h3>
+              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{pevent.timming}}</span></p>
+              <p><a href="{{pevent.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{pevent.venue}}</span></a></p>
+              <p>{{pevent.description}}</p>
+              <p *ngIf="pevent.pageLink != '/' " ><a routerLink="{{pevent.pageLink}}">Click here for more details</a></p>
             </div>
           </div>
         </div>
 
 
-<!--         
-        <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url('assets/images/event-2.jpg');">
-            </a>
-            <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2018</a></div>
-                <div><a href="#">Admin</a></div>
-                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-              </div>
-              <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url('assets/images/event-3.jpg');">
-            </a>
-            <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                <div><a href="#">Sep. 10, 2018</a></div>
-                <div><a href="#">Admin</a></div>
-                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-              </div>
-              <h3 class="heading mb-4"><a href="#">World Wide Donation</a></h3>
-              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:30AM-03:30PM</span> <span><i class="icon-map-o"></i> Venue Main Campus</span></p>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="event.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>

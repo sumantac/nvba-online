@@ -4,7 +4,8 @@
 
 
 
-$font-primary: 'Overpass',Arial, sans-serif;
+//$font-primary: 'Overpass',Arial, sans-serif;
+$font-primary: 'Dosis',Arial, sans-serif;
 $font-secondary: 'Dosis',Arial, sans-serif;
 
 $white: #fff;
@@ -40,8 +41,8 @@ body {
 	background: $white;
 	font-size: 1rem;
 	line-height: 1.8;
-	font-weight: 300;
-	color: lighten($black,50%);
+	font-weight: 400;
+	color: lighten($black,30%);
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5,
 .ftco-navbar-light {
 	// background: transparent!important;
 	background: #000000!important;
-	opacity: .8;
+	opacity: .98;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -291,6 +292,12 @@ h1, h2, h3, h4, h5,
 	i{
 		color: $primary;
 		font-size: 30px;
+	}
+	img{
+		height: 48px;
+		@include media-breakpoint-down(md) {
+			height: 32px;
+		}
 	}
 }
 
@@ -2414,4 +2421,8 @@ textarea.form-control {
 		font-weight: 800;
 	}
 	
+}
+
+.btn{
+	overflow-wrap: break-word !important;
 }

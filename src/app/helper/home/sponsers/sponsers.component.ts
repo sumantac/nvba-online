@@ -8,7 +8,7 @@ import { GetjsonfileService } from './../../../services/getjsonfile.service';
   styleUrls: ['./sponsers.component.scss']
 })
 export class SponsersComponent implements OnInit {
-  sponsers: any;
+  sponsers: any = [];
   constructor(private jsonFile:GetjsonfileService) { }
 
   ngOnInit(): void {

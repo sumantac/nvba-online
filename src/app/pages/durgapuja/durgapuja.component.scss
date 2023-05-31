@@ -1,6 +1,5 @@
 div{
     font-size: 14px;  
-    color: #949494;
   }
   .btn-get-started {
       background: #ff8d00;
@@ -47,4 +46,17 @@ div{
 
   .btn-get-started-dark{
     background-color: #ff6500;
+  }
+
+  .icon-play-circle, .icon-pause-circle{
+    height: 20px;
+    width: 20px;
+  }
+
+  .table .col {
+    flex: 1;        /* distributes space on the line equally among items */
+  }
+
+  #activities tr td:first-child {
+    font-weight: 800;
   }

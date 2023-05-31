@@ -46,7 +46,7 @@
   },
   {
       "name": "All 3 days",
-      "description": "Students and Visiting Parents - Non-Veg - Please bring your Student ID",
+      "description": "Students and Visiting Parents - Non-Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 50,
       "tax": 0.00,
@@ -55,7 +55,7 @@
   },
   {
       "name": "All 3 days",
-      "description": "Students and Visiting Parents - Veg - Please bring your Student ID",
+      "description": "Students and Visiting Parents - Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 50,
       "tax": 0.00,
@@ -109,7 +109,7 @@
   },
   {
       "name": "Friday Only",
-      "description": "Students and Visiting Parents - Non-Veg - Please bring your Student ID",
+      "description": "Students and Visiting Parents - Non-Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 35,
       "tax": 0.00,
@@ -118,7 +118,7 @@
   },
   {
       "name": "Friday Only",
-      "description": "Students and Visiting Parents - Veg - Please bring your Student ID",
+      "description": "Students and Visiting Parents - Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 35,
       "tax": 0.00,
@@ -145,7 +145,7 @@
     },
     {
       "name": "Saturday Only",
-      "description": "Kids [ 11 to 18 years ] - Non-Veg - Please bring your Student ID",
+      "description": "Kids [ 11 to 18 years ] - Non-Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 35,
       "tax": 0.00,
@@ -154,7 +154,7 @@
     },
     {
       "name": "Saturday Only",
-      "description": "Kids [ 11 to 18 years ] - Veg - Please bring your Student ID",
+      "description": "Kids [ 11 to 18 years ] - Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 35,
       "tax": 0.00,
@@ -172,7 +172,7 @@
   },
   {
       "name": "Saturday Only",
-      "description": "Students and Visiting Parents Non-Veg - Please bring your Student ID",
+      "description": "Students and Visiting Parents Non-Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 35,
       "tax": 0.00,
@@ -181,7 +181,7 @@
   },
   {
       "name": "Saturday Only",
-      "description": "Students and Visiting Parents Veg - Please bring your Student ID",
+      "description": "Students and Visiting Parents Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 35,
       "tax": 0.00,
@@ -235,7 +235,7 @@
   },
   {
       "name": "Sunday Only",
-      "description": "Students and Visiting Parents Non-Veg - Please bring your Student ID",
+      "description": "Students and Visiting Parents Non-Veg - Please bring your Student ID at venue.",
       "quantity": 0,
       "price": 35,
       "tax": 0.00,
@@ -244,7 +244,7 @@
   },
   {
     "name": "Sunday Only",
-    "description": "Students and Visiting Parents Veg - Please bring your Student ID",
+    "description": "Students and Visiting Parents Veg - Please bring your Student ID at venue.",
     "quantity": 0,
     "price": 35,
     "tax": 0.00,

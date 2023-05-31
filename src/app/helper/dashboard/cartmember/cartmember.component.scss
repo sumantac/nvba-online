@@ -39,4 +39,29 @@ div{
       margin: 0 20px 20px 0;
       cursor: pointer;
       box-shadow: 0px 4px 6px 0px rgb(0 0 0 / 55%);
+      white-space: normal;
   }
+
+  .btn{
+    white-space: wrap ;
+  }
+
+  .accordion-toggle{
+    bottom: nowrap ;
+  }
+
+  #membershipTab{
+    app-cartmember{
+      #cartmember{
+          margin-left: auto ;
+          margin-right: auto ;
+      }
+    }
+      
+  }
+
+  #cartmember{
+    margin-left: auto ;
+  }
+
+  

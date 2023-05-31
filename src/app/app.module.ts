@@ -53,6 +53,19 @@ import { PastteamsComponent } from './pages/archive/pastteams/pastteams.componen
 import { MagazinesComponent } from './pages/archive/magazines/magazines.component';
 import { Durgapujatickets2022Component } from './helper/tickets/durgapujatickets2022/durgapujatickets2022.component';
 import { TicketsComponent } from './components/tickets/tickets.component';
+import { ReportsComponent } from './components/admin/reports/reports.component';
+
+import { AgGridModule } from 'ag-grid-angular';
+import { AlldetailsComponent } from './components/admin/alldetails/alldetails.component';
+import { ConcertComponent } from './components/events/concert/concert.component';
+import { EventscheckoutComponent } from './components/events/eventscheckout/eventscheckout.component';
+import { AgmComponent } from './pages/aboutus/agm/agm.component';
+import { SaraswatiComponent } from './pages/saraswati/saraswati.component';
+import { EventticketsComponent } from './components/events/eventtickets/eventtickets.component';
+import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presidentsdesk.component';
+import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
+import { FoodticketsComponent } from './components/foodcart/foodtickets/foodtickets.component';
+import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 
 
 @NgModule({
@@ -85,6 +98,17 @@ import { TicketsComponent } from './components/tickets/tickets.component';
     MagazinesComponent,
     Durgapujatickets2022Component,
     TicketsComponent,
+    ReportsComponent,
+    AlldetailsComponent,
+    ConcertComponent,
+    EventscheckoutComponent,
+    AgmComponent,
+    SaraswatiComponent,
+    EventticketsComponent,
+    PresidentsdeskComponent,
+    KobipronamComponent,
+    FoodticketsComponent,
+    FoodcheckoutComponent,
 
   ],
   imports: [
@@ -100,11 +124,17 @@ import { TicketsComponent } from './components/tickets/tickets.component';
     AngularFireDatabaseModule,
     ReactiveFormsModule,
     FormsModule,
-    ToastrModule.forRoot(), // ToastrModule added
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-top-center',
+      closeButton: true,
+      preventDuplicates: true,
+    }), // ToastrModule added
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     AccordionModule.forRoot(),
     NgxPayPalModule,
+    AgGridModule
   ],
   providers: [GetjsonfileService, AuthService ],
   bootstrap: [AppComponent]

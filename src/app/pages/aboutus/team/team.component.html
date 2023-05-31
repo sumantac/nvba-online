@@ -1,12 +1,11 @@
 <div class="wrapper" >
-
-
-    <div class="hero-wrap" style="background-image: url('./../../../../assets/images/ecm/team.jpg'); filter: grayscale(100%) opacity(50%) " data-stellar-background-ratio="0.5">
+    
+    <div class="hero-wrap" style="background-image: url('./../../../../assets/images/ecm/Executive.jpg'); filter: grayscale(100%) opacity(50%) " data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
             <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }" style="filter: grayscale(100%) opacity(200%)" >
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Our Team</span></p>
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span>/ &nbsp;<span style="text-transform: lowercase;" >team</span></p>
             <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our Team</h1>
             </div>
         </div>
@@ -26,12 +25,12 @@
                     <div class="d-flex mb-4">
                         <div class="img" style="background-image: url({{member.img_url}});"></div>
                         <div class="info ml-4">
-                            <h3><a routerLink="teacher-single.html">{{member.display_name}}</a></h3>
+                            <h3><a routerLink="{{member.facebook}}">{{member.display_name}}</a></h3>
                             <div class="position text mb-3">
                                 <p>{{member.designation}}</p>
                                 </div>
                             <div class="text">
-                                <p><a target="_blank" href="{{member.facebook?member.facebook:member.linkedin}}">Social link to connect</a></p>
+                                <p *ngIf="member.facebook?member.facebook:member.linkedin" ><a target="_blank" href="{{member.facebook?member.facebook:member.linkedin}}">Social link to connect</a></p>
                             </div>
                         </div>
                     </div>

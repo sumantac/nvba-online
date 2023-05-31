@@ -3,7 +3,9 @@
 
       
 
-    <a class="navbar-brand" routerLink="/home">NVBA</a>
+    <a class="navbar-brand" routerLink="/">
+      <img src="./../../../assets/images/logo/logo.png " title="NVBA-Logo" alt="NVBA-Logo" >
+    </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" id="nvbaMenu" >
         <span class="oi oi-grid-four-up "></span>
       </button>
@@ -23,14 +25,26 @@
               </ul>
             </li>
             <li class="nav-item" [ngClass]="auth.member.value?.email ? 'dropmenu':'' " >
-              <a class="nav-link" routerLink="/membership" (click)="toggle()" >
-                  Welcome,<span class=" text-primary " > {{auth.member.value?.firstname?auth.member.value?.firstname:'Guest'}}</span>
+              <a class="nav-link" routerLink="/membership" (click)="toggle()" *ngIf="auth.member.value?.email"  >
+                  Welcome,<span class=" text-primary "  > {{auth.member.value?.firstname?auth.member.value?.firstname:'Guest'}}</span>
+              </a>
+              <a class="nav-link" routerLink="/membership" *ngIf="!auth.member.value?.email" >
+               <span class=" text-primary " > Login</span>
               </a>
                 <ul class="dropmenu-content "  [ngClass]="auth.member.value?.email ? '':'hide' " >
                   <li (click)="signout()" >
                     <a  > Logout </a>
                   </li>
                 </ul>
+            </li>
+            <li class="nav-item  " [ngClass]="auth.member.value?.usertype == 'admin' ? 'dropmenu':'' "  >
+              <a class="nav-link" routerLink="/admin/reports" (click)="toggle()" *ngIf="auth.member.value?.usertype == 'admin' "  >
+                 <span class=" text-secondary "  > Admin </span>
+              </a>
+              <ul class="dropmenu-content">
+                <li><a routerlinkactive="active" routerLink="admin/reports" *ngIf="auth.member.value?.usertype == 'admin' "  >Reports</a></li>
+                <li><a  routerlinkactive="active" href="/admin/alldetails" *ngIf="auth.member.value?.usertype == 'admin' "  >Details</a></li>
+              </ul>
             </li>
           
           
