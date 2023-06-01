@@ -127,11 +127,11 @@ export class FoodcheckoutComponent implements OnInit {
 
 
   paypalConfig = {
-      env: 'sandbox',
-    //  env: 'production',
+    //  env: 'sandbox',
+      env: 'production',
       client: {
-        sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
-     //   production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
+     //   sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
+       production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
       },
       style: {
         shape: 'rect',
@@ -211,7 +211,7 @@ export class FoodcheckoutComponent implements OnInit {
         //    this.member.purchase.unshift(this.cartCheck);
         //    console.log(this.member);
         //    this.mds.UpdateMember(this.member.id, this.member);
-          this.mds.concert(payment);
+          this.mds.kp2023(payment);
            console.log('update done');
           this.toastr.success('Your payment is successful.','Payment Process');
           console.log(payment);

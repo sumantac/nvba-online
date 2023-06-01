@@ -1,7 +1,7 @@
 [
       {
         "name": "NVBA Kobi Pronam - Non-Veg Biryani",
-        "description": "Regular - Adults -  Non-Veg Chicken Biryani",
+        "description": "Regular - Non-Veg Chicken Biryani",
         "quantity": 0,
         "price": 10,
         "tax": 0,
@@ -10,7 +10,7 @@
       },
       {
         "name": "NVBA Kobi Pronam - Veg Biryani",
-        "description": "Regular - Adults -  Veg Jackfruit Biryani",
+        "description": "Regular - Veg Jackfruit Biryani",
         "quantity": 0,
         "price": 8,
         "tax": 0,
