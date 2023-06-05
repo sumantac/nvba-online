@@ -2,7 +2,7 @@
     {
         "pageId": "1",
         "pageName": "Home",
-        "pageLink": "home",
+        "pageLink": "/",
         "tag": "",
         "description": "",
         "child": null
