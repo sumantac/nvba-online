@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { merge } from 'rxjs';
 import { MemberService } from './../../../shared/member/member.service';
 import { ConcertticketsService } from './../../../shared/services/tickets/concerttickets.service';
+import { FoodticketsService  } from './../../../shared/services/tickets/foodtickets.service';
+
 import 'ag-grid-community';
 import * as moment from 'moment';
 
@@ -14,6 +16,7 @@ export class AlldetailsComponent implements OnInit {
   members:any;
   rowData:any;
   concertTickets:any;
+  foodTickets:any;
   private gridApi:any;
   private gridColumnApi:any;
 
@@ -32,6 +35,10 @@ export class AlldetailsComponent implements OnInit {
   SP2023KIDS:number =0;
 
   SP2023CTSATURDAY:number =0;
+
+  KP2023NON:number = 0;
+
+  KP2023VEG:number = 0;
 
   // DP2022EBALL01NON:number = 0;
   // DP2022EBALL02VEG:number = 0;
@@ -93,7 +100,7 @@ export class AlldetailsComponent implements OnInit {
   user: { index:number; email: string; firstname: string; lastname: string; expires: string; phone:string } | undefined;
 
 
-  constructor(private mds: MemberService, private tds: ConcertticketsService ) {
+  constructor(private mds: MemberService, private tds: ConcertticketsService, private foodds:FoodticketsService ) {
 
     this.mds.GetMembersList().subscribe(m=>{
       this.members = m;
@@ -107,6 +114,12 @@ export class AlldetailsComponent implements OnInit {
       this.concertTickets = t;
       console.log(t);
       this.checkConcertDetails();
+    })
+
+    this.foodds.GetTicketsList().subscribe(t => {
+      this.foodTickets = t;
+      console.log(t);
+      this.checkKPDetails();
     })
 
    }
@@ -211,6 +224,45 @@ export class AlldetailsComponent implements OnInit {
        if(ct.transactions[0].item_list.items[0].sku == 'SP2023CTSATURDAY'){
         this.SP2023CTSATURDAY = this.SP2023CTSATURDAY + parseInt(ct.transactions[0].item_list.items[0].quantity );
        }
+
+     });
+  }
+
+
+  checkKPDetails(){
+    [...this.foodTickets].forEach( ct =>{
+        console.log(' Each row KP');
+       console.log(ct.transactions[0].item_list.items[0].quantity );
+       [...ct.transactions[0].item_list.items].forEach( nonandveg =>{
+
+        console.log(nonandveg);
+        //"KP2023VEG"
+       if(nonandveg.sku == 'KP2023VEG'){
+        this.KP2023VEG = this.KP2023VEG + parseInt(nonandveg.quantity );
+       }
+       //"KP2023NON"
+       if(nonandveg.sku == 'KP2023NON'){
+        this.KP2023NON = this.KP2023NON + parseInt(nonandveg.quantity );
+       }
+
+       })
+
+      //  //"KP2023VEG"
+      //  if(ct.transactions[0].item_list.items[0].sku == 'KP2023VEG'){
+      //   this.KP2023VEG = this.KP2023VEG + parseInt(ct.transactions[0].item_list.items[0].quantity );
+      //  }
+      //  //"KP2023NON"
+      //  if(ct.transactions[0].item_list.items[0].sku == 'KP2023NON'){
+      //   this.KP2023NON = this.KP2023NON + parseInt(ct.transactions[0].item_list.items[0].quantity );
+      //  }
+      //  if(ct.transactions[0].item_list.items[1].sku == 'KP2023VEG'){
+      //   this.KP2023VEG = this.KP2023VEG + parseInt(ct.transactions[0].item_list.items[1].quantity );
+      //  }
+      //  //"KP2023NON"
+      //  if(ct.transactions[0].item_list.items[1].sku == 'KP2023NON'){
+      //   this.KP2023NON = this.KP2023NON + parseInt(ct.transactions[0].item_list.items[1].quantity );
+      //  }
+       
 
      });
   }
@@ -331,7 +383,18 @@ export class AlldetailsComponent implements OnInit {
                   this.newPurches = true;
                 }
 
-                // if(e.sku.includes("MM2022YY")){  
+                if(e.sku.includes("KP2023NON")){  
+                  this.KP2023NON += e.quantity ;
+                  Object.assign(userTicket,{ KP2023NON : e.quantity });
+                  this.newPurches = true;
+                }
+                if(e.sku.includes("KP2023VEG")){  
+                  this.KP2023VEG += e.quantity ;
+                  Object.assign(userTicket,{ KP2023VEG : e.quantity });
+                  this.newPurches = true;
+                }
+
+                // if(e.sku.includes("MM2022YY")){  KP2023VEG
                 //     this.MM2022YY += e.quantity ;
                 //     Object.assign(userTicket,{ MM2022YY : e.quantity });
                 //     this.newPurches = true;
