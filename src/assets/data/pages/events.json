@@ -1,18 +1,6 @@
 [
     
-    { 
-        "eventId":12,
-        "eventType": "coming",
-        "eventName": "Kobi Pronam",
-        "eventDate": "June 10th, 2023",
-        "eventEndDate": "June 10th, 2023",
-        "eventImage": "./../../../assets/images/gallery/common/kobipronam.jpg",
-        "timming": "7-10 PM",
-        "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
-        "pageLink": "kobipronam",
-        "description": "Tribute for Kobi Pronam. As Bengalis we are always very proud of this unique event in honor of the poets who form the cornerstone of our Bengali culture.",
-        "mapUrl": "https://www.google.com/maps/dir//Mercer+Middle+School,+42149+Greenstone+Dr,+Aldie,+VA+20105/@38.9247839,-77.549134,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b641c3ba822e23:0xf3d318eb03789316!2m2!1d-77.5469453!2d38.9247839!3e0"
-    },
+   
     { 
         "eventId":13,
         "eventType": "coming",
@@ -20,11 +8,11 @@
         "eventDate": "June 17th, 2023",
         "eventEndDate": "June 17th, 2023",
         "eventImage": "./../../../assets/images/gallery/common/picnic/picnic-2022.jpg",
-        "timming": "June 17th",
-        "venue": "TBD",
+        "timming": "June 17th from 10:00AM to 4:00PM",
+        "venue": "Shelter 8 at Bull Run ",
         "pageLink": "",
         "description": "Our annual picnic, where all our members were invite to a free picnic event for a great day of food, fun and friendship..",
-        "mapUrl": ""
+        "mapUrl": "https://www.google.com/maps/dir/38.8759552,-77.2243456/Shelter+8+at+Bull+Run,+7700+Bull+Run+Dr,+Centreville,+VA+20121/"
     },
     { 
         "eventId":1,
@@ -38,6 +26,19 @@
         "pageLink": "",
         "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
         "mapUrl": ""
+    },
+    { 
+        "eventId":12,
+        "eventType": "past",
+        "eventName": "Kobi Pronam",
+        "eventDate": "June 10th, 2023",
+        "eventEndDate": "June 10th, 2023",
+        "eventImage": "./../../../assets/images/gallery/common/kobipronam.jpg",
+        "timming": "7-10 PM",
+        "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
+        "pageLink": "kobipronam",
+        "description": "Tribute for Kobi Pronam. As Bengalis we are always very proud of this unique event in honor of the poets who form the cornerstone of our Bengali culture.",
+        "mapUrl": "https://www.google.com/maps/dir//Mercer+Middle+School,+42149+Greenstone+Dr,+Aldie,+VA+20105/@38.9247839,-77.549134,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b641c3ba822e23:0xf3d318eb03789316!2m2!1d-77.5469453!2d38.9247839!3e0"
     },
     { 
         "eventId":14,

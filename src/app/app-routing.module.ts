@@ -34,7 +34,7 @@ import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodch
 
 
 const routes: Routes = [
-  { path: "", component: KobipronamComponent, pathMatch: 'full' }, 
+  { path: "", component: HomeComponent, pathMatch: 'full' }, 
   { path: "home", component: HomeComponent, pathMatch: 'full'  },
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
   { path: "history", component: HistoryComponent, pathMatch: 'full'  },
