@@ -66,6 +66,7 @@ import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presiden
 import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
 import { FoodticketsComponent } from './components/foodcart/foodtickets/foodtickets.component';
 import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
+import { PicnicComponent } from './pages/picnic/picnic.component';
 
 
 @NgModule({
@@ -109,6 +110,7 @@ import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodch
     KobipronamComponent,
     FoodticketsComponent,
     FoodcheckoutComponent,
+    PicnicComponent,
 
   ],
   imports: [
