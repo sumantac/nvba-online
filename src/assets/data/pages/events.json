@@ -1,9 +1,11 @@
 [
     
    
+    
+    
     { 
         "eventId":13,
-        "eventType": "coming",
+        "eventType": "past",
         "eventName": "Annual Picnic",
         "eventDate": "June 17th, 2023",
         "eventEndDate": "June 17th, 2023",
@@ -13,19 +15,6 @@
         "pageLink": "/picnic",
         "description": "Our annual picnic, where all our members were invite to a free picnic event for a great day of food, fun and friendship..",
         "mapUrl": "https://www.google.com/maps/dir/38.8759552,-77.2243456/Shelter+8+at+Bull+Run,+7700+Bull+Run+Dr,+Centreville,+VA+20121/"
-    },
-    { 
-        "eventId":1,
-        "eventType": "coming",
-        "eventName": "Sarbojanin Durga Utsav 2023",
-        "eventDate": "October 20th, 2023 - October 22nd, 2023",
-        "eventEndDate": "October 22nd, 2023",
-        "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
-        "timming": "October 20th - 6 pm to 10 pm. October 21st and 22nd - 9am to 10 pm.",
-        "venue": "TBD",
-        "pageLink": "",
-        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
-        "mapUrl": ""
     },
     { 
         "eventId":12,
@@ -116,9 +105,22 @@
         "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
         "timming": "September 30th - 6 pm to 10 pm. October 1st and 2nd - 9am to 10 pm.",
         "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
+        "pageLink": "",
+        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
+        "mapUrl": ""
+    },
+    { 
+        "eventId":231,
+        "eventType": "coming",
+        "eventName": "Sarbojanin Durga Utsav 2023",
+        "eventDate": "October 20th, 2023 - October 22nd, 2023",
+        "eventEndDate": "October 22nd, 2023",
+        "eventImage": "./../../../assets/images/stocks/2023/durga-ascha.jpg",
+        "timming": "October 20th - 6 pm to 10 pm. October 21st and 22nd - 9am to 10 pm.",
+        "venue": "Stone Bridge High School - 43100 Hay Rd, Ashburn, VA 20147",
         "pageLink": "/durgapuja",
         "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
-        "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
+        "mapUrl": "https://www.google.com/maps/place/Stone+Bridge+High+School/@39.048967,-77.5110628,17z/data=!3m2!4b1!5s0x89b63e8f3a9da41d:0xe846c30367fe06e2!4m6!3m5!1s0x89b63e8eade2be9f:0x19474cf24a7c6513!8m2!3d39.048967!4d-77.5084825!16zL20vMDlkcjUy?entry=ttu"
     }
     
 
