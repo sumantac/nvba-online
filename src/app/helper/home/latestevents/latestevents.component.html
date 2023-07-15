@@ -10,15 +10,20 @@
 
         <div class="col-md-4 d-flex ftco-animate" *ngFor="let event of events" >
           <div class="blog-entry align-self-stretch w-100 " *ngIf="event.eventType=='coming'" >
-          <a routerLink="{{event.pageLink}}" class="block-20" style="background-image: url({{event.eventImage}});">
-          </a>
+          <a *ngIf="event.pageLink" routerLink="{{event.pageLink}}" class="block-20" style="background-image: url({{event.eventImage}});"></a>
+          <a *ngIf="event.externalLink" href="{{event.externalLink}}" class="block-20" style="background-image: url({{event.eventImage}});"></a>
           <div class="text p-4 d-block">
               <div class="meta mb-3">
-              <div><a routerLink="{{event.pageLink}}">{{event.eventDate}}</a></div>
+              <div>{{event.eventDate}}</div>
               <!-- <div><a routerLink="#">Admin</a></div>
               <div><a routerLink="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
             </div>
-            <h3 class="heading mb-4"><a routerLink="{{event.pageLink}}">{{event.eventName}}</a></h3>
+            <h3 *ngIf="event.externalLink" class="heading mb-4">
+              <a href="{{event.externalLink}}">{{event.eventName}}</a>
+            </h3>
+            <h3 *ngIf!="event.externalLink" class="heading mb-4">
+              <a routerLink="{{event.pageLink}}">{{event.eventName}}</a>
+            </h3>
             <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> {{event.timming}}</span></p>
             <p><a href="{{event.mapUrl}}" target="_blank" ><span><i class="icon-map-o"></i> {{event.venue}}</span></a></p>
             <p>{{event.description}}</p>

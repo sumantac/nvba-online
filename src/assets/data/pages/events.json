@@ -1,5 +1,31 @@
 [
-    
+    { 
+        "eventId":2311,
+        "eventType": "coming",
+        "eventName": "Pancham Swar",
+        "eventDate": "September 10th, 2023",
+        "eventEndDate": "September 10th, 2023",
+        "eventImage": "./../../../assets/images/stocks/2023/pancham.jpg",
+        "timming": "Early bird sale ends on July 16",
+        "venue": "Richard J Ernst Community Cultural Center Northern Virginia Community College - Annandale Campus, 8333 Little River Turnpike, Annandale, VA 22003",
+        "pageLink": "",
+        "description": "Raising funds for women, children and underprivileged communities Where music intersects with giving hearts resulting in pure magic \n \"Pancham Swar\" \n A Musical Tribute to R.D. Burman.",
+        "mapUrl": "https://www.google.com/maps/place/Richard+J+Ernst+Community+Cultural+Center/@38.8333994,-77.2389877,17z/data=!3m1!4b1!4m6!3m5!1s0x89b64cf9a4b7d595:0x736872a31ef0fe0b!8m2!3d38.8333994!4d-77.236799!16s%2Fg%2F1tfb7fvw?entry=ttu",
+        "externalLink":"https://breakthetide.org/"
+    },
+    { 
+        "eventId":231,
+        "eventType": "coming",
+        "eventName": "Sarbojanin Durga Utsav 2023",
+        "eventDate": "October 20th, 2023 - October 22nd, 2023",
+        "eventEndDate": "October 22nd, 2023",
+        "eventImage": "./../../../assets/images/stocks/2023/durga-ascha.jpg",
+        "timming": "October 20th - 6 pm to 10 pm. October 21st and 22nd - 9am to 10 pm.",
+        "venue": "TBD",
+        "pageLink": "/durgapuja",
+        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
+        "mapUrl": ""
+    },
    
     
     
@@ -108,20 +134,8 @@
         "pageLink": "",
         "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
         "mapUrl": ""
-    },
-    { 
-        "eventId":231,
-        "eventType": "coming",
-        "eventName": "Sarbojanin Durga Utsav 2023",
-        "eventDate": "October 20th, 2023 - October 22nd, 2023",
-        "eventEndDate": "October 22nd, 2023",
-        "eventImage": "./../../../assets/images/stocks/2023/durga-ascha.jpg",
-        "timming": "October 20th - 6 pm to 10 pm. October 21st and 22nd - 9am to 10 pm.",
-        "venue": "TBD",
-        "pageLink": "/durgapuja",
-        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
-        "mapUrl": ""
     }
+    
     
 
     
