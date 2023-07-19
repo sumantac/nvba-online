@@ -32,6 +32,7 @@ import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presiden
 import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
 import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 import { PicnicComponent } from './pages/picnic/picnic.component';
+import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
   { path: "history", component: HistoryComponent, pathMatch: 'full'  },
   { path: "constitution", component: ConstitutionComponent, pathMatch: 'full'  },
+  { path: "eventsguidelines", component: EventsguidelinesComponent, pathMatch: 'full'  },
   { path: "contactus", component: ContactusComponent, pathMatch: 'full'  },
   { path: "durgapuja", component: DurgapujaComponent, pathMatch: 'full'  },
   { path: "saraswatipuja", component: SaraswatiComponent, pathMatch: 'full'  },
