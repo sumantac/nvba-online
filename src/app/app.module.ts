@@ -67,6 +67,7 @@ import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
 import { FoodticketsComponent } from './components/foodcart/foodtickets/foodtickets.component';
 import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 import { PicnicComponent } from './pages/picnic/picnic.component';
+import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 
 
 @NgModule({
@@ -111,6 +112,7 @@ import { PicnicComponent } from './pages/picnic/picnic.component';
     FoodticketsComponent,
     FoodcheckoutComponent,
     PicnicComponent,
+    EventsguidelinesComponent,
 
   ],
   imports: [
