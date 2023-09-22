@@ -1,8 +1,50 @@
 [
+    { 
+        "eventId":2311,
+        "eventType": "coming",
+        "eventName": "Pancham Swar",
+        "eventDate": "September 10th, 2023",
+        "eventEndDate": "September 10th, 2023",
+        "eventImage": "./../../../assets/images/stocks/2023/pancham.jpg",
+        "timming": "Early bird sale ends on July 16",
+        "venue": "Richard J Ernst Community Cultural Center Northern Virginia Community College - Annandale Campus, 8333 Little River Turnpike, Annandale, VA 22003",
+        "pageLink": "",
+        "description": "Raising funds for women, children and underprivileged communities Where music intersects with giving hearts resulting in pure magic \n \"Pancham Swar\" \n A Musical Tribute to R.D. Burman.",
+        "mapUrl": "https://www.google.com/maps/place/Richard+J+Ernst+Community+Cultural+Center/@38.8333994,-77.2389877,17z/data=!3m1!4b1!4m6!3m5!1s0x89b64cf9a4b7d595:0x736872a31ef0fe0b!8m2!3d38.8333994!4d-77.236799!16s%2Fg%2F1tfb7fvw?entry=ttu",
+        "externalLink":"https://breakthetide.org/"
+    },
+    { 
+        "eventId":231,
+        "eventType": "coming",
+        "eventName": "Sarbojanin Durga Utsav 2023",
+        "eventDate": "October 20th, 2023 - October 22nd, 2023",
+        "eventEndDate": "October 22nd, 2023",
+        "eventImage": "./../../../assets/images/stocks/2023/durga-ascha.jpg",
+        "timming": "October 20th - 6 pm to 10 pm. October 21st and 22nd - 9am to 10 pm.",
+        "venue": "TBD",
+        "pageLink": "/durgapuja",
+        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
+        "mapUrl": ""
+    },
+   
+    
     
     { 
+        "eventId":13,
+        "eventType": "past",
+        "eventName": "Annual Picnic",
+        "eventDate": "June 17th, 2023",
+        "eventEndDate": "June 17th, 2023",
+        "eventImage": "./../../../assets/images/gallery/common/picnic/picnic-2022.jpg",
+        "timming": "June 17th from 10:00AM to 4:00PM",
+        "venue": "Shelter 8 at Bull Run ",
+        "pageLink": "/picnic",
+        "description": "Our annual picnic, where all our members were invite to a free picnic event for a great day of food, fun and friendship..",
+        "mapUrl": "https://www.google.com/maps/dir/38.8759552,-77.2243456/Shelter+8+at+Bull+Run,+7700+Bull+Run+Dr,+Centreville,+VA+20121/"
+    },
+    { 
         "eventId":12,
-        "eventType": "coming",
+        "eventType": "past",
         "eventName": "Kobi Pronam",
         "eventDate": "June 10th, 2023",
         "eventEndDate": "June 10th, 2023",
@@ -12,32 +54,6 @@
         "pageLink": "kobipronam",
         "description": "Tribute for Kobi Pronam. As Bengalis we are always very proud of this unique event in honor of the poets who form the cornerstone of our Bengali culture.",
         "mapUrl": "https://www.google.com/maps/dir//Mercer+Middle+School,+42149+Greenstone+Dr,+Aldie,+VA+20105/@38.9247839,-77.549134,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b641c3ba822e23:0xf3d318eb03789316!2m2!1d-77.5469453!2d38.9247839!3e0"
-    },
-    { 
-        "eventId":13,
-        "eventType": "coming",
-        "eventName": "Annual Picnic",
-        "eventDate": "June 17th, 2023",
-        "eventEndDate": "June 17th, 2023",
-        "eventImage": "./../../../assets/images/gallery/common/picnic/picnic-2022.jpg",
-        "timming": "June 17th",
-        "venue": "TBD",
-        "pageLink": "",
-        "description": "Our annual picnic, where all our members were invite to a free picnic event for a great day of food, fun and friendship..",
-        "mapUrl": ""
-    },
-    { 
-        "eventId":1,
-        "eventType": "coming",
-        "eventName": "Sarbojanin Durga Utsav 2023",
-        "eventDate": "October 20th, 2023 - October 22nd, 2023",
-        "eventEndDate": "October 22nd, 2023",
-        "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
-        "timming": "October 20th - 6 pm to 10 pm. October 21st and 22nd - 9am to 10 pm.",
-        "venue": "TBD",
-        "pageLink": "",
-        "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
-        "mapUrl": ""
     },
     { 
         "eventId":14,
@@ -115,10 +131,11 @@
         "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
         "timming": "September 30th - 6 pm to 10 pm. October 1st and 2nd - 9am to 10 pm.",
         "venue": "Freedom High School, 25450 Riding Center Dr, Chantilly, VA 20152",
-        "pageLink": "/durgapuja",
+        "pageLink": "",
         "description": "Come join us to celebrate our most auspicious Bengali event of the year.",
-        "mapUrl": "https://www.google.com/maps/place/Freedom+High+School/@38.9141524,-77.5372297,17z/data=!3m1!4b1!4m5!3m4!1s0x89b6419385f7acb7:0xdfcafaf31ad1c442!8m2!3d38.9141482!4d-77.535041"
+        "mapUrl": ""
     }
+    
     
 
     

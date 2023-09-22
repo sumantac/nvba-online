@@ -1,8 +1,8 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CartService} from './../../../shared/services/cart.service';
 import { MemberService } from './../../../shared/member/member.service';
-import { from } from 'rxjs';
+import { from, Observable } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { Location} from "@angular/common";
 import { Router } from '@angular/router';
@@ -13,6 +13,7 @@ import {
 } from 'ngx-paypal';
 
 import * as moment from 'moment';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 declare let paypal:any;
 
 
@@ -22,6 +23,17 @@ declare let paypal:any;
   styleUrls: ['./foodcheckout.component.scss']
 })
 export class FoodcheckoutComponent implements OnInit {
+  @ViewChild('cartElement', {static: false}) myElementRef: ElementRef | undefined;
+  getInnerHtml() {
+    if (this.myElementRef) {
+      const innerHtml = this.myElementRef.nativeElement.innerHTML;
+      console.log(innerHtml);
+      return innerHtml;
+    }
+  }
+
+  dataformail: any;
+  
   cartCheck: any = [];
   subtotal: number = 0;
   tax: number = 0;
@@ -45,7 +57,8 @@ export class FoodcheckoutComponent implements OnInit {
     private mds: MemberService,
     private location: Location,
     private router: Router,
-    private userService: AuthService
+    private userService: AuthService,
+    private http: HttpClient,
     ) {
 
       this.userService.cast.subscribe( m => {
@@ -114,11 +127,11 @@ export class FoodcheckoutComponent implements OnInit {
 
 
   paypalConfig = {
-      env: 'sandbox',
-    //  env: 'production',
+    //  env: 'sandbox',
+      env: 'production',
       client: {
-        sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
-     //   production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
+     //   sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
+       production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
       },
       style: {
         shape: 'rect',
@@ -198,11 +211,25 @@ export class FoodcheckoutComponent implements OnInit {
         //    this.member.purchase.unshift(this.cartCheck);
         //    console.log(this.member);
         //    this.mds.UpdateMember(this.member.id, this.member);
-          this.mds.concert(payment);
+          this.mds.kp2023(payment);
            console.log('update done');
           this.toastr.success('Your payment is successful.','Payment Process');
           console.log(payment);
-          
+          const htmlvalue = this.getInnerHtml();
+
+          this.dataformail = {
+            subject: 'Kobi Pronam food Tickets',
+            id: payment.id,
+            create_time: payment.create_time,
+            cart: payment.cart,
+            fname: payment.payer.payer_info.first_name,
+            lname: payment.payer.payer_info.last_name,
+            email: payment.payer.payer_info.email,
+            emailtemplate: 'kobipronam.html',
+            items: this.getInnerHtml()
+          };
+       // for Send Mail
+          this.postData(this.dataformail);
    
        
              this.cart.clearCart();
@@ -233,6 +260,13 @@ export class FoodcheckoutComponent implements OnInit {
   }
   
 
+  postData(data: any) {
+    const url = 'https://dhrubajyoti.com/nvbamail';
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    
+    this.http.post(url, data, { headers });
+    console.log(data);
+  }
 
 
 }

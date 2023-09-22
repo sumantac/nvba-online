@@ -1,18 +1,18 @@
 [
       {
         "name": "NVBA Kobi Pronam - Non-Veg Biryani",
-        "description": "Regular - Adults -  Non-Veg Chicken Biryani",
+        "description": "Regular - Non-Veg Chicken Biryani",
         "quantity": 0,
-        "price": 12,
+        "price": 10,
         "tax": 0,
         "sku": "KP2023NON",
         "currency": "USD" 
       },
       {
         "name": "NVBA Kobi Pronam - Veg Biryani",
-        "description": "Regular - Adults -  Veg Biryani",
+        "description": "Regular - Veg Jackfruit Biryani",
         "quantity": 0,
-        "price": 10,
+        "price": 8,
         "tax": 0,
         "sku": "KP2023VEG",
         "currency": "USD" 

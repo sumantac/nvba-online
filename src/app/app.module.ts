@@ -66,6 +66,9 @@ import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presiden
 import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
 import { FoodticketsComponent } from './components/foodcart/foodtickets/foodtickets.component';
 import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
+import { PicnicComponent } from './pages/picnic/picnic.component';
+import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
+import { Durgapujatickets2023Component } from './helper/tickets/durgapujatickets2023/durgapujatickets2023.component';
 
 
 @NgModule({
@@ -109,6 +112,9 @@ import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodch
     KobipronamComponent,
     FoodticketsComponent,
     FoodcheckoutComponent,
+    PicnicComponent,
+    EventsguidelinesComponent,
+    Durgapujatickets2023Component,
 
   ],
   imports: [

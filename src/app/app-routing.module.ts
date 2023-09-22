@@ -31,14 +31,17 @@ import { EventticketsComponent } from './components/events/eventtickets/eventtic
 import { PresidentsdeskComponent } from './pages/aboutus/presidentsdesk/presidentsdesk.component';
 import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
 import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
+import { PicnicComponent } from './pages/picnic/picnic.component';
+import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 
 
 const routes: Routes = [
-  { path: "", component: HomeComponent, pathMatch: 'full' }, 
+  { path: "", component: DurgapujaComponent, pathMatch: 'full' }, 
   { path: "home", component: HomeComponent, pathMatch: 'full'  },
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
   { path: "history", component: HistoryComponent, pathMatch: 'full'  },
   { path: "constitution", component: ConstitutionComponent, pathMatch: 'full'  },
+  { path: "eventsguidelines", component: EventsguidelinesComponent, pathMatch: 'full'  },
   { path: "contactus", component: ContactusComponent, pathMatch: 'full'  },
   { path: "durgapuja", component: DurgapujaComponent, pathMatch: 'full'  },
   { path: "saraswatipuja", component: SaraswatiComponent, pathMatch: 'full'  },
@@ -68,6 +71,7 @@ const routes: Routes = [
   // { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },kobipronam
   { path: 'kobipronam', component: KobipronamComponent },
   { path: 'foodcheckout', component: FoodcheckoutComponent },
+  { path: 'picnic', component: PicnicComponent },
 ];
 
 @NgModule({
