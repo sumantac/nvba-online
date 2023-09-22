@@ -4,7 +4,7 @@ import { AuthService } from './../../shared/services/auth.service';
 
 @Component({
   selector: 'app-durgapuja',
-  templateUrl: './durgapuja.component.html',
+  templateUrl: './durgapuja.component-2023.html',
   styleUrls: ['./durgapuja.component.scss']
 })
 export class DurgapujaComponent implements OnInit {
