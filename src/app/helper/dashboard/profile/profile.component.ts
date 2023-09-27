@@ -18,6 +18,7 @@ export class ProfileComponent implements OnInit {
   saveBtn: boolean = true;
   newUserCheck: boolean = true;
   newUserId: number = 0;
+  
 
   constructor( public ms:MemberService, public as:AuthService,private fb: FormBuilder, ) { 
     
@@ -40,7 +41,8 @@ export class ProfileComponent implements OnInit {
     
     this.as.cast.subscribe( m => {
       this.member = m;
-    //  ////console.log(this.member);
+    //   console.log('this.member');
+    // console.log(this.member);
       this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
     });
   }

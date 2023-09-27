@@ -131,7 +131,7 @@ import { Durgapujatickets2023Component } from './helper/tickets/durgapujatickets
     ReactiveFormsModule,
     FormsModule,
     ToastrModule.forRoot({
-      timeOut: 10000,
+      timeOut: 50000,
       positionClass: 'toast-top-center',
       closeButton: true,
       preventDuplicates: true,
