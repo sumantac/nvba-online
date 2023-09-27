@@ -33,7 +33,7 @@ export class CheckoutComponent implements OnInit {
 
   userDetails: any;
   move:boolean = false;
-
+  currentPurches: any =[];
 
   public payPalConfig ? : IPayPalConfig;
   item: any;
@@ -188,18 +188,25 @@ export class CheckoutComponent implements OnInit {
             console.log('regular Member');
            }
             
-            console.log(paymentTrans);
-            console.log(...this.cartCheck);
-            console.log( this.member.payments);
+           this.currentPurches = [];
+           [...this.cartCheck].forEach(e => {
+            this.currentPurches.unshift({ ...e, paymentTime: paymentTrans.create_time });
+            });
+          //  console.log('paymentTrans>>');
+          //   console.log(paymentTrans);
+          //   console.log(...this.cartCheck);
+          //   console.log( this.member.payments);
+          //   console.log('currentPurches>');
+          //   console.log(this.currentPurches);
 
           //  this.member.payments = paymentTrans.con
 
          //  this.member.payments.unshift(paymentTrans);
-           this.member.purchase.unshift(this.cartCheck);
+           this.member.purchase.unshift(this.currentPurches);
            console.log(this.member);
            this.mds.UpdateMember(this.member.id, this.member);
            console.log('update done');
-          this.toastr.success('Your payment is successful.','Payment Process');
+          this.toastr.success('Hi'+ this.member.displayName +',  Thanks for your recent purchase. Your payment is successful. You will get confirmation emails form Paypal. You can varify your tickets at Membership page order history tab. ','Payment Process');
    
        
              this.cart.clearCart();

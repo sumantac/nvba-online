@@ -15,6 +15,9 @@
         <i class="ni education_hat mr-2"></i>Email: <span class="font-weight-light">{{member?.email}}</span> 
       </div>
 
+      <a href="https://novaba.us5.list-manage.com/subscribe?u=71b8b228056801a92f04f6000&id=172a06829e" class=" btn btn-secondary px-3 py-2 mt-2" target="_blank" >Subscribe for email</a>
+        
+    
       <app-cartmember></app-cartmember>
       <!-- <a href=" " class="btn btn-primary">Edit profile</a> -->
       <style>
@@ -146,6 +149,7 @@
                 <tbody>
                 <tr *ngFor="let item of items ">
                     <td width="60%"><div class="smallOrangeHeader">{{item.name}}</div>{{item.description}}</td>
+                    <td>{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
                     <td>$ {{item.price}}</td>
                     <td>{{ item.quantity}}</td>
                     <!-- <td> <button class="btn btn-warning" (click)="addToCartobj(item)" >Add to Cart</button></td> -->
