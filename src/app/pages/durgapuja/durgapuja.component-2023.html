@@ -1,10 +1,6 @@
 <div class="wrapper"  >
 
-  <audio #playA id="myAudio"  loop onload="soundplay()" >
-    <source src="https://dhrubajyoti.com/nvba/media/durga.mp3" type="audio/mpeg" autoplay play loop onload="soundplay()" >
-    <!-- <source src="./../../../assets/media/durga.mp3" type="audio/mpeg" autoplay loop onload="soundplay()" > -->
-    Your browser does not support the audio element.
-  </audio>
+
   <!-- <div style="width: 100%; max-height: 500px; display: flex; align-items: center;
     justify-content: center;  "  >
     <img src="./../../../../assets/images/stocks/2023/durga-ascha.jpg" style="max-width: 100%; max-height: 500px;  "  >
@@ -25,9 +21,9 @@
 
 
 
-      <!-- <div style="z-index: 2000; position: absolute; top: 80px; right: 20px; cursor: pointer;"  >
-        <i id="play-pause-button" class="icon " [ngClass]="playAudio?'icon-play-circle':'icon-pause-circle' "  (click)="soundplay()" ></i>
-      </div> -->
+      <div style="z-index: 2000; position: absolute; top: 80px; left: 20px; cursor: pointer;"  >
+        <i id="play-pause-button" class="icon" [ngClass]="playAudio?'icon-volume-up':'icon-volume-off' "  (click)="soundplay()" ></i>
+      </div>
       
       <div style="width: 100vw; height: 60vh; " >
         <div style="width: 100%; height: 100%; "  class="cb-slideshow-overlay" >
