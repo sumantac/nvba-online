@@ -12,6 +12,7 @@ export class DurgapujaComponent implements OnInit {
 
   sliderImage : any;
   playAudio: boolean = true;
+  audio = new Audio();
   isLog: boolean = true;
 //  audio = new Audio('https://dhrubajyoti.com/nvba/media/durga.mp3');
   constructor( private jsonFile:GetjsonfileService, public auth: AuthService ) {
@@ -24,22 +25,26 @@ export class DurgapujaComponent implements OnInit {
    //   ////console.log(data);
       this.sliderImage = data;
     });
-    this.soundplay();
+    
+    this.audio.src = "https://dhrubajyoti.com/nvba/media/durga.mp3";
+    this.audio.load();
+    this.audio.play();
   }
 
-  soundplay(){
- //   console.log(this.audio);
-    if(this.playAudio===false){
-      this.playA.nativeElement.play();
+  
+  soundplay() : void{
+    if(this.playAudio == false){
+      this.audio.play();
       console.log('Play');
       this.playAudio = true;
     }
     else{
-      this.playA.nativeElement.pause();
+      this.audio.pause();
       console.log('Pause');
       this.playAudio = false;
     }
   }
+
 
   ngAfterViewInit() {
     //  console.log(this.playA.nativeElement.innerHTML);
