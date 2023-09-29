@@ -69,6 +69,7 @@ import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodch
 import { PicnicComponent } from './pages/picnic/picnic.component';
 import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 import { Durgapujatickets2023Component } from './helper/tickets/durgapujatickets2023/durgapujatickets2023.component';
+import { CaresComponent } from './pages/cares/cares.component';
 
 
 @NgModule({
@@ -115,6 +116,7 @@ import { Durgapujatickets2023Component } from './helper/tickets/durgapujatickets
     PicnicComponent,
     EventsguidelinesComponent,
     Durgapujatickets2023Component,
+    CaresComponent,
 
   ],
   imports: [
