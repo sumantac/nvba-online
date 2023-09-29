@@ -206,7 +206,9 @@ export class CheckoutComponent implements OnInit {
            console.log(this.member);
            this.mds.UpdateMember(this.member.id, this.member);
            console.log('update done');
-          this.toastr.success('Hi '+ this.member.displayName +', \n  Thanks for your recent purchase. Your payment is successful. \n You will get confirmation emails form Paypal. \n You can varify your tickets at Membership page under order history tab. ','Payment Process');
+           const userNa = this.member.displayName?this.member.displayName:'';
+           console.log(userNa);
+          this.toastr.success('Hi '+ userNa +', \n  Thanks for your recent purchase. Your payment is successful. \n You will get confirmation emails form Paypal. \n You can varify your tickets at Membership page under order history tab. ','Payment Process');
    
        
              this.cart.clearCart();

@@ -33,6 +33,7 @@ import { KobipronamComponent } from './pages/kobipronam/kobipronam.component';
 import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 import { PicnicComponent } from './pages/picnic/picnic.component';
 import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
+import { CaresComponent } from './pages/cares/cares.component';
 
 
 const routes: Routes = [
@@ -72,6 +73,7 @@ const routes: Routes = [
   { path: 'kobipronam', component: KobipronamComponent },
   { path: 'foodcheckout', component: FoodcheckoutComponent },
   { path: 'picnic', component: PicnicComponent },
+  { path: 'cares', component: CaresComponent },
 ];
 
 @NgModule({
