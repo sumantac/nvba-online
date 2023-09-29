@@ -27,7 +27,8 @@ export class DurgapujaComponent implements OnInit {
     });
     
    // this.audio.src = "https://dhrubajyoti.com/nvba/media/durga.mp3"; YA-CHANDI-MAHALAYA-SONG-SOURENDRO-SOUMYOJIT
-   this.audio.src = "./../../../../assets/media/YA-CHANDI-MAHALAYA-SONG-SOURENDRO-SOUMYOJIT.mp3";
+   //this.audio.src = "./../../../../assets/media/YA-CHANDI-MAHALAYA-SONG-SOURENDRO-SOUMYOJIT.mp3";
+   this.audio.src = "https://dhrubajyoti.com/nvba/media/YA-CHANDI-MAHALAYA-SONG-SOURENDRO-SOUMYOJIT.mp3"; 
    this.audio.load();
     this.audio.play();
   }
