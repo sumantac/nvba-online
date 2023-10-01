@@ -68,6 +68,8 @@ import { FoodticketsComponent } from './components/foodcart/foodtickets/foodtick
 import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodcheckout.component';
 import { PicnicComponent } from './pages/picnic/picnic.component';
 import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
+import { Durgapujatickets2023Component } from './helper/tickets/durgapujatickets2023/durgapujatickets2023.component';
+import { CaresComponent } from './pages/cares/cares.component';
 
 
 @NgModule({
@@ -113,6 +115,8 @@ import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/even
     FoodcheckoutComponent,
     PicnicComponent,
     EventsguidelinesComponent,
+    Durgapujatickets2023Component,
+    CaresComponent,
 
   ],
   imports: [
@@ -129,7 +133,7 @@ import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/even
     ReactiveFormsModule,
     FormsModule,
     ToastrModule.forRoot({
-      timeOut: 10000,
+      timeOut: 50000,
       positionClass: 'toast-top-center',
       closeButton: true,
       preventDuplicates: true,

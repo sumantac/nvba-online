@@ -1,0 +1,256 @@
+[
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - All 3 days",
+      "description": "Adult Non-Veg",
+      "quantity": 0,
+      "price": 90,
+      "tax": 0.00,
+      "sku": "DP2023EBALL01NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - All 3 days",
+      "description": "Adult Veg",
+      "quantity": 0,
+      "price": 90,
+      "tax": 0.00,
+      "sku": "DP2023EBALL02VEG",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - All 3 days",
+      "description": "Kids [ 11 to 18 years ] Non-Veg ",
+      "quantity": 0,
+      "price": 50,
+      "tax": 0.00,
+      "sku": "DP2023EBALL03NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - All 3 days",
+      "description": "Kids [ 11 to 18 years ] Veg",
+      "quantity": 0,
+      "price": 50,
+      "tax": 0.00,
+      "sku": "DP2023EBALL04VEG",
+      "currency": "USD"
+    },
+  {
+    "name": "NVBA Durga Puja 2023 Ticket - All 3 days ",
+    "description": "Kids [ 0 to 10 years ]",
+    "quantity": 0,
+    "price": 0,
+    "tax": 0.00,
+    "sku": "DP2023EBALL05KID",
+    "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - All 3 days",
+      "description": "Students and Visiting Parents - Non-Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 50,
+      "tax": 0.00,
+      "sku": "DP2023EBALL06NON",
+      "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - All 3 days",
+      "description": "Students and Visiting Parents - Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 50,
+      "tax": 0.00,
+      "sku": "DP2023EBALL07VEG",
+      "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Friday Only",
+      "description": "Adult Non-Veg",
+      "quantity": 0,
+      "price": 80,
+      "tax": 0.00,
+      "sku": "DP2023EBFRI01NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Friday Only",
+      "description": "Adult Veg",
+      "quantity": 0,
+      "price": 80,
+      "tax": 0.00,
+      "sku": "DP2023EBFRI02VEG",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Friday Only",
+      "description": "Kids [ 11 to 18 years ] Non-Veg",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBFRI03NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Friday Only",
+      "description": "Kids [ 11 to 18 years ] Veg",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBFRI04VEG",
+      "currency": "USD"
+    },
+  {
+    "name": "NVBA Durga Puja 2023 Ticket - Friday Only",
+    "description": "Kids [ 0 to 10 years ]",
+    "quantity": 0,
+    "price": 0,
+    "tax": 0.00,
+    "sku": "DP2023EBFRI05KID",
+    "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Friday Only",
+      "description": "Students and Visiting Parents - Non-Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBFRI06NON",
+      "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Friday Only",
+      "description": "Students and Visiting Parents - Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBFRI07VEG",
+      "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Saturday Only",
+      "description": "Adult Non-Veg",
+      "quantity": 0,
+      "price": 80,
+      "tax": 0.00,
+      "sku": "DP2023EBSAT01NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Saturday Only",
+      "description": "Adult Veg",
+      "quantity": 0,
+      "price": 80,
+      "tax": 0.00,
+      "sku": "DP2023EBSAT02VEG",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Saturday Only",
+      "description": "Kids [ 11 to 18 years ] - Non-Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBSAT03NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Saturday Only",
+      "description": "Kids [ 11 to 18 years ] - Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBSAT04VEG",
+      "currency": "USD"
+    },
+  {
+    "name": "NVBA Durga Puja 2023 Ticket - Saturday Only",
+    "description": "Kids [ 0 to 10 years ]",
+    "quantity": 0,
+    "price": 0,
+    "tax": 0.00,
+    "sku": "DP2023EBSAT05KID",
+    "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Saturday Only",
+      "description": "Students and Visiting Parents Non-Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBSAT06NON",
+      "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Saturday Only",
+      "description": "Students and Visiting Parents Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBSAT07VEG",
+      "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Sunday Only",
+      "description": "Adult Non-Veg",
+      "quantity": 0,
+      "price": 80,
+      "tax": 0.00,
+      "sku": "DP2023EBSUN01NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Sunday Only",
+      "description": "Adult Veg",
+      "quantity": 0,
+      "price": 80,
+      "tax": 0.00,
+      "sku": "DP2023EBSUN02VEG",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Sunday Only",
+      "description": "Kids [ 11 to 18 years ] Non-Veg",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBSUN03NON",
+      "currency": "USD"
+    },
+    {
+      "name": "NVBA Durga Puja 2023 Ticket - Sunday Only",
+      "description": "Kids [ 11 to 18 years ] Veg",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBSUN04VEG",
+      "currency": "USD"
+    },
+  {
+    "name": "NVBA Durga Puja 2023 Ticket - Sunday Only",
+    "description": "Kids [ 0 to 10 years ]",
+    "quantity": 0,
+    "price": 0,
+    "tax": 0.00,
+    "sku": "DP2023EBSUN05KID",
+    "currency": "USD"
+  },
+  {
+      "name": "NVBA Durga Puja 2023 Ticket - Sunday Only",
+      "description": "Students and Visiting Parents Non-Veg - Please bring your Student ID at venue.",
+      "quantity": 0,
+      "price": 35,
+      "tax": 0.00,
+      "sku": "DP2023EBSUN06NON",
+      "currency": "USD"
+  },
+  {
+    "name": "NVBA Durga Puja 2023 Ticket - Sunday Only",
+    "description": "Students and Visiting Parents Veg - Please bring your Student ID at venue.",
+    "quantity": 0,
+    "price": 35,
+    "tax": 0.00,
+    "sku": "DP2023EBSUN07VEG",
+    "currency": "USD"
+}
+  
+    
+]    

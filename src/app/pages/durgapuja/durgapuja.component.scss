@@ -60,3 +60,40 @@ div{
   #activities tr td:first-child {
     font-weight: 800;
   }
+
+  #play-pause-button{
+    color: #fff;
+    box-shadow: #000;
+    font-size: 1.5rem;
+  }
+
+
+  .ticketTable{
+    border: #cccccc 1px solid;
+    width: 100%;
+    font-size: 1rem;
+    tr{
+      border: #cccccc 1px solid;
+      td{
+        border: #cccccc 1px solid;
+        text-align: center;
+        font-weight:500;
+      }
+    }
+    .redHeader{
+      background-color: #fbdaca;
+      font-weight: 400 !important;
+    }
+    .redSideHeader{
+      background-color: #fceee7;
+      font-weight: 400 !important;
+    }
+    .highlight{
+      font-weight: 600 !important;
+    }
+    
+  }  
+
+  .warning{
+    font-size: 0.8rem;
+  }

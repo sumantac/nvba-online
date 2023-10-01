@@ -8,7 +8,7 @@
     </div>
     <div class="row">
 
-        <div class="col-md-4 d-flex ftco-animate" *ngFor="let event of events" >
+        <div class="col-md-4 d-flex ftco-animate" *ngFor="let event of commingevents" >
           <div class="blog-entry align-self-stretch w-100 " *ngIf="event.eventType=='coming'" >
           <a *ngIf="event.pageLink" routerLink="{{event.pageLink}}" class="block-20" style="background-image: url({{event.eventImage}});"></a>
           <a *ngIf="event.externalLink" href="{{event.externalLink}}" class="block-20" style="background-image: url({{event.eventImage}});"></a>
@@ -47,7 +47,7 @@
       </div>
       <div class="row">
 
-          <div class="col-md-4 d-flex ftco-animate" *ngFor="let pevent of events" >
+          <div class="col-md-4 d-flex ftco-animate" *ngFor="let pevent of pastevents" >
             <div class="blog-entry align-self-stretch w-100 " *ngIf="pevent.eventType=='past'" >
             <a routerLink="blog-single.html" class="block-20" style="background-image: url({{pevent.eventImage}});">
             </a>

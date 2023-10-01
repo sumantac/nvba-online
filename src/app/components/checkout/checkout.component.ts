@@ -33,7 +33,7 @@ export class CheckoutComponent implements OnInit {
 
   userDetails: any;
   move:boolean = false;
-
+  currentPurches: any =[];
 
   public payPalConfig ? : IPayPalConfig;
   item: any;
@@ -117,7 +117,7 @@ export class CheckoutComponent implements OnInit {
      // env: 'sandbox',
       env: 'production',
       client: {
-     //   sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
+      // sandbox: 'AeLhWUCfC2jHOZv7b-KDfZV6R6Mig-2FklW6iIxsuI0UROww652TU9SlVPHyW1ygMGohQo21TfXUVPrz',
        production: 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS'
       },
       style: {
@@ -188,18 +188,27 @@ export class CheckoutComponent implements OnInit {
             console.log('regular Member');
            }
             
-            console.log(paymentTrans);
-            console.log(...this.cartCheck);
-            console.log( this.member.payments);
+           this.currentPurches = [];
+           [...this.cartCheck].forEach(e => {
+            this.currentPurches.unshift({ ...e, paymentTime: paymentTrans.create_time });
+            });
+          //  console.log('paymentTrans>>');
+          //   console.log(paymentTrans);
+          //   console.log(...this.cartCheck);
+          //   console.log( this.member.payments);
+          //   console.log('currentPurches>');
+          //   console.log(this.currentPurches);
 
           //  this.member.payments = paymentTrans.con
 
          //  this.member.payments.unshift(paymentTrans);
-           this.member.purchase.unshift(this.cartCheck);
+           this.member.purchase.unshift(this.currentPurches);
            console.log(this.member);
            this.mds.UpdateMember(this.member.id, this.member);
            console.log('update done');
-          this.toastr.success('Your payment is successful.','Payment Process');
+           const userNa = this.member.displayName?this.member.displayName:'';
+           console.log(userNa);
+          this.toastr.success('Hi '+ userNa +', \n  Thanks for your recent purchase. Your payment is successful. \n You will get confirmation emails form Paypal. \n You can varify your tickets at Membership page under order history tab. ','Payment Process');
    
        
              this.cart.clearCart();
