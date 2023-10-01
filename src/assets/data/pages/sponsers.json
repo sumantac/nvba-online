@@ -34,5 +34,14 @@
         "amount" : "25,000",
         "cause" : "Puja Sponser",
         "type" : "Silver"
+    },
+    {
+        "name" : "Synchronisys",
+        "image" : "assets/images/gallery/sponsors/sync.png",
+        "url": "https://www.synchronisys.com",
+        "dateofDonation" : "Donated Just now",
+        "amount" : "25,000",
+        "cause" : "Puja Sponser",
+        "type" : "Silver"
     }
 ]
