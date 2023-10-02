@@ -9,15 +9,6 @@
         "type" : "Platinam"
     },
     {
-        "name" : "Brite Group Inc. ",
-        "image" : "assets/images/gallery/sponsors/thebritegroup.png",
-        "url": "https://www.thebritegroup.com/",
-        "dateofDonation" : "Donated Just now",
-        "amount" : "20,000",
-        "cause" : "Puja Sponser",
-        "type" : "Gold"
-    },
-    {
         "name" : "Synergy",
         "image" : "assets/images/gallery/sponsors/synergy.png",
         "url": "https://www.synergybis.com/",
@@ -25,6 +16,24 @@
         "amount" : "25,000",
         "cause" : "Puja Sponser",
         "type" : "Silver"
+    },
+    {
+        "name" : "Synchronisys",
+        "image" : "assets/images/gallery/sponsors/sync.png",
+        "url": "https://www.synchronisys.com",
+        "dateofDonation" : "Donated Just now",
+        "amount" : "25,000",
+        "cause" : "Puja Sponser",
+        "type" : "Silver"
+    },
+    {
+        "name" : "Brite Group Inc. ",
+        "image" : "assets/images/gallery/sponsors/thebritegroup.png",
+        "url": "https://www.thebritegroup.com/",
+        "dateofDonation" : "Donated Just now",
+        "amount" : "20,000",
+        "cause" : "Puja Sponser",
+        "type" : "Gold"
     },
     {
         "name" : "Long and Foster -Reema Raju",
@@ -36,9 +45,9 @@
         "type" : "Silver"
     },
     {
-        "name" : "Synchronisys",
-        "image" : "assets/images/gallery/sponsors/sync.png",
-        "url": "https://www.synchronisys.com",
+        "name" : "Raaha LLC",
+        "image" : "assets/images/gallery/sponsors/raahallc.png",
+        "url": "https://raahallc.com/",
         "dateofDonation" : "Donated Just now",
         "amount" : "25,000",
         "cause" : "Puja Sponser",
