@@ -28,7 +28,7 @@
               <a class="nav-link" routerLink="/membership" (click)="toggle()" *ngIf="auth.member.value?.email"  >
                   Welcome,<span class=" text-primary "  > {{auth.member.value?.firstname?auth.member.value?.firstname:'Guest'}}</span>
               </a>
-              <a class="nav-link" routerLink="/membership" *ngIf="!auth.member.value?.email" >
+              <a class="nav-link" routerLink="/membership"  (click)="toggle()" *ngIf="!auth.member.value?.email" >
                <span class=" text-primary " > Login</span>
               </a>
                 <ul class="dropmenu-content "  [ngClass]="auth.member.value?.email ? '':'hide' " >
