@@ -1,7 +1,14 @@
 <div class="row wrapper"   >
     
     <div *ngIf="!memberValidity" class="col-md-12 pt-3 " id="cartmember"  >
-        
+        <p class=" text-center " style="color: #848484;">
+
+            Durga Puja 2023 tickets are exclusively available for members.<br />
+             If you are already a member, kindly log in to make your ticket purchase.  
+
+        </p>
+        <div style="font-weight: bold; font-size: 1.1em;color: #848484; text-align: center;" ><b>Membership fees: $30 per family.</b> </div>
+           
         <!-- <p class=" text-center ">
 
             We suspend our purchase tickets online as well as at Venue. Due to overwhelming response of our Members and Guests. 
@@ -17,8 +24,8 @@
         <button *ngIf="!this.member?.expires" (click)="addToCartobj()" class="btn-get-started w-100 mb-3 mt-2" >
             NVBA Annual Membership</button>
         <div class="flex-column row ">
-            <div style="font-weight: bold; font-size: 1.3em;color: #cccccc; text-align: center;" ><span class=" text-primary ">*</span><b>Membership Benefits:</b> </div>
-            <ul  style=" color: #cccccc; text-align: center;"> 
+            <div style="font-weight: bold; font-size: 1.2em;color: #848484; text-align: center;" ><span class=" text-primary ">*</span><b>Membership Benefits:</b> </div>
+            <ul  style=" color: #848484; text-align: center;"> 
                 <li>
                     Access to year round member only events like kobi pronam, nobo borsho celebrations, picnic etc.
                 </li>
