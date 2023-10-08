@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MemberService } from './../../../shared/member/member.service';
 import { AuthService } from './../../../shared/services/auth.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { SafeUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-profile',
@@ -18,10 +19,20 @@ export class ProfileComponent implements OnInit {
   saveBtn: boolean = true;
   newUserCheck: boolean = true;
   newUserId: number = 0;
+
+  sitehost = window.location.host +'/user-details-check/';
+  siteUrl : any = null;
+  public myAngularxQrCode: string = "";
+  public qrCodeDownloadLink: SafeUrl = "";
+
+  loadDiv:boolean = false;
+
+  htmlContent:any = 'hello';
   
 
   constructor( public ms:MemberService, public as:AuthService,private fb: FormBuilder, ) { 
-    
+  
+
 
     this.profileForm = new FormGroup({
       firstname: new FormControl(),
@@ -35,16 +46,35 @@ export class ProfileComponent implements OnInit {
       zipcode: new FormControl
    });
 
+   this.as.cast.subscribe( m => {
+    this.member = m;
+     console.log('this.member',this.member);
+  // console.log(this.member);
+    this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
+  
+    this.siteUrl = this.sitehost + this.member!.email;
+    console.log('this.siteUrl', this.siteUrl);
+    this.myAngularxQrCode = this.siteUrl;
+    this.qrCodeDownloadLink = this.siteUrl;
+    console.log('this.myAngularxQrCode', this.myAngularxQrCode);
+    console.log('this.qrCodeDownloadLink', this.qrCodeDownloadLink);
+    
+    setTimeout(() => {
+      this.loadDiv = true;
+    }, 1000);
+  });
+
    }
 
   ngOnInit(): void {
     
-    this.as.cast.subscribe( m => {
-      this.member = m;
-    //   console.log('this.member');
-    // console.log(this.member);
-      this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
-    });
+
+
+    // this.siteUrl = this.sitehost + this.member.email;
+    // console.log('this.siteUrl', this.siteUrl);
+  }
+  onChangeURL(url: SafeUrl) {
+    this.qrCodeDownloadLink = url;
   }
 
   createForm(id: any, firstname: any, lastname: any, photoURL: any, address1: any, address2: any, city: any, state: any, country: any, zipcode: any) {
