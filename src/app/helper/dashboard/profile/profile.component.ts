@@ -20,7 +20,7 @@ export class ProfileComponent implements OnInit {
   newUserCheck: boolean = true;
   newUserId: number = 0;
 
-  sitehost = window.location.host +'/user-details-check/';
+  sitehost = 'https://'+window.location.host +'/user-details-check/';
   siteUrl : any = null;
   public myAngularxQrCode: string = "";
   public qrCodeDownloadLink: SafeUrl = "";

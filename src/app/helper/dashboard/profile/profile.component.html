@@ -30,7 +30,7 @@
      </style>
 
      <div  >
-      <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+      <!-- <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode> -->
       <div *ngIf="loadDiv" class="qrcodeImage">
         <qrcode
           [qrdata]="siteUrl"
@@ -48,9 +48,7 @@
         ></qrcode>
       </div>
 
-      
-
-      <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode> 
+      <!-- <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>  -->
      </div>
 
     </div>
