@@ -3,6 +3,7 @@ import { MemberService } from './../../../shared/member/member.service';
 import { AuthService } from './../../../shared/services/auth.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { SafeUrl } from '@angular/platform-browser';
+import 'base64-js';
 
 @Component({
   selector: 'app-profile',
@@ -51,31 +52,19 @@ export class ProfileComponent implements OnInit {
      console.log('this.member',this.member);
   // console.log(this.member);
     this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
-  
-    this.siteUrl = this.sitehost + this.member!.email;
-    console.log('this.siteUrl', this.siteUrl);
-    this.myAngularxQrCode = this.siteUrl;
-    this.qrCodeDownloadLink = this.siteUrl;
-    console.log('this.myAngularxQrCode', this.myAngularxQrCode);
-    console.log('this.qrCodeDownloadLink', this.qrCodeDownloadLink);
-    
+    let encoded: string = btoa(this.member!.email);
+  //  console.log(encoded);
+    this.siteUrl = this.sitehost + encoded;
+  //  console.log('this.siteUrl', this.siteUrl);
     setTimeout(() => {
       this.loadDiv = true;
-    }, 1000);
+    }, 10);
   });
 
    }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {}
 
-
-    // this.siteUrl = this.sitehost + this.member.email;
-    // console.log('this.siteUrl', this.siteUrl);
-  }
-  onChangeURL(url: SafeUrl) {
-    this.qrCodeDownloadLink = url;
-  }
 
   createForm(id: any, firstname: any, lastname: any, photoURL: any, address1: any, address2: any, city: any, state: any, country: any, zipcode: any) {
 
