@@ -24,16 +24,16 @@ export class UserDetailsCheckComponent implements OnInit {
           this.userMember = member;
           console.log(this.userMember);
 
-          [...member.purchase].forEach( purchaseList =>{
-            console.log('purchaseList >', purchaseList.length );
-            for(let i=0; i< purchaseList.length; i++ ){
-                if(purchaseList[i].sku.includes('DP2023')){
-                  this.ticketList.push(purchaseList[i]);
-                }
-            }
-          });
+          // [...member.purchase].forEach( purchaseList =>{
+          //   console.log('purchaseList >', purchaseList.length );
+          //   for(let i=0; i< purchaseList.length; i++ ){
+          //       if(purchaseList[i].sku.includes('DP2023')){
+          //         this.ticketList.push(purchaseList[i]);
+          //       }
+          //   }
+          // });
 
-          console.log('this.ticketList >',this.ticketList);
+          // console.log('this.ticketList >',this.ticketList);
 
         }
       })
