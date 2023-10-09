@@ -10,6 +10,7 @@ import 'base64-js';
 })
 export class UserDetailsCheckComponent implements OnInit {
   userMember:any;
+  ticketList:any =[];
 
   constructor(private ms: MemberService, private route: ActivatedRoute ) {
     console.log(window.location.host);
@@ -22,6 +23,18 @@ export class UserDetailsCheckComponent implements OnInit {
         if(member.email == decoded){
           this.userMember = member;
           console.log(this.userMember);
+
+          [...member.purchase].forEach( purchaseList =>{
+            console.log('purchaseList >', purchaseList.length );
+            for(let i=0; i< purchaseList.length; i++ ){
+                if(purchaseList[i].sku.includes('DP2023')){
+                  this.ticketList.push(purchaseList[i]);
+                }
+            }
+          });
+
+          console.log('this.ticketList >',this.ticketList);
+
         }
       })
     });
