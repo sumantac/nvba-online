@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MemberService } from 'src/app/shared/member/member.service';
-//import { btoa, atob } from 'base64-js';
+import 'base64-js';
 
 @Component({
   selector: 'app-user-details-check',
@@ -13,11 +13,13 @@ export class UserDetailsCheckComponent implements OnInit {
 
   constructor(private ms: MemberService, private route: ActivatedRoute ) {
     console.log(window.location.host);
-    const emailId = this.route.snapshot.params['id'];
-    console.log(emailId);
+  //   const emailId = this.route.snapshot.params['id'];
+  //  // console.log(emailId);
+    let decoded: string = atob(this.route.snapshot.params['id']);
+   // console.log(decoded);
     this.ms.GetMembersList().subscribe( mList =>{
       [...mList].forEach( member => {
-        if(member.email == emailId){
+        if(member.email == decoded){
           this.userMember = member;
           console.log(this.userMember);
         }

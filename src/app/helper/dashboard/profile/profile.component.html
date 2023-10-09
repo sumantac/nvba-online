@@ -29,27 +29,27 @@
        
      </style>
 
-     <div  >
-      <!-- <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode> -->
-      <div *ngIf="loadDiv" class="qrcodeImage">
-        <qrcode
-          [qrdata]="siteUrl"
-          [allowEmptyString]="true"
-          [ariaLabel]="siteUrl"
-          [cssClass]="'center'"
-          [colorDark]="'#000000'"
-          [colorLight]="'#ffffffff'"
-          [elementType]="'canvas'"
-          [errorCorrectionLevel]="'M'"
-          [margin]="4"
-          [scale]="1"
-          [title]="siteUrl"
-          [width]="300"
-        ></qrcode>
+     <div class="mt-2 mb-3"  >
+         <div *ngIf="loadDiv" class="qrcodeImage">
+            <qrcode
+              [qrdata]="siteUrl"
+              [allowEmptyString]="true"
+              [ariaLabel]="'Member details'"
+              [cssClass]="'center'"
+              [colorDark]="'#000000'"
+              [colorLight]="'#ffffffff'"
+              [elementType]="'canvas'"
+              [errorCorrectionLevel]="'M'"
+              [imageSrc]="'./../../../assets/images/logo/logo.png'"
+              [imageHeight]="24"
+              [imageWidth]="115"
+              [margin]="4"
+              [scale]="1"
+              [title]="'Member details'"
+              [width]="300"
+            ></qrcode>
+          </div>  
       </div>
-
-      <!-- <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>  -->
-     </div>
 
     </div>
     
