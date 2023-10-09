@@ -14,17 +14,24 @@
         {{ userMember?.displayName }} -->
 
         <div>
+              
               <div class="h5 mt-4">
-                <i class="ni business_briefcase-24 mr-2"></i>Member Name,   {{userMember?.displayName | date}}
+                Email:-  <span class="font-weight-light">{{userMember?.email}}</span> 
               </div>
               <div class="h5 mt-4">
-                <i class="ni education_hat mr-2"></i>Email: <span class="font-weight-light">{{userMember?.email}}</span> 
+                Member Display Name :-   <span class="font-weight-light">{{userMember?.displayName}}</span>
               </div>
               <div class="h5 mt-4">
-                <i class="ni business_briefcase-24 mr-2"></i>Member Since,   {{userMember?.joined | date}}
+                Member First Name :-   {{userMember?.firstname }}
               </div>
               <div class="h5 mt-4">
-                <i class="ni business_briefcase-24 mr-2"></i>Membership Expiry Date,   {{userMember?.expires | date }}
+                Member Last Name :-   {{userMember?.lastname }}
+              </div>
+              <div class="h5 mt-4">
+                Member Since :-   {{userMember?.joined | date}}
+              </div>
+              <div class="h5 mt-4">
+                Membership Expiry Date :-  {{userMember?.expires | date }}
               </div>
               <div class="h5 mt-4">
                 Ticket Details
@@ -47,40 +54,10 @@
               </div>
         </div>
 
-        <div>
-            <table class="table table-hover table-bordered"  >
-                <thead>
-                <tr>
-                    <th scope="col">Items</th>
-                    <th scope="col">Cost</th>
-                    <th scope="col">Quantity</th>
-                    <!-- <th scope="col">Add</th> -->
-                    <th scope="col">Total</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr *ngFor="let item of ticketList">
-                    <th><div class="smallOrangeHeader">{{item.name}}</div>{{item.description}}</th>
-                    <td>$ {{item.price}}</td>
-                    <td>{{ item.quantity}}</td>
-                    <!-- <td> <button class="btn btn-warning" (click)="addToCartobj(item)" >Add to Cart</button></td> -->
-                    <td  >$ {{item.price * item.quantity}}</td>
-                </tr>
-                </tbody>
-                <!-- <thead>
-                    <tr>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col">Total</th>
-                    <th scope="col">$ {{subtotal}}</th> 
-                    </tr>
-                </thead> -->
-            </table>
-        </div>
-
-        <div>
+       
+        <!-- <div>
             {{ ticketList | json }}
-        </div> 
+        </div>  -->
     </div>
 
 </div>
