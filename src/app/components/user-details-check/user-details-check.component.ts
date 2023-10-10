@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MemberService } from 'src/app/shared/member/member.service';
 import 'base64-js';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'app-user-details-check',
@@ -12,7 +13,7 @@ export class UserDetailsCheckComponent implements OnInit {
   userMember:any;
   ticketList:any =[];
 
-  constructor(private ms: MemberService, private route: ActivatedRoute ) {
+  constructor(private ms: MemberService, public auth:AuthService, private route: ActivatedRoute ) {
     console.log(window.location.host);
   //   const emailId = this.route.snapshot.params['id'];
   //  // console.log(emailId);
