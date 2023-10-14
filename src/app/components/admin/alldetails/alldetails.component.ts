@@ -40,6 +40,11 @@ export class AlldetailsComponent implements OnInit {
 
   // KP2023VEG:number = 0;
 
+  DP2023CTFRIDAY:number = 0;
+  DP2023CTSATURDAY:number = 0;
+  DP2023CTSUNDAY:number =0;
+
+
   DP2023EBALL01NON:number = 0;
   DP2023EBALL02VEG:number = 0;
 
@@ -110,11 +115,11 @@ export class AlldetailsComponent implements OnInit {
       this.checkDetails();
     })
 
-    // this.tds.GetTicketsList().subscribe(t => {
-    //   this.concertTickets = t;
-    //   console.log(t);
-    //   this.checkConcertDetails();
-    // })
+    this.tds.GetTicketsList().subscribe(t => {
+      this.concertTickets = t;
+      console.log(t);
+      this.checkConcertDetails();
+    })
 
     // this.foodds.GetTicketsList().subscribe(t => {
     //   this.foodTickets = t;
@@ -216,17 +221,22 @@ export class AlldetailsComponent implements OnInit {
 	];
 
 
-  // checkConcertDetails(){
-  //   [...this.concertTickets].forEach( ct =>{
-  //       console.log(' Each row ');
-  //      console.log(ct.transactions[0].item_list.items[0].quantity        );
-  //      //"SP2023CTSATURDAY"
-  //      if(ct.transactions[0].item_list.items[0].sku == 'SP2023CTSATURDAY'){
-  //       this.SP2023CTSATURDAY = this.SP2023CTSATURDAY + parseInt(ct.transactions[0].item_list.items[0].quantity );
-  //      }
-
-  //    });
-  // }
+  checkConcertDetails(){
+    [...this.concertTickets].forEach( ct =>{
+        console.log(' Each row ', ct.transactions[0].item_list.items[0].quantity);
+       [...ct.transactions[0].item_list.items].forEach(tic =>{
+          if(tic.sku == 'DP2023CTFRIDAY'){
+            this.DP2023CTFRIDAY = this.DP2023CTFRIDAY + parseInt(tic.quantity );
+          }
+          if(tic.sku == 'DP2023CTSATURDAY'){
+            this.DP2023CTSATURDAY = this.DP2023CTSATURDAY + parseInt(tic.quantity );
+          }
+          if(tic.sku == 'DP2023CTSUNDAY'){
+            this.DP2023CTSUNDAY = this.DP2023CTSUNDAY + parseInt(tic.quantity );
+          }
+       });
+     });
+  }
 
 
   // checkKPDetails(){

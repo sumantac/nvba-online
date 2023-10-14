@@ -1,0 +1,31 @@
+[
+    {
+        "name": "NVBA Presents Antara Nandi",
+        "description": "Antara Nandi - Friday October 20, 2023 at 8:30pm",
+        "quantity": 0,
+        "price": 30,
+        "tax": 0,
+        "sku": "DP2023CTFRIDAY",
+        "currency": "USD" 
+      },
+    {
+      "name": "NVBA Presents Aditi Munshi",
+      "description": " Aditi Munshi - Saturday October 21st, 2023 at 8:30pm",
+      "quantity": 0,
+      "price": 30,
+      "tax": 0.00,
+      "sku": "DP2023CTSATURDAY",
+      "currency": "USD"
+    },
+    {
+        "name": "NVBA Presents Soumen Nandi",
+        "description": " Soumen Nandi - Sunday October 22nd, 2023 at 8pm",
+        "quantity": 0,
+        "price": 30,
+        "tax": 0.00,
+        "sku": "DP2023CTSUNDAY",
+        "currency": "USD"
+    }
+    
+      
+]    

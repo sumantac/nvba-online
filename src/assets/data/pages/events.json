@@ -3,7 +3,7 @@
     { 
         "eventId":231,
         "eventType": "coming",
-        "eventName": "Sarbojanin Durga Utsav 2023",
+        "eventName": "Sarbojanin Durgotsob 2023",
         "eventDate": "October 20th, 2023 - October 22nd, 2023",
         "eventEndDate": "October 22nd, 2023",
         "eventImage": "./../../../assets/images/stocks/2023/durga-ascha.jpg",
@@ -125,7 +125,7 @@
     { 
         "eventId":1,
         "eventType": "past",
-        "eventName": "Sarbojanin Durga Utsav 2022",
+        "eventName": "Sarbojanin Durgotsob 2022",
         "eventDate": "September 30th, 2022 - October 2nd, 2022",
         "eventEndDate": "October 2nd, 2022",
         "eventImage": "./../../../assets/images/gallery/common/durga-puja.jpg",
