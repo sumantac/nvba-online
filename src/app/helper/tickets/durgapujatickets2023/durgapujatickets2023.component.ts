@@ -25,7 +25,7 @@ export class Durgapujatickets2023Component implements OnInit, OnChanges, AfterVi
 
 
 
-  private _jsonURLcart = '/assets/data/tickets/durgapuja-2023-earlybird.json';
+  private _jsonURLcart = '/assets/data/tickets/durgapuja-2023-regular.json';
    constructor(private http: HttpClient, private cs: CartService, public router: Router, private cdr: ChangeDetectorRef) {
     this.cs.currentCart.subscribe( cartCheck => this.cartCheck = cartCheck);
     this.getJSON().subscribe((data: any) => {
