@@ -14,7 +14,6 @@
         {{ userMember?.displayName }} -->
 
         <div>
-              type{{auth.member.value?.email}}
               <div class="h5 mt-4">
                 Email:-  <span class="font-weight-light">{{userMember?.email}}</span> 
               </div>
@@ -39,19 +38,18 @@
               
             <div *ngFor="let items of userMember?.purchase " >
                 <table class="table table-hover  mb-2" style="border: 1px solid #ccc;"  >
-                  <tbody>
-                  <tr *ngFor="let item of items ">
-                      <td *ngIf="item.sku.includes('DP2023')" width="50%"><div class="smallOrangeHeader">{{item.name}}</div>{{item.description}}</td>
-                      <td *ngIf="item.sku.includes('DP2023')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
-                      <td *ngIf="item.sku.includes('DP2023')" >$ {{item.price}}</td>
-                      <td *ngIf="item.sku.includes('DP2023')" >{{ item.quantity}}</td>
-                      <!-- <td> <button class="btn btn-warning" (click)="addToCartobj(item)" >Add to Cart</button></td> -->
-                      <td *ngIf="item.sku.includes('DP2023')"  >$ {{item.price * item.quantity}}</td>
-                  </tr>
-                  </tbody>
-              </table>
-  
-              </div>
+                    <tbody>
+                    <tr *ngFor="let item of items ">
+                        <td *ngIf="item.sku.includes('DP2023')" width="50%"><div class="smallOrangeHeader">{{item.name}}</div>{{item.description}}</td>
+                        <td *ngIf="item.sku.includes('DP2023')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                        <td *ngIf="item.sku.includes('DP2023')" >$ {{item.price}}</td>
+                        <td *ngIf="item.sku.includes('DP2023')" >{{ item.quantity}}</td>
+                        <!-- <td> <button class="btn btn-warning" (click)="addToCartobj(item)" >Add to Cart</button></td> -->
+                        <td *ngIf="item.sku.includes('DP2023')"  >$ {{item.price * item.quantity}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
        
