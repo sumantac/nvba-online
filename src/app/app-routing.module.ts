@@ -34,6 +34,7 @@ import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodch
 import { PicnicComponent } from './pages/picnic/picnic.component';
 import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 import { CaresComponent } from './pages/cares/cares.component';
+import { UserDetailsCheckComponent } from './components/user-details-check/user-details-check.component';
 
 
 const routes: Routes = [
@@ -74,6 +75,7 @@ const routes: Routes = [
   { path: 'foodcheckout', component: FoodcheckoutComponent },
   { path: 'picnic', component: PicnicComponent },
   { path: 'cares', component: CaresComponent },
+  { path: 'user-details-check/:id', component: UserDetailsCheckComponent },
 ];
 
 @NgModule({

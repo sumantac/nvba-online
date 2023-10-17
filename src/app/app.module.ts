@@ -70,7 +70,8 @@ import { PicnicComponent } from './pages/picnic/picnic.component';
 import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 import { Durgapujatickets2023Component } from './helper/tickets/durgapujatickets2023/durgapujatickets2023.component';
 import { CaresComponent } from './pages/cares/cares.component';
-
+import { UserDetailsCheckComponent } from './components/user-details-check/user-details-check.component';
+import { QRCodeModule } from 'angularx-qrcode';
 
 @NgModule({
   declarations: [
@@ -117,6 +118,7 @@ import { CaresComponent } from './pages/cares/cares.component';
     EventsguidelinesComponent,
     Durgapujatickets2023Component,
     CaresComponent,
+    UserDetailsCheckComponent,
 
   ],
   imports: [
@@ -142,7 +144,8 @@ import { CaresComponent } from './pages/cares/cares.component';
     ModalModule.forRoot(),
     AccordionModule.forRoot(),
     NgxPayPalModule,
-    AgGridModule
+    AgGridModule,
+    QRCodeModule
   ],
   providers: [GetjsonfileService, AuthService ],
   bootstrap: [AppComponent]
