@@ -31,6 +31,7 @@
 
      <div class="mt-2 mb-3"  >
          <div *ngIf="loadDiv" class="qrcodeImage">
+          Scan QR Code with mobile camera.
             <qrcode
               [qrdata]="siteUrl"
               [allowEmptyString]="true"
@@ -47,8 +48,10 @@
               [scale]="1"
               [title]="'Member details'"
               [width]="300"
+              (qrCodeURL)="onChangeURL($event)"
             ></qrcode>
           </div>  
+          <a [href]="qrCodeDownloadLink" download="qrcode" class=" btn btn-secondary px-3 py-2 mt-2" target="_blank" >Download QR Code</a>
       </div>
 
     </div>

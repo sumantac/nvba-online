@@ -20,12 +20,13 @@ export class ProfileComponent implements OnInit {
   saveBtn: boolean = true;
   newUserCheck: boolean = true;
   newUserId: number = 0;
+  
 
   sitehost = 'https://'+window.location.host +'/user-details-check/';
   siteUrl : any = null;
   public myAngularxQrCode: string = "";
   public qrCodeDownloadLink: SafeUrl = "";
-
+  
   loadDiv:boolean = false;
 
   htmlContent:any = 'hello';
@@ -113,5 +114,10 @@ export class ProfileComponent implements OnInit {
       //  }, err => ////console.log(err))
    
      }
+
+
+onChangeURL(url: SafeUrl) {
+    this.qrCodeDownloadLink = url;
+}   
 
 }
