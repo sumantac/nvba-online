@@ -68,7 +68,7 @@ const routes: Routes = [
   { path: 'admin/alldetails', component:AlldetailsComponent, canActivate:[AuthGuard] },
 
   { path: 'concerttickets', component: ConcertComponent },
-  { path: 'concert', component: ConcertComponent },
+  // { path: 'concert', component: ConcertComponent },
   { path: 'concertcheckout', component: EventscheckoutComponent },
   // { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },kobipronam
   { path: 'kobipronam', component: KobipronamComponent },
