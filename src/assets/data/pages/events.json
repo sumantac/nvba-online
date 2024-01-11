@@ -1,8 +1,21 @@
 [
+    { 
+        "eventId":4,
+        "eventType": "coming",
+        "eventName": "Saraswati Puja",
+        "eventDate": "January 10th, 2024 - Saturday",
+        "eventEndDate": "January 10th, 2024 - Saturday",
+        "eventImage": "./../../../assets/images/stocks/saraswati-2021.jpg",
+        "timming": "11 am - 10 pm",
+        "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
+        "pageLink": "/saraswatipuja",
+        "description": "Saraswati Puja",
+        "mapUrl": "https://goo.gl/maps/iUQvcV6htit6HW3e8"
+    },
    
     { 
         "eventId":231,
-        "eventType": "coming",
+        "eventType": "past",
         "eventName": "Sarbojanin Durgotsob 2023",
         "eventDate": "October 20th, 2023 - October 22nd, 2023",
         "eventEndDate": "October 22nd, 2023",
