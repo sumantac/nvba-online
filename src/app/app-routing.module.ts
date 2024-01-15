@@ -37,7 +37,7 @@ import { CaresComponent } from './pages/cares/cares.component';
 
 
 const routes: Routes = [
-  { path: "", component: DurgapujaComponent, pathMatch: 'full' }, 
+  { path: "", component: HomeComponent, pathMatch: 'full' }, 
   { path: "home", component: HomeComponent, pathMatch: 'full'  },
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
   { path: "history", component: HistoryComponent, pathMatch: 'full'  },
