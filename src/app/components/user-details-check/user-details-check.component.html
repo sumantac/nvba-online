@@ -1,0 +1,63 @@
+<div class="wrapper"  >
+    <div class="container p-3 pt-5" >
+        <div class="row no-gutters  align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }" style="filter: grayscale(100%) opacity(200%)" >
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> / <span>User Details Check</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">User Details Check</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-1" >
+
+        <!-- {{ userMember?.email }} <br />
+        {{ userMember?.displayName }} -->
+
+        <div>
+              
+              <div class="h5 mt-4">
+                Email:-  <span class="font-weight-light">{{userMember?.email}}</span> 
+              </div>
+              <div class="h5 mt-4">
+                Member Display Name :-   <span class="font-weight-light">{{userMember?.displayName}}</span>
+              </div>
+              <div class="h5 mt-4">
+                Member First Name :-   {{userMember?.firstname }}
+              </div>
+              <div class="h5 mt-4">
+                Member Last Name :-   {{userMember?.lastname }}
+              </div>
+              <div class="h5 mt-4">
+                Member Since :-   {{userMember?.joined | date}}
+              </div>
+              <div class="h5 mt-4">
+                Membership Expiry Date :-  {{userMember?.expires | date }}
+              </div>
+              <div class="h5 mt-4">
+                Ticket Details
+              </div>
+              
+            <div *ngFor="let items of userMember?.purchase " >
+                <table class="table table-hover  mb-2" style="border: 1px solid #ccc;"  >
+                  <tbody>
+                  <tr *ngFor="let item of items ">
+                      <td *ngIf="item.sku.includes('DP2023')" width="50%"><div class="smallOrangeHeader">{{item.name}}</div>{{item.description}}</td>
+                      <td *ngIf="item.sku.includes('DP2023')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                      <td *ngIf="item.sku.includes('DP2023')" >$ {{item.price}}</td>
+                      <td *ngIf="item.sku.includes('DP2023')" >{{ item.quantity}}</td>
+                      <!-- <td> <button class="btn btn-warning" (click)="addToCartobj(item)" >Add to Cart</button></td> -->
+                      <td *ngIf="item.sku.includes('DP2023')"  >$ {{item.price * item.quantity}}</td>
+                  </tr>
+                  </tbody>
+              </table>
+  
+              </div>
+        </div>
+
+       
+        <!-- <div>
+            {{ ticketList | json }}
+        </div>  -->
+    </div>
+
+</div>

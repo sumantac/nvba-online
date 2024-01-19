@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MemberService } from './../../../shared/member/member.service';
 import { AuthService } from './../../../shared/services/auth.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { SafeUrl } from '@angular/platform-browser';
+import 'base64-js';
 
 @Component({
   selector: 'app-profile',
@@ -20,8 +22,19 @@ export class ProfileComponent implements OnInit {
   newUserId: number = 0;
   
 
+  sitehost = 'https://'+window.location.host +'/user-details-check/';
+  siteUrl : any = null;
+  public myAngularxQrCode: string = "";
+  public qrCodeDownloadLink: SafeUrl = "";
+  
+  loadDiv:boolean = false;
+
+  htmlContent:any = 'hello';
+  
+
   constructor( public ms:MemberService, public as:AuthService,private fb: FormBuilder, ) { 
-    
+  
+
 
     this.profileForm = new FormGroup({
       firstname: new FormControl(),
@@ -35,17 +48,24 @@ export class ProfileComponent implements OnInit {
       zipcode: new FormControl
    });
 
+   this.as.cast.subscribe( m => {
+    this.member = m;
+     console.log('this.member',this.member);
+  // console.log(this.member);
+    this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
+    let encoded: string = btoa(this.member!.email);
+  //  console.log(encoded);
+    this.siteUrl = this.sitehost + encoded;
+  //  console.log('this.siteUrl', this.siteUrl);
+    setTimeout(() => {
+      this.loadDiv = true;
+    }, 10);
+  });
+
    }
 
-  ngOnInit(): void {
-    
-    this.as.cast.subscribe( m => {
-      this.member = m;
-    //   console.log('this.member');
-    // console.log(this.member);
-      this.createForm(this.member?.id, this.member?.firstname, this.member?.lastname,this.member?.photoURL, this.member?.address1, this.member?.address2, this.member?.city, this.member?.state, this.member?.country, this.member?.zipcode );
-    });
-  }
+  ngOnInit(): void {}
+
 
   createForm(id: any, firstname: any, lastname: any, photoURL: any, address1: any, address2: any, city: any, state: any, country: any, zipcode: any) {
 
@@ -94,5 +114,10 @@ export class ProfileComponent implements OnInit {
       //  }, err => ////console.log(err))
    
      }
+
+
+onChangeURL(url: SafeUrl) {
+    this.qrCodeDownloadLink = url;
+}   
 
 }
