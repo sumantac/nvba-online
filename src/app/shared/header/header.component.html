@@ -32,6 +32,9 @@
                <span class=" text-primary " > Login</span>
               </a>
                 <ul class="dropmenu-content "  [ngClass]="auth.member.value?.email ? '':'hide' " >
+                  <li  >
+                    <a routerLink="/proposedconstitution" (click)="toggle()" > Proposed Constitution</a>
+                  </li>
                   <li (click)="signout()" >
                     <a  > Logout </a>
                   </li>

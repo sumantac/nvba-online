@@ -70,6 +70,7 @@ import { PicnicComponent } from './pages/picnic/picnic.component';
 import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 import { Durgapujatickets2023Component } from './helper/tickets/durgapujatickets2023/durgapujatickets2023.component';
 import { CaresComponent } from './pages/cares/cares.component';
+import { ProposedconstitutionComponent } from './pages/archive/proposedconstitution/proposedconstitution.component';
 
 
 @NgModule({
@@ -117,6 +118,7 @@ import { CaresComponent } from './pages/cares/cares.component';
     EventsguidelinesComponent,
     Durgapujatickets2023Component,
     CaresComponent,
+    ProposedconstitutionComponent,
 
   ],
   imports: [
