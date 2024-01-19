@@ -1,21 +1,21 @@
 <div class="row wrapper"   >
     
     <div *ngIf="!memberValidity" class="col-md-12 pt-3 " id="cartmember"  >
-        <p class=" text-center " style="color: #848484;">
+        <!-- <p class=" text-center " style="color: #848484;">
 
             Durga Puja 2023 tickets are exclusively available for members.<br />
              If you are already a member, kindly log in to make your ticket purchase.  
 
-        </p>
+        </p> -->
         <div style="font-weight: bold; font-size: 1.1em;color: #848484; text-align: center;" ><b>Membership fees: $30 per family.</b> </div>
            
-        <!-- <p class=" text-center ">
+        <p class=" text-center ">
 
-            We suspend our purchase tickets online as well as at Venue. Due to overwhelming response of our Members and Guests. 
-            Only online pre purchase ticket owners are allow at Venue. <br />
+            We suspend our purchase tickets online. Due to overwhelming response of our Members and Guests. 
+            <br />
             Sorry for the inconvenience.
 
-        </p> -->
+        </p>
 
         <div  class="redExpired" *ngIf="this.member?.expires"  > Membership Expired : {{ this.member?.expires }}</div>
 
@@ -57,7 +57,7 @@
             <!-- <button class="btn-get-userpage text-center "   routerLink="/ordertickets" >Register for Durga Puja 2021 Darshan & Buy Kavita Krishnamurti Concert Tickets</button> -->
             
 
-            <app-durgapujatickets2023></app-durgapujatickets2023>
+            <!-- <app-durgapujatickets2023></app-durgapujatickets2023> -->
         </div>
 
     </div>

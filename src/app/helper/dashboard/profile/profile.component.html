@@ -60,6 +60,33 @@ EC & Steering Committee
            
        
      </style>
+
+     <div class="mt-2 mb-3"  >
+      <p class="green" > Bring QR Code as image or screenshot for fast tickets collection process.<br /></p>
+         <div *ngIf="loadDiv" class="qrcodeImage">
+          Scan QR Code with mobile camera.
+            <qrcode
+              [qrdata]="siteUrl"
+              [allowEmptyString]="true"
+              [ariaLabel]="'Member details'"
+              [cssClass]="'center'"
+              [colorDark]="'#000000'"
+              [colorLight]="'#ffffffff'"
+              [elementType]="'canvas'"
+              [errorCorrectionLevel]="'M'"
+              [imageSrc]="'./../../../assets/images/logo/logo.png'"
+              [imageHeight]="24"
+              [imageWidth]="115"
+              [margin]="4"
+              [scale]="1"
+              [title]="'Member details'"
+              [width]="300"
+              (qrCodeURL)="onChangeURL($event)"
+            ></qrcode>
+          </div>  
+          <a [href]="qrCodeDownloadLink" download="qrcode" class=" btn btn-secondary px-3 py-2 mt-2" target="_blank" >Download QR Code</a>
+      </div>
+
     </div>
     
   </div>

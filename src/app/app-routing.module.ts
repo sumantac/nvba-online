@@ -34,7 +34,10 @@ import { FoodcheckoutComponent } from './components/foodcart/foodcheckout/foodch
 import { PicnicComponent } from './pages/picnic/picnic.component';
 import { EventsguidelinesComponent } from './pages/aboutus/eventsguidelines/eventsguidelines.component';
 import { CaresComponent } from './pages/cares/cares.component';
+
 import { ProposedconstitutionComponent } from './pages/archive/proposedconstitution/proposedconstitution.component';
+import { UserDetailsCheckComponent } from './components/user-details-check/user-details-check.component';
+
 
 
 const routes: Routes = [
@@ -67,16 +70,18 @@ const routes: Routes = [
   { path: 'admin/reports', component:ReportsComponent, canActivate:[AuthGuard] },
   { path: 'admin/alldetails', component:AlldetailsComponent, canActivate:[AuthGuard] },
 
-  { path: 'concerttickets', component: ConcertComponent },
-  { path: 'concert', component: ConcertComponent },
+  // { path: 'concerttickets', component: ConcertComponent },
+  // { path: 'concert', component: ConcertComponent },
   { path: 'concertcheckout', component: EventscheckoutComponent },
   // { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },kobipronam
   { path: 'kobipronam', component: KobipronamComponent },
   { path: 'foodcheckout', component: FoodcheckoutComponent },
   { path: 'picnic', component: PicnicComponent },
   { path: 'cares', component: CaresComponent },
-
+  
   { path: 'proposedconstitution', component:ProposedconstitutionComponent, canActivate:[AuthGuard] },
+  { path: 'user-details-check/:id', component: UserDetailsCheckComponent },
+
 ];
 
 @NgModule({
