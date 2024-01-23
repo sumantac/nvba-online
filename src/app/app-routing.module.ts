@@ -41,7 +41,7 @@ import { UserDetailsCheckComponent } from './components/user-details-check/user-
 
 
 const routes: Routes = [
-  { path: "", component: HomeComponent, pathMatch: 'full' }, 
+  { path: "", component: SaraswatiComponent, pathMatch: 'full' }, 
   { path: "home", component: HomeComponent, pathMatch: 'full'  },
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
   { path: "history", component: HistoryComponent, pathMatch: 'full'  },
