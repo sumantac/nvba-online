@@ -40,6 +40,14 @@
             <div *ngFor="let items of userMember?.purchase " >
                 <table class="table table-hover  mb-2" style="border: 1px solid #ccc;"  >
                   <tbody>
+                    <tr *ngFor="let item of items ">
+                      <td *ngIf="item.sku.includes('SP2024')" width="50%"><div class="smallOrangeHeader">{{item.name}}</div>{{item.description}}</td>
+                      <td *ngIf="item.sku.includes('SP2024')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                      <td *ngIf="item.sku.includes('SP2024')" >$ {{item.price}}</td>
+                      <td *ngIf="item.sku.includes('SP2024')" >{{ item.quantity}}</td>
+                      <!-- <td> <button class="btn btn-warning" (click)="addToCartobj(item)" >Add to Cart</button></td> -->
+                      <td *ngIf="item.sku.includes('SP2024')"  >$ {{item.price * item.quantity}}</td>
+                  </tr>  
                   <tr *ngFor="let item of items ">
                       <td *ngIf="item.sku.includes('DP2023')" width="50%"><div class="smallOrangeHeader">{{item.name}}</div>{{item.description}}</td>
                       <td *ngIf="item.sku.includes('DP2023')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
