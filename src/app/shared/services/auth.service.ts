@@ -84,16 +84,16 @@ export class AuthService  {
         this.router.navigate(['verify-email-address']);
       });
   }
-  // Reset Forggot password
+  // Reset forgot password
   ForgotPassword(passwordResetEmail: string) {
     return this.afAuth
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {
-        this.toastr.success('Password reset email sent, check your inbox.','Reset Forggot Password');
+        this.toastr.success('Password reset email sent, check your inbox.','Reset forgot Password');
         console.log('Password reset email sent, check your inbox.');
       })
       .catch((error) => {
-        this.toastr.error(error,'Reset Forggot Password');
+        this.toastr.error(error,'Reset forgot Password');
         console.log(error);
       });
   }
