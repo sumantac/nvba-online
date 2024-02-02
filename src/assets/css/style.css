@@ -4786,9 +4786,9 @@ button.close {
 
 .carousel-fade .carousel-item {
   opacity: 0;
-  -webkit-transition-duration: .6s;
-  -o-transition-duration: .6s;
-  transition-duration: .6s;
+  -webkit-transition-duration: 1000;
+  -o-transition-duration: 1000;
+  transition-duration: 1000;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity; }
