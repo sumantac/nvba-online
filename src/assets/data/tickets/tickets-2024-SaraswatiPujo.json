@@ -1,36 +1,36 @@
 [
       {
         "name": "NVBA Saraswati Puja 2024 Ticket Adults Non-Veg",
-        "description": "Early Bird - Adults -  Non-Veg",
+        "description": "Regular - Adults -  Non-Veg",
         "quantity": 0,
-        "price": 40,
+        "price": 45,
         "tax": 0,
         "sku": "SP2024AEBNON",
         "currency": "USD" 
       },
       {
         "name": "NVBA Saraswati Puja 2024 Ticket Adults Veg",
-        "description": "Early Bird - Adults -  Veg",
+        "description": "Regular - Adults -  Veg",
         "quantity": 0,
-        "price": 40,
+        "price": 45,
         "tax": 0,
         "sku": "SP2024AEBVEG",
         "currency": "USD" 
       },
       {
         "name": "NVBA Saraswati Puja 2024 Ticket Subsidized Non-Veg",
-        "description": "Early Bird - Kids [ 11 to 18 years ] / Visiting Parents / Students for Non-Veg",
+        "description": "Regular - Kids [ 11 to 18 years ] / Visiting Parents / Students for Non-Veg",
         "quantity": 0,
-        "price": 30,
+        "price": 35,
         "tax": 0,
         "sku": "SP2024STUDENTEBNON",
         "currency": "USD"
       },
       {
         "name": "NVBA Saraswati Puja 2024 Ticket Subsidized Veg",
-        "description": "Early Bird - Kids [ 11 to 18 years ] / Visiting Parents / Students for Veg",
+        "description": "Regular - Kids [ 11 to 18 years ] / Visiting Parents / Students for Veg",
         "quantity": 0,
-        "price": 30,
+        "price": 35,
         "tax": 0,
         "sku": "SP2024STUDENTEBVEG",
         "currency": "USD"
