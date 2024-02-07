@@ -12,12 +12,157 @@
 
     <div class="container" >
 
-        <h3 class="text-center mt-3 mb-2 " >Tickets Details of 2023</h3>
+        <h3 class="text-center mt-3 mb-2 " >Tickets Details of 2024</h3>
 
         <!-- <p>Total Membership of 2022 =>  {{MM2022YY}}</p>  -->
         <!-- {{rowData}} -->
         <div>
+
             <table class="table table-bordered " >
+                <tr>
+                      <th>Total Annual Membership - 2024</th>
+                      <th>{{MM2024YY}}</th>
+                      
+                </tr>  
+                <tr>
+                  <th></th>
+                  <th class="d-flex justify-content-around " >Saturday, 10th Feb, 2024</th>
+                </tr>
+                <tr>
+                  <th>Adult</th>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBALL01NON}}</div>
+                          <div class="green">{{DP2023EBALL02VEG}}</div>
+                     </div> 
+                  </td>
+                  <!-- <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBFRI01NON}}</div>
+                          <div class="green">{{DP2023EBFRI02VEG}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSAT01NON}}</div>
+                          <div class="green">{{DP2023EBSAT02VEG}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSUN01NON}}</div>
+                          <div class="green">{{DP2023EBSUN02VEG}}</div>
+                      </div>
+                  </td> -->
+                </tr>
+                <tr>
+                  <th>Kids [ 11 to 18 years ]</th>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBALL03NON}}</div>
+                          <div class="green">{{DP2023EBALL04VEG}}</div>
+                      </div>
+                  </td>
+                  <!-- <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBFRI03NON}}</div>
+                          <div class="green">{{DP2023EBFRI04VEG}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSAT03NON}}</div>
+                          <div class="green">{{DP2023EBSAT04VEG}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSUN03NON}}</div>
+                          <div class="green">{{DP2023EBSUN04VEG}}</div>
+                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Kids [ 0 to 10 years ]</th>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBALL05KID}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBFRI05KID}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSAT05KID}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSUN05KID}}</div>
+                      </div>
+                  </td> -->
+                </tr>
+                <tr>
+                  <th>Students and Visiting Parents </th>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBALL06NON}}</div>
+                          <div class="green">{{DP2023EBALL07VEG}}</div>
+                      </div>
+                  </td>
+                  <!-- <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBFRI06NON}}</div>
+                          <div class="green">{{DP2023EBFRI07VEG}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSAT06NON}}</div>
+                          <div class="green">{{DP2023EBSAT07VEG}}</div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSUN06NON}}</div>
+                          <div class="green">{{DP2023EBSUN07VEG}}</div>
+                      </div>
+                  </td> -->
+                </tr>
+                <tr class=" bg-light " >
+                  <th>Total</th>
+                    <th>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBALL01NON + DP2023EBALL03NON + DP2023EBALL06NON +DP2023EBALL05KID }}</div>
+                          <div class="green">{{DP2023EBALL02VEG + DP2023EBALL04VEG + DP2023EBALL07VEG}}</div>
+                      </div>
+                    </th>
+                    <!-- <th>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBFRI01NON + DP2023EBFRI03NON + DP2023EBFRI05KID + DP2023EBFRI06NON }}</div>
+                          <div class="green">{{DP2023EBFRI02VEG + DP2023EBFRI04VEG + DP2023EBFRI07VEG}}</div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSAT01NON + DP2023EBSAT03NON + DP2023EBSAT05KID + DP2023EBSAT06NON }}</div>
+                          <div class="green">{{DP2023EBSAT02VEG + DP2023EBSAT04VEG + DP2023EBSAT07VEG}}</div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{DP2023EBSUN01NON + DP2023EBSUN03NON + DP2023EBSUN05KID + DP2023EBSUN06NON }}</div>
+                          <div class="green">{{DP2023EBSUN02VEG + DP2023EBSUN04VEG + DP2023EBSUN07VEG}}</div>
+                      </div>
+                    </th> -->
+                </tr>
+              </table>
+
+
+            <!-- <table class="table table-bordered " >
               <tr>
                     <th>Total Annual Membership </th>
                     <th>{{MM2023YY}}</th>
@@ -172,7 +317,7 @@
                 <th>{{DP2023CTSATURDAY}}</th>
                 <th>{{DP2023CTSUNDAY}}</th>
               </tr>
-            </table>
+            </table> -->
           </div>
         
         

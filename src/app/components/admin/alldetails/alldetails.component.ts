@@ -25,14 +25,15 @@ export class AlldetailsComponent implements OnInit {
 
   MM2022YY: number = 0;
   MM2023YY: number = 0;
+  MM2024YY: number = 0;
 
-  // SP2023AEBNON:number = 0;
-  // SP2023AEBVEG:number = 0;
+  SP2024AEBNON:number = 0;
+  SP2024AEBVEG:number = 0;
 
-  // SP2023STUDENTEBNON:number =0;
-  // SP2023STUDENTEBVEG:number =0;
+  SP2024STUDENTEBNON:number =0;
+  SP2024STUDENTEBVEG:number =0;
 
-  // SP2023KIDS:number =0;
+  SP2024KIDS:number =0;
 
   // SP2023CTSATURDAY:number =0;
 
@@ -290,6 +291,7 @@ export class AlldetailsComponent implements OnInit {
     
     this.MM2022YY = 0;
     this.MM2023YY = 0;
+    this.MM2024YY = 0;
 
     this.DP2023EBALL01NON= 0;
     this.DP2023EBALL02VEG= 0;
@@ -303,7 +305,7 @@ export class AlldetailsComponent implements OnInit {
     this.DP2023EBALL07VEG= 0;
 
     this.DP2023EBFRI01NON= 0;
-    this. DP2023EBFRI02VEG= 0;
+    this.DP2023EBFRI02VEG= 0;
 
     this.DP2023EBFRI03NON= 0;
     this.DP2023EBFRI04VEG= 0;
@@ -337,6 +339,14 @@ export class AlldetailsComponent implements OnInit {
 
     this.customAdult = 0;
     this.customKid = 0;
+
+    this.SP2024AEBNON = 0;
+    this.SP2024AEBVEG = 0;
+  
+    this.SP2024STUDENTEBNON =0;
+    this.SP2024STUDENTEBVEG =0;
+  
+    this.SP2024KIDS=0;
   
     
 
@@ -355,41 +365,41 @@ export class AlldetailsComponent implements OnInit {
       //     console.log(element.sku);
           [...element].forEach(e => {
 
-                if(e.sku.includes("MM2023YY")){
-                    this.MM2023YY += e.quantity ;
-                    Object.assign(userTicket,{ MM2023YY : e.quantity });
+                if(e.sku.includes("MM2024YY")){
+                    this.MM2024YY += e.quantity ;
+                    Object.assign(userTicket,{ MM2024YY : e.quantity });
                     this.newPurches = true;
                 }
 
-                // if(e.sku.includes("SP2023AEBNON")){
-                //   this.SP2023AEBNON += e.quantity ;
-                //   Object.assign(userTicket,{ SP2023AEBNON : e.quantity });
-                //   this.newPurches = true;
-                // }
+                if(e.sku.includes("SP2024AEBNON")){
+                  this.SP2024AEBNON += e.quantity ;
+                  Object.assign(userTicket,{ SP2024AEBNON : e.quantity });
+                  this.newPurches = true;
+                }
 
-                // if(e.sku.includes("SP2023AEBVEG")){
-                //   this.SP2023AEBVEG += e.quantity ;
-                //   Object.assign(userTicket,{ SP2023AEBVEG : e.quantity });
-                //   this.newPurches = true;
-                // }
+                if(e.sku.includes("SP2024AEBVEG")){
+                  this.SP2024AEBVEG += e.quantity ;
+                  Object.assign(userTicket,{ SP2024AEBVEG : e.quantity });
+                  this.newPurches = true;
+                }
 
-                // if(e.sku.includes("SP2023STUDENTEBNON")){
-                //   this.SP2023STUDENTEBNON += e.quantity ;
-                //   Object.assign(userTicket,{ SP2023STUDENTEBNON : e.quantity });
-                //   this.newPurches = true;
-                // }
+                if(e.sku.includes("SP2024STUDENTEBNON")){
+                  this.SP2024STUDENTEBNON += e.quantity ;
+                  Object.assign(userTicket,{ SP2024STUDENTEBNON : e.quantity });
+                  this.newPurches = true;
+                }
 
-                // if(e.sku.includes("SP2023STUDENTEBVEG")){
-                //   this.SP2023STUDENTEBVEG += e.quantity ;
-                //   Object.assign(userTicket,{ SP2023STUDENTEBVEG : e.quantity });
-                //   this.newPurches = true;
-                // }
+                if(e.sku.includes("SP2024STUDENTEBVEG")){
+                  this.SP2024STUDENTEBVEG += e.quantity ;
+                  Object.assign(userTicket,{ SP2024STUDENTEBVEG : e.quantity });
+                  this.newPurches = true;
+                }
 
-                // if(e.sku.includes("SP2023KIDS")){
-                //   this.SP2023KIDS += e.quantity ;
-                //   Object.assign(userTicket,{ SP2023KIDS : e.quantity });
-                //   this.newPurches = true;
-                // }
+                if(e.sku.includes("SP2024KIDS")){
+                  this.SP2024KIDS += e.quantity ;
+                  Object.assign(userTicket,{ SP2024KIDS : e.quantity });
+                  this.newPurches = true;
+                }
 
                 // if(e.sku.includes("SP2023CTSATURDAY")){  
                 //   this.SP2023CTSATURDAY += e.quantity ;
@@ -413,153 +423,154 @@ export class AlldetailsComponent implements OnInit {
                 //     Object.assign(userTicket,{ MM2022YY : e.quantity });
                 //     this.newPurches = true;
                 // }
-                if(e.sku.includes('DP2023EBALL01NON')){
-                    this.DP2023EBALL01NON += e.quantity ;
-                    Object.assign(userTicket,{ DP2023EBALL01NON : e.quantity });
-                    this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBALL02VEG')){
-                    this.DP2023EBALL02VEG += e.quantity ;
-                    Object.assign(userTicket,{ DP2023EBALL02VEG : e.quantity });
-                    this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBALL03NON')){
-                    this.DP2023EBALL03NON += e.quantity ;
-                    Object.assign(userTicket,{ DP2023EBALL03NON : e.quantity });
-                    this.newPurches = true;
-                }
 
-                if(e.sku.includes('DP2023EBALL04VEG')){
-                  this.DP2023EBALL04VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBALL04VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBALL05KID')){
-                  this.DP2023EBALL05KID += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBALL05KID : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBALL06NON')){
-                  this.DP2023EBALL06NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBALL06NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBALL07VEG')){
-                  this.DP2023EBALL07VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBALL07VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                //Friday
-                if(e.sku.includes('DP2023EBFRI01NON')){
-                  this.DP2023EBFRI01NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBFRI01NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBFRI02VEG')){
-                  this.DP2023EBFRI02VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBFRI02VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBFRI03NON')){
-                  this.DP2023EBFRI03NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBFRI03NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBFRI04VEG')){
-                  this.DP2023EBFRI04VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBFRI04VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBFRI05KID')){
-                  this.DP2023EBFRI05KID += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBFRI05KID : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBFRI06NON')){
-                  this.DP2023EBFRI06NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBFRI06NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBFRI07VEG')){
-                  this.DP2023EBFRI07VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBFRI07VEG : e.quantity });
-                  this.newPurches = true;
-                }
+                // if(e.sku.includes('DP2023EBALL01NON')){
+                //     this.DP2023EBALL01NON += e.quantity ;
+                //     Object.assign(userTicket,{ DP2023EBALL01NON : e.quantity });
+                //     this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBALL02VEG')){
+                //     this.DP2023EBALL02VEG += e.quantity ;
+                //     Object.assign(userTicket,{ DP2023EBALL02VEG : e.quantity });
+                //     this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBALL03NON')){
+                //     this.DP2023EBALL03NON += e.quantity ;
+                //     Object.assign(userTicket,{ DP2023EBALL03NON : e.quantity });
+                //     this.newPurches = true;
+                // }
 
-                //Satuerday
-                if(e.sku.includes('DP2023EBSAT01NON')){
-                  this.DP2023EBSAT01NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSAT01NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSAT02VEG')){
-                  this.DP2023EBSAT02VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSAT02VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSAT03NON')){
-                  this.DP2023EBSAT03NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSAT03NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSAT04VEG')){
-                  this.DP2023EBSAT04VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSAT04VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSAT05KID')){
-                  this.DP2023EBSAT05KID += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSAT05KID : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSAT06NON')){
-                  this.DP2023EBSAT06NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSAT06NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSAT07VEG')){
-                  this.DP2023EBSAT07VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSAT07VEG : e.quantity });
-                  this.newPurches = true;
-                }
+                // if(e.sku.includes('DP2023EBALL04VEG')){
+                //   this.DP2023EBALL04VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBALL04VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBALL05KID')){
+                //   this.DP2023EBALL05KID += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBALL05KID : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBALL06NON')){
+                //   this.DP2023EBALL06NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBALL06NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBALL07VEG')){
+                //   this.DP2023EBALL07VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBALL07VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // //Friday
+                // if(e.sku.includes('DP2023EBFRI01NON')){
+                //   this.DP2023EBFRI01NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBFRI01NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBFRI02VEG')){
+                //   this.DP2023EBFRI02VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBFRI02VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBFRI03NON')){
+                //   this.DP2023EBFRI03NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBFRI03NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBFRI04VEG')){
+                //   this.DP2023EBFRI04VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBFRI04VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBFRI05KID')){
+                //   this.DP2023EBFRI05KID += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBFRI05KID : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBFRI06NON')){
+                //   this.DP2023EBFRI06NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBFRI06NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBFRI07VEG')){
+                //   this.DP2023EBFRI07VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBFRI07VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
 
-                //Sunday
-                if(e.sku.includes('DP2023EBSUN01NON')){
-                  this.DP2023EBSUN01NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSUN01NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSUN02VEG')){
-                  this.DP2023EBSUN02VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSUN02VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSUN03NON')){
-                  this.DP2023EBSUN03NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSUN03NON : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSUN04VEG')){
-                  this.DP2023EBSUN04VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSUN04VEG : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSUN05KID')){
-                  this.DP2023EBSUN05KID += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSUN05KID : e.quantity });
-                  this.newPurches = true;
-                }
-                if(e.sku.includes('DP2023EBSUN06NON')){
-                  this.DP2023EBSUN06NON += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSUN06NON : e.quantity });
-                  this.newPurches = true;
-                }
+                // //Satuerday
+                // if(e.sku.includes('DP2023EBSAT01NON')){
+                //   this.DP2023EBSAT01NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSAT01NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSAT02VEG')){
+                //   this.DP2023EBSAT02VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSAT02VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSAT03NON')){
+                //   this.DP2023EBSAT03NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSAT03NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSAT04VEG')){
+                //   this.DP2023EBSAT04VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSAT04VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSAT05KID')){
+                //   this.DP2023EBSAT05KID += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSAT05KID : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSAT06NON')){
+                //   this.DP2023EBSAT06NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSAT06NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSAT07VEG')){
+                //   this.DP2023EBSAT07VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSAT07VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
 
-                if(e.sku.includes('DP2023EBSUN07VEG')){  
-                  this.DP2023EBSUN07VEG += e.quantity ;
-                  Object.assign(userTicket,{ DP2023EBSUN07VEG : e.quantity });
-                  this.newPurches = true;
-                }
+                // //Sunday
+                // if(e.sku.includes('DP2023EBSUN01NON')){
+                //   this.DP2023EBSUN01NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSUN01NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSUN02VEG')){
+                //   this.DP2023EBSUN02VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSUN02VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSUN03NON')){
+                //   this.DP2023EBSUN03NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSUN03NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSUN04VEG')){
+                //   this.DP2023EBSUN04VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSUN04VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSUN05KID')){
+                //   this.DP2023EBSUN05KID += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSUN05KID : e.quantity });
+                //   this.newPurches = true;
+                // }
+                // if(e.sku.includes('DP2023EBSUN06NON')){
+                //   this.DP2023EBSUN06NON += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSUN06NON : e.quantity });
+                //   this.newPurches = true;
+                // }
+
+                // if(e.sku.includes('DP2023EBSUN07VEG')){  
+                //   this.DP2023EBSUN07VEG += e.quantity ;
+                //   Object.assign(userTicket,{ DP2023EBSUN07VEG : e.quantity });
+                //   this.newPurches = true;
+                // }
                 
                 
           }); // End of Purchase Loop e
