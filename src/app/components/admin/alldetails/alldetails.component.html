@@ -12,12 +12,71 @@
 
     <div class="container" >
 
-        <h3 class="text-center mt-3 mb-2 " >Tickets Details of 2023</h3>
+        <h3 class="text-center mt-3 mb-2 " >Tickets Details of 2024</h3>
 
         <!-- <p>Total Membership of 2022 =>  {{MM2022YY}}</p>  -->
         <!-- {{rowData}} -->
         <div>
+
             <table class="table table-bordered " >
+                <!-- <tr>
+                      <th>Total Annual Membership - 2024</th>
+                      <th>{{MM2024YY}}</th>
+                      
+                </tr>   -->
+                <tr>
+                  <th></th>
+                  <th class="d-flex justify-content-around " >Saturday, 10th Feb, 2024</th>
+                </tr>
+                <tr>
+                  <th>Adult</th>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{SP2024AEBNON}}</div>
+                          <div class="green">{{SP2024AEBVEG}}</div>
+                     </div> 
+                  </td>
+                </tr>
+                <tr>
+                  <th>Kids [ 11 to 18 years ] / Visiting Parents / Students for Non-Veg</th>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{SP2024STUDENTEBNON}}</div>
+                          <div class="green">{{SP2024STUDENTEBVEG}}</div>
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th>Kids age group [ 0 - 10 years ] are free </th>
+                  <td>
+                      <div class="d-flex justify-content-around ">
+                          <div >{{SP2024KIDS}}</div>
+                          <!-- <div class="green">{{DP2023EBALL07VEG}}</div> -->
+                      </div>
+                  </td>
+                </tr>
+                <tr class=" bg-light " >
+                  <th>Total ( without kids count)</th>
+                    <th>
+                      <div class="d-flex justify-content-around ">
+                          <div class="red" >{{SP2024AEBNON + SP2024STUDENTEBNON }}</div>
+                          <div class="green">{{SP2024AEBVEG + SP2024STUDENTEBVEG }}</div>
+                      </div>
+                    </th>
+                </tr>
+                <tr class=" bg-light " >
+                    <th>Total Head Count</th>
+                      <th>
+                        <div class="d-flex justify-content-around ">
+                            <div  >{{SP2024AEBNON + SP2024STUDENTEBNON + SP2024AEBVEG + SP2024STUDENTEBVEG + SP2024KIDS}}</div>
+                        </div>
+                      </th>
+                  </tr>
+              </table>
+
+
+            <!-- <table class="table table-bordered " >
               <tr>
                     <th>Total Annual Membership </th>
                     <th>{{MM2023YY}}</th>
@@ -172,7 +231,7 @@
                 <th>{{DP2023CTSATURDAY}}</th>
                 <th>{{DP2023CTSUNDAY}}</th>
               </tr>
-            </table>
+            </table> -->
           </div>
         
         
