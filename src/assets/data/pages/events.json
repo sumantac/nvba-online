@@ -1,5 +1,18 @@
 [
     { 
+        "eventId":11,
+        "eventType": "coming",
+        "eventName": "Poila Boisakh",
+        "eventDate": "April 13th, 2024",
+        "eventEndDate": "April 13th, 2024",
+        "eventImage": "./../../../assets/images/gallery/common/newyear-2024.png",
+        "timming": "April 13th - 10 am to 5pm",
+        "venue": "Washington Kali Temple",
+        "pageLink": "/home",
+        "description": "Come join us to celebrate our new year. Entry: FREE ",
+        "mapUrl": "https://goo.gl/maps/oK7kDeWN1RjXAZQRA"
+    },
+    { 
         "eventId":4,
         "eventType": "past",
         "eventName": "Saraswati Puja",
