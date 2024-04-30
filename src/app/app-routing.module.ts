@@ -37,6 +37,7 @@ import { CaresComponent } from './pages/cares/cares.component';
 
 import { ProposedconstitutionComponent } from './pages/archive/proposedconstitution/proposedconstitution.component';
 import { UserDetailsCheckComponent } from './components/user-details-check/user-details-check.component';
+import { Pastteam2023to24Component } from './pages/archive/pastteam2023to24/pastteam2023to24.component';
 
 
 
@@ -53,6 +54,7 @@ const routes: Routes = [
   { path: "gallery", component: GalleryComponent, pathMatch: 'full'  },
   { path: "magazines", component: MagazinesComponent, pathMatch: 'full'  },
   { path: "pastteam", component: PastteamsComponent, pathMatch: 'full'  },
+  { path: "pastteam2022", component: Pastteam2023to24Component, pathMatch: 'full'  },
   { path: "agm", component: AgmComponent, pathMatch: 'full'  },
   { path: 'frompresidentsdesk', component: PresidentsdeskComponent },
 
