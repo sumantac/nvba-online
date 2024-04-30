@@ -76,6 +76,7 @@ import { ProposedconstitutionComponent } from './pages/archive/proposedconstitut
 
 import { UserDetailsCheckComponent } from './components/user-details-check/user-details-check.component';
 import { QRCodeModule } from 'angularx-qrcode';
+import { Pastteam2023to24Component } from './pages/archive/pastteam2023to24/pastteam2023to24.component';
 
 
 @NgModule({
@@ -126,6 +127,7 @@ import { QRCodeModule } from 'angularx-qrcode';
 
     ProposedconstitutionComponent,
     UserDetailsCheckComponent,
+    Pastteam2023to24Component,
 
   ],
   imports: [
