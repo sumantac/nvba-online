@@ -53,7 +53,7 @@ const routes: Routes = [
   { path: "saraswatipuja", component: SaraswatiComponent, pathMatch: 'full'  },
   { path: "gallery", component: GalleryComponent, pathMatch: 'full'  },
   { path: "magazines", component: MagazinesComponent, pathMatch: 'full'  },
-  { path: "pastteam", component: PastteamsComponent, pathMatch: 'full'  },
+  { path: "pastteam2020", component: PastteamsComponent, pathMatch: 'full'  },
   { path: "pastteam2022", component: Pastteam2023to24Component, pathMatch: 'full'  },
   { path: "agm", component: AgmComponent, pathMatch: 'full'  },
   { path: 'frompresidentsdesk', component: PresidentsdeskComponent },

@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "img_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/432766875_10159481506221577_5276051600468235993_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kf-1A2Hf1gwQ7kNvgEU7Lr6&_nc_oc=AdjfdZFOAbEG2AmMLeFwgfNvTd37dMLAWbhDgF60iQGYG_SWJG5-ajs5xb-m6vx2bFE&_nc_ht=scontent-iad3-2.xx&oh=00_AfBCSgONpICpi2MBD_fuIl5G0u22QEtzAcJxw4EwazvNaA&oe=663CEB2E", 
+        "img_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/353051396_10159036928961577_617156706227753797_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BKyC78x4ZhQQ7kNvgEFCGRA&_nc_ht=scontent-iad3-1.xx&oh=00_AfC-rh_ZR54YhVSmFZdZ_jAT97ZVGntqxLCVvUvFBJc5UA&oe=663D856F", 
         "img_xurl": "",
         "designation":"Board of Director",
         "tag": "",
@@ -13,7 +13,7 @@
   },
   {
         "id": "2",
-        "img_url": "", 
+        "img_url": "https://media-iad3-1.cdn.whatsapp.net/v/t61.24694-24/425281807_1036397701237286_8704516087448552810_n.jpg?ccb=11-4&oh=01_Q5AaICK6bvBTszOhmHNRyguSGLJ7HupU2Zb4Vx72SnagRvha&oe=6644DD82&_nc_sid=e6ed6c&_nc_cat=106", 
         "img_xurl": "",
         "designation":"Board of Director",
         "tag": "",
@@ -86,7 +86,7 @@
     
     {
         "id": "8",
-        "img_url": "https://www.facebook.com/sameeransatarupa.das",
+        "img_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/433008621_7739960942682934_1966665411214467155_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Y2zgrjXxte0Q7kNvgEIGmbB&_nc_ht=scontent-iad3-1.xx&oh=00_AfD2IijADD_nmEXWPfsi8wl164degBSX-QiBe4seEIXGBw&oe=663DB0AE",
         "img_xurl": "",
         "designation":"Cultural Secretary",
         "tag": "",
@@ -100,7 +100,7 @@
         "id": "9",
         "img_url": "",
         "img_xurl": "",
-        "designation":"Fund Raising",
+        "designation":"Fund Raising Secretary",
         "tag": "",
         "description": "",
         "display_name": "Sugato Chakraborty",
@@ -112,7 +112,7 @@
         "id": "10",
         "img_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.18169-9/13010871_10208634670696425_5713721425481596821_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qf69EuVlZAYQ7kNvgHmYf_-&_nc_ht=scontent-iad3-1.xx&oh=00_AfByDR4NnRJUhl-A03FtffjoRMf-qZ380aVY-0AB7utYvw&oe=665F3E79",
         "img_xurl": "",
-        "designation":"Communications",
+        "designation":"Communications Secretary",
         "tag": "",
         "description": "",
         "display_name": "Tapasri Chakraborty",

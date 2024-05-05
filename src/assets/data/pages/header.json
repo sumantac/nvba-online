@@ -23,7 +23,7 @@
         "description": "",
         "child": [{
             "pageId": "21",
-            "pageName": "Executive Committee",
+            "pageName": "Our Team",
             "pageLink": "team",
             "tag": "",
             "description": "",
@@ -79,8 +79,16 @@
         "child": [
             {
                 "pageId": "51",
+                "pageName": "Team 2022-23",
+                "pageLink": "pastteam2022",
+                "tag": "",
+                "description": "",
+                "child": null
+            },
+            {
+                "pageId": "51",
                 "pageName": "Team 2020-21",
-                "pageLink": "pastteam",
+                "pageLink": "pastteam2020",
                 "tag": "",
                 "description": "",
                 "child": null
