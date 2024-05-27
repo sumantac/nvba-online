@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { TeamComponent } from './pages/aboutus/team/team.component';
+import { BodComponent } from './pages/aboutus/bod/bod.component';
 
 import { GetjsonfileService } from './services/getjsonfile.service';
 import { ConstitutionComponent } from './pages/aboutus/constitution/constitution.component';
@@ -77,6 +78,7 @@ import { ProposedconstitutionComponent } from './pages/archive/proposedconstitut
 import { UserDetailsCheckComponent } from './components/user-details-check/user-details-check.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { Pastteam2023to24Component } from './pages/archive/pastteam2023to24/pastteam2023to24.component';
+import { Kobipronam2024Component } from './pages/kobipronam2024/kobipronam2024.component';
 
 
 @NgModule({
@@ -87,6 +89,7 @@ import { Pastteam2023to24Component } from './pages/archive/pastteam2023to24/past
     HomeComponent,
     ContactusComponent,
     TeamComponent,
+    BodComponent,
     ConstitutionComponent,
     ThreecolComponent,
     DonationsComponent,
@@ -128,6 +131,7 @@ import { Pastteam2023to24Component } from './pages/archive/pastteam2023to24/past
     ProposedconstitutionComponent,
     UserDetailsCheckComponent,
     Pastteam2023to24Component,
+    Kobipronam2024Component
 
   ],
   imports: [

@@ -1,5 +1,18 @@
 [
     { 
+        "eventId":1,
+        "eventType": "current",
+        "eventName": "Kobi Pronam",
+        "eventDate": "June 22nd, 2024",
+        "eventEndDate": "June 22nd, 2024",
+        "eventImage": "./../../../assets/images/gallery/common/kobipronam.jpg",
+        "timming": "6-9:30 PM",
+        "venue": "Mercer Middle School, 42149 Greenstone Dr, Aldie, VA 20105",
+        "pageLink": "kobipronam-2024",
+        "description": "Tribute for Kobi Pronam. As Bengalis we are always very proud of this unique event in honor of the poets who form the cornerstone of our Bengali culture.",
+        "mapUrl": "https://www.google.com/maps/dir//Mercer+Middle+School,+42149+Greenstone+Dr,+Aldie,+VA+20105/@38.9247839,-77.549134,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b641c3ba822e23:0xf3d318eb03789316!2m2!1d-77.5469453!2d38.9247839!3e0"
+    },
+    { 
         "eventId":11,
         "eventType": "past",
         "eventName": "Poila Boisakh",

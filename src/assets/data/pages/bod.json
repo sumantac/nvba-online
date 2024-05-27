@@ -1,0 +1,39 @@
+[
+    {
+        "id": "1",
+        "img_url": "assets/images/bod/Paul_Upadhyay_Profile.jpg", 
+        "img_xurl": "",
+        "designation":"Board of Director",
+        "tag": "",
+        "description": "0",
+        "display_name": "Paul Upadhyay",
+        "facebook": "https://www.facebook.com/paul.upadhyay",
+        "linkedin": "",
+        "website":""
+  },
+  {
+        "id": "2",
+        "img_url": "assets/images/bod/dBasak.png", 
+        "img_xurl": "",
+        "designation":"Board of Director",
+        "tag": "",
+        "description": "0",
+        "display_name": "Debasis Basak",
+        "facebook": "",
+        "linkedin": "",
+        "website":""
+    },
+    {
+        "id": "3",
+        "img_url": "assets/images/bod/SRay.jpg", 
+        "img_xurl": "",
+        "designation":"Board of Director",
+        "tag": "",
+        "description": "0",
+        "display_name": "Suparna Ray",
+        "facebook": "",
+        "linkedin": "",
+        "website":""
+    }
+
+]

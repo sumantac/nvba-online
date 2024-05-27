@@ -1,31 +1,7 @@
 [
     {
         "id": "1",
-        "img_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/353051396_10159036928961577_617156706227753797_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BKyC78x4ZhQQ7kNvgEFCGRA&_nc_ht=scontent-iad3-1.xx&oh=00_AfC-rh_ZR54YhVSmFZdZ_jAT97ZVGntqxLCVvUvFBJc5UA&oe=663D856F", 
-        "img_xurl": "",
-        "designation":"Board of Director",
-        "tag": "",
-        "description": "0",
-        "display_name": "Paul Upadhyay",
-        "facebook": "https://www.facebook.com/paul.upadhyay",
-        "linkedin": "",
-        "website":""
-  },
-  {
-        "id": "2",
-        "img_url": "https://media-iad3-1.cdn.whatsapp.net/v/t61.24694-24/425281807_1036397701237286_8704516087448552810_n.jpg?ccb=11-4&oh=01_Q5AaICK6bvBTszOhmHNRyguSGLJ7HupU2Zb4Vx72SnagRvha&oe=6644DD82&_nc_sid=e6ed6c&_nc_cat=106", 
-        "img_xurl": "",
-        "designation":"Board of Director",
-        "tag": "",
-        "description": "0",
-        "display_name": "Debasis Basak",
-        "facebook": "",
-        "linkedin": "",
-        "website":""
-    },
-    {
-        "id": "3",
-        "img_url": "assets/images/ecm/Sumanta.png", 
+        "img_url": "assets/images/ecm/SumantaChakraborty.jpg", 
         "img_xurl": "",
         "designation":"President",
         "tag": "",
@@ -36,7 +12,7 @@
         "website":""
     },
     {
-        "id": "4",
+        "id": "2",
         "img_url": "assets/images/ecm/arijitAuddy.jpg",
         "img_xurl": "",
         "designation":"General Secretary",
@@ -48,8 +24,8 @@
         "website":""
     },
     {
-        "id": "5",
-        "img_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t31.18172-8/330503_113818342072017_990720473_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-NB0nGfbnksQ7kNvgFKgyN2&_nc_ht=scontent-iad3-2.xx&oh=00_AfBl4lEZjSNvDdHCgD0e9uOKdJeG-8X7FyxWc-4SqFtocQ&oe=665E8684",
+        "id": "3",
+        "img_url": "assets/images/ecm/IpsitaGhosh.jpg",
         "img_xurl": "",
         "designation":"Treasurer",
         "tag": "",
@@ -60,33 +36,8 @@
         "website":""
     },
     {
-        "id": "6",
-        "img_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t1.18169-9/1913826_1067408144754_3658941_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=T4R3sdm6L34Q7kNvgG3QshS&_nc_ht=scontent-iad3-2.xx&oh=00_AfCPLpGA6Ah87YFoj5i7TCb7yv8mnR-Yesfdd4-9rEaXBA&oe=665E8422",
-        "img_xurl": "",
-        "designation":"Food Secretary",
-        "tag": "",
-        "description": "",
-        "display_name": "Mrinal Chakraborty",
-        "facebook": "",
-        "linkedin": "https://www.facebook.com/mrinal.chakraborty.733",
-        "website":""
-    },
-    {
-        "id": "7",
-        "img_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/72626369_10158877876934863_6614599525350768640_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=55_huk-RxVcQ7kNvgEljM88&_nc_ht=scontent-iad3-2.xx&oh=00_AfB8G4Fg8tTN6qkqXi26pBQL5PpDyptu4Aid6e6icXsxug&oe=665E92B5",
-        "img_xurl": "",
-        "designation":"IT Secretary",
-        "tag": "",
-        "description": "",
-        "display_name": "Arnab Chakraborty",
-        "facebook": "https://www.facebook.com/25Arnab",
-        "linkedin": "",
-        "website":""
-    },
-    
-    {
-        "id": "8",
-        "img_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/433008621_7739960942682934_1966665411214467155_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Y2zgrjXxte0Q7kNvgEIGmbB&_nc_ht=scontent-iad3-1.xx&oh=00_AfD2IijADD_nmEXWPfsi8wl164degBSX-QiBe4seEIXGBw&oe=663DB0AE",
+        "id": "4",
+        "img_url": "assets/images/ecm/SatarupaDas.jpg",
         "img_xurl": "",
         "designation":"Cultural Secretary",
         "tag": "",
@@ -97,22 +48,58 @@
         "website":""
     },
     {
-        "id": "9",
-        "img_url": "",
+        "id": "5",
+        "img_url": "assets/images/ecm/MrinalChakraborty.jpg",
+        "img_xurl": "",
+        "designation":"Food Secretary",
+        "tag": "",
+        "description": "",
+        "display_name": "Mrinal Chakraborty",
+        "facebook": "",
+        "linkedin": "https://www.facebook.com/mrinal.chakraborty.733",
+        "website":""
+    },
+    {
+        "id": "6",
+        "img_url": "assets/images/ecm/ArnabChakraborty.jpg",
+        "img_xurl": "",
+        "designation":"IT Secretary",
+        "tag": "",
+        "description": "",
+        "display_name": "Arnab Chakraborty",
+        "facebook": "https://www.facebook.com/25Arnab",
+        "linkedin": "",
+        "website":""
+    },
+    {
+        "id": "7",
+        "img_url": "assets/images/ecm/NayanBhattacharjee.jpg",
+        "img_xurl": "",
+        "designation":"Operations Secretary",
+        "tag": "",
+        "description": "",
+        "display_name": "Nayan Bhattacharya",
+        "facebook": "https://www.facebook.com/nayan.bhattacharjee.7",
+        "linkedin": "",
+        "website":""
+    },
+    {
+        "id": "8",
+        "img_url": "assets/images/ecm/SugataChakraborty.jpg",
         "img_xurl": "",
         "designation":"Fund Raising Secretary",
         "tag": "",
         "description": "",
-        "display_name": "Sugato Chakraborty",
+        "display_name": "Sugata Chakraborty",
         "facebook": "",
         "linkedin": "",
         "website":""
     },
     {
-        "id": "10",
-        "img_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t1.18169-9/13010871_10208634670696425_5713721425481596821_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qf69EuVlZAYQ7kNvgHmYf_-&_nc_ht=scontent-iad3-1.xx&oh=00_AfByDR4NnRJUhl-A03FtffjoRMf-qZ380aVY-0AB7utYvw&oe=665F3E79",
+        "id": "9",
+        "img_url": "assets/images/ecm/TapasriChakraborty.jpg",
         "img_xurl": "",
-        "designation":"Communications Secretary",
+        "designation":"Communications/Magazine Secretary",
         "tag": "",
         "description": "",
         "display_name": "Tapasri Chakraborty",
@@ -121,7 +108,7 @@
         "website":""
     },
     {
-        "id": "8",
+        "id": "10",
         "img_url": "assets/images/ecm/swapan.jpg",
         "img_xurl": "",
         "designation":"Pujo Secretary",
@@ -131,19 +118,6 @@
         "facebook": "https://www.facebook.com/swapan.acharyya1",
         "linkedin": "",
         "website":""
-    },
-    {
-        "id": "11",
-        "img_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/45474978_10218127841574041_964983300626055168_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h6klZoY6OBgQ7kNvgHkty_l&_nc_ht=scontent-iad3-2.xx&oh=00_AfC6TjQAwHdc5-N61Zqt9yVmkfwGy1hr2rq6qXoUAQcnWQ&oe=665F394B",
-        "img_xurl": "",
-        "designation":"Operations Secretary",
-        "tag": "",
-        "description": "",
-        "display_name": "Nayan Bhattacharya",
-        "facebook": "https://www.facebook.com/nayan.bhattacharjee.7",
-        "linkedin": "",
-        "website":""
     }
-    
 
 ]

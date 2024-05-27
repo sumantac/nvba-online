@@ -1,0 +1,1513 @@
+Microsoft Windows [Version 10.0.22621.3593]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\suman>npm install -g @angular/cli
+
+added 225 packages in 14s
+
+41 packages are looking for funding
+  run `npm fund` for details
+
+C:\Users\suman>npm install
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path C:\Users\suman\package.json
+npm ERR! errno -4058
+npm ERR! enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\suman\package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in: C:\Users\suman\AppData\Local\npm-cache\_logs\2024-05-26T16_46_57_630Z-debug-0.log
+
+C:\Users\suman>cd C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online
+
+C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online>npm install
+npm WARN deprecated @cordobo/qrcode@1.5.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm WARN deprecated popper.js@1.16.1: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
+
+added 1058 packages, and audited 1059 packages in 1m
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+12 vulnerabilities (7 moderate, 2 high, 3 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
+C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online>npm audit fix
+
+added 9 packages, changed 31 packages, and audited 1068 packages in 11s
+
+130 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+loader-utils  3.0.0 - 3.2.0
+Severity: high
+loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable - https://github.com/advisories/GHSA-3rfm-jhwj-7488
+loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) - https://github.com/advisories/GHSA-hhq3-ff78-jv3g
+fix available via `npm audit fix`
+node_modules/loader-utils
+  @angular-devkit/build-angular  <=15.2.9 || 16.0.0-next.0 - 16.2.4 || 17.0.0-next.0 - 17.0.0-rc.5
+  Depends on vulnerable versions of loader-utils
+  Depends on vulnerable versions of postcss
+  Depends on vulnerable versions of semver
+  Depends on vulnerable versions of webpack
+  Depends on vulnerable versions of webpack-dev-middleware
+  node_modules/@angular-devkit/build-angular
+
+postcss  <8.4.31
+Severity: moderate
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+fix available via `npm audit fix`
+node_modules/postcss
+
+semver  7.0.0 - 7.5.1
+Severity: moderate
+semver vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+fix available via `npm audit fix`
+node_modules/semver
+
+webpack  5.0.0 - 5.75.0
+Severity: critical
+Cross-realm object access in Webpack 5 - https://github.com/advisories/GHSA-hc6q-2mpp-qw7j
+fix available via `npm audit fix`
+node_modules/webpack
+
+webpack-dev-middleware  <=5.3.3
+Severity: high
+Path traversal in webpack-dev-middleware - https://github.com/advisories/GHSA-wr3j-pwj9-hqq6
+fix available via `npm audit fix`
+node_modules/webpack-dev-middleware
+
+6 vulnerabilities (2 moderate, 2 high, 2 critical)
+
+To address all issues, run:
+  npm audit fix
+
+C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online>npm audit fix
+
+up to date, audited 1068 packages in 6s
+
+130 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+loader-utils  3.0.0 - 3.2.0
+Severity: high
+loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable - https://github.com/advisories/GHSA-3rfm-jhwj-7488
+loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) - https://github.com/advisories/GHSA-hhq3-ff78-jv3g
+fix available via `npm audit fix`
+node_modules/loader-utils
+  @angular-devkit/build-angular  <=15.2.9 || 16.0.0-next.0 - 16.2.4 || 17.0.0-next.0 - 17.0.0-rc.5
+  Depends on vulnerable versions of loader-utils
+  Depends on vulnerable versions of postcss
+  Depends on vulnerable versions of semver
+  Depends on vulnerable versions of webpack
+  Depends on vulnerable versions of webpack-dev-middleware
+  node_modules/@angular-devkit/build-angular
+
+postcss  <8.4.31
+Severity: moderate
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+fix available via `npm audit fix`
+node_modules/postcss
+
+semver  7.0.0 - 7.5.1
+Severity: moderate
+semver vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+fix available via `npm audit fix`
+node_modules/semver
+
+webpack  5.0.0 - 5.75.0
+Severity: critical
+Cross-realm object access in Webpack 5 - https://github.com/advisories/GHSA-hc6q-2mpp-qw7j
+fix available via `npm audit fix`
+node_modules/webpack
+
+webpack-dev-middleware  <=5.3.3
+Severity: high
+Path traversal in webpack-dev-middleware - https://github.com/advisories/GHSA-wr3j-pwj9-hqq6
+fix available via `npm audit fix`
+node_modules/webpack-dev-middleware
+
+6 vulnerabilities (2 moderate, 2 high, 2 critical)
+
+To address all issues, run:
+  npm audit fix
+
+C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online>npm audit fix
+
+up to date, audited 1068 packages in 6s
+
+130 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+loader-utils  3.0.0 - 3.2.0
+Severity: high
+loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable - https://github.com/advisories/GHSA-3rfm-jhwj-7488
+loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) - https://github.com/advisories/GHSA-hhq3-ff78-jv3g
+fix available via `npm audit fix`
+node_modules/loader-utils
+  @angular-devkit/build-angular  <=15.2.9 || 16.0.0-next.0 - 16.2.4 || 17.0.0-next.0 - 17.0.0-rc.5
+  Depends on vulnerable versions of loader-utils
+  Depends on vulnerable versions of postcss
+  Depends on vulnerable versions of semver
+  Depends on vulnerable versions of webpack
+  Depends on vulnerable versions of webpack-dev-middleware
+  node_modules/@angular-devkit/build-angular
+
+postcss  <8.4.31
+Severity: moderate
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+fix available via `npm audit fix`
+node_modules/postcss
+
+semver  7.0.0 - 7.5.1
+Severity: moderate
+semver vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+fix available via `npm audit fix`
+node_modules/semver
+
+webpack  5.0.0 - 5.75.0
+Severity: critical
+Cross-realm object access in Webpack 5 - https://github.com/advisories/GHSA-hc6q-2mpp-qw7j
+fix available via `npm audit fix`
+node_modules/webpack
+
+webpack-dev-middleware  <=5.3.3
+Severity: high
+Path traversal in webpack-dev-middleware - https://github.com/advisories/GHSA-wr3j-pwj9-hqq6
+fix available via `npm audit fix`
+node_modules/webpack-dev-middleware
+
+6 vulnerabilities (2 moderate, 2 high, 2 critical)
+
+To address all issues, run:
+  npm audit fix
+
+C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online>ng serve
+| Generating browser application bundles (phase: building)...WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+618 │ $nav-divider-margin-y:              ($spacer / 2) !default;
+    │                                      ^^^^^^^^^^^
+    ╵
+    src\assets\scss\bootstrap\_variables.scss 618:38  @import
+    src\assets\scss\bootstrap\bootstrap.scss 9:9      @import
+    src\assets\scss\style.scss 2:9                    root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+35 │   margin-bottom: ($spacer / 2);
+   │                   ^^^^^^^^^^^
+   ╵
+    src\assets\scss\bootstrap\_images.scss 35:19   @import
+    src\assets\scss\bootstrap\bootstrap.scss 14:9  @import
+    src\assets\scss\style.scss 2:9                 root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2) or calc($grid-gutter-width / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+  ╷
+7 │   padding-right: ($grid-gutter-width / 2);
+  │                   ^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\assets\scss\bootstrap\mixins\_grid.scss 7:19  make-container()
+    src\assets\scss\bootstrap\_grid.scss 7:5          @import
+    src\assets\scss\bootstrap\bootstrap.scss 16:9     @import
+    src\assets\scss\style.scss 2:9                    root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, 2) or calc($grid-gutter-width / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+  ╷
+8 │   padding-left: ($grid-gutter-width / 2);
+  │                  ^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\assets\scss\bootstrap\mixins\_grid.scss 8:18  make-container()
+    src\assets\scss\bootstrap\_grid.scss 7:5          @import
+    src\assets\scss\bootstrap\bootstrap.scss 16:9     @import
+    src\assets\scss\style.scss 2:9                    root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($grid-gutter-width, -2) or calc($grid-gutter-width / -2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+26 │   margin-right: ($grid-gutter-width / -2);
+   │                  ^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    src\assets\scss\bootstrap\mixins\_grid.scss 26:18  make-row()
+    src\assets\scss\bootstrap\_grid.scss 29:5          @import
+    src\assets\scss\bootstrap\bootstrap.scss 16:9      @import
+    src\assets\scss\style.scss 2:9                     root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(9, 21)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+32 │     padding-top: percentage(9 / 21);
+   │                             ^^^^^^
+   ╵
+    src\assets\scss\bootstrap\utilities\_embed.scss 32:29  @import
+    src\assets\scss\bootstrap\_utilities.scss 6:9          @import
+    src\assets\scss\bootstrap\bootstrap.scss 41:9          @import
+    src\assets\scss\style.scss 2:9                         root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(9, 16)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+38 │     padding-top: percentage(9 / 16);
+   │                             ^^^^^^
+   ╵
+    src\assets\scss\bootstrap\utilities\_embed.scss 38:29  @import
+    src\assets\scss\bootstrap\_utilities.scss 6:9          @import
+    src\assets\scss\bootstrap\bootstrap.scss 41:9          @import
+    src\assets\scss\style.scss 2:9                         root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(3, 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+44 │     padding-top: percentage(3 / 4);
+   │                             ^^^^^
+   ╵
+    src\assets\scss\bootstrap\utilities\_embed.scss 44:29  @import
+    src\assets\scss\bootstrap\_utilities.scss 6:9          @import
+    src\assets\scss\bootstrap\bootstrap.scss 41:9          @import
+    src\assets\scss\style.scss 2:9                         root stylesheet
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(1, 1)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+   ╷
+50 │     padding-top: percentage(1 / 1);
+   │                             ^^^^^
+   ╵
+    src\assets\scss\bootstrap\utilities\_embed.scss 50:29  @import
+    src\assets\scss\bootstrap\_utilities.scss 6:9          @import
+    src\assets\scss\bootstrap\bootstrap.scss 41:9          @import
+    src\assets\scss\style.scss 2:9                         root stylesheet
+
+WARNING: 31 repetitive deprecation warnings omitted.
+
+√ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   8.59 MB |
+styles.css, styles.js | styles        |   1.15 MB |
+main.js               | main          | 590.67 kB |
+polyfills.js          | polyfills     | 319.83 kB |
+scripts.js            | scripts       | 146.30 kB |
+runtime.js            | runtime       |   7.41 kB |
+
+                      | Initial Total |  10.78 MB
+
+Build at: 2024-05-26T16:53:24.730Z - Hash: 45574dd59eb10bed - Time: 47945ms
+
+Warning: C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online\node_modules\angularx-qrcode\fesm2020\angularx-qrcode.mjs depends on '@cordobo/qrcode'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online\src\app\components\checkout\checkout.component.ts depends on 'moment'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online\src\app\components\user-details-check\user-details-check.component.ts depends on 'base64-js'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+
+
+./src/app/app-routing.module.ts:25:0-82 - Error: Module not found: Error: Can't resolve './pages/kobipronam/kobipronam2024.component' in 'C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online\src\app'
+
+./src/app/app.module.ts:59:0-82 - Error: Module not found: Error: Can't resolve './pages/kobipronam/kobipronam2024.component' in 'C:\RFIDGS\Backup Data\Documents Backup\Personal Docs\NVBA\Website Source\nvba-online\src\app'
+
+Error: src/app/app-routing.module.ts:33:37 - error TS2307: Cannot find module './pages/kobipronam/kobipronam2024.component' or its corresponding type declarations.
+
+33 import { KobipronamComponent } from './pages/kobipronam/kobipronam2024.component';
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/app/app.component.html:1:1 - error NG8001: 'app-header' is not a known element:
+1. If 'app-header' is an Angular component, then verify that it is part of this module.
+2. If 'app-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+1 <app-header></app-header>
+  ~~~~~~~~~~~~
+
+  src/app/app.component.ts:5:16
+    5   templateUrl: './app.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AppComponent.
+
+
+Error: src/app/app.component.html:3:5 - error NG8001: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is part of this module.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+3     <router-outlet></router-outlet>
+      ~~~~~~~~~~~~~~~
+
+  src/app/app.component.ts:5:16
+    5   templateUrl: './app.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AppComponent.
+
+
+Error: src/app/app.component.html:5:1 - error NG8001: 'app-footer' is not a known element:
+1. If 'app-footer' is an Angular component, then verify that it is part of this module.
+2. If 'app-footer' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+5 <app-footer></app-footer>
+  ~~~~~~~~~~~~
+
+  src/app/app.component.ts:5:16
+    5   templateUrl: './app.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AppComponent.
+
+
+Error: src/app/app.module.ts:67:37 - error TS2307: Cannot find module './pages/kobipronam/kobipronam2024.component' or its corresponding type declarations.
+
+67 import { KobipronamComponent } from './pages/kobipronam/kobipronam2024.component';
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: src/app/app.module.ts:84:17 - error NG1010: Value
+
+Error: src/app/components/admin/reports/reports.component.html:17:17 - error NG8001: 'ag-grid-angular' is not a known element:
+1. If 'ag-grid-angular' is an Angular component, then verify that it is part of this module.
+2. If 'ag-grid-angular' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+ 17                 <ag-grid-angular
+                    ~~~~~~~~~~~~~~~~
+ 18                     style="width: 100%; height: 550px; "
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+...
+ 27                     [getRowId]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 28                      >
+    ~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/components/admin/reports/reports.component.ts:7:16
+    7   templateUrl: './reports.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ReportsComponent.
+
+
+Error: src/app/components/admin/reports/reports.component.html:24:21 - error NG8002: Can't bind to 'rowData' since it isn't a known property of 'ag-grid-angular'.
+1. If 'ag-grid-angular' is an Angular component and it has 'rowData' input, then verify that it is part of this module.
+2. If 'ag-grid-angular' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+24                     [rowData]="rowData"
+                       ~~~~~~~~~~~~~~~~~~~
+
+  src/app/components/admin/reports/reports.component.ts:7:16
+    7   templateUrl: './reports.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ReportsComponent.
+
+
+Error: src/app/components/admin/reports/reports.component.html:25:21 - error NG8002: Can't bind to 'columnDefs' since it isn't a known property of 'ag-grid-angular'.
+1. If 'ag-grid-angular' is an Angular component and it has 'columnDefs' input, then verify that it is part of this module.
+2. If 'ag-grid-angular' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+25                     [columnDefs]="columnDefs"
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/components/admin/reports/reports.component.ts:7:16
+    7   templateUrl: './reports.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ReportsComponent.
+
+
+Error: src/app/components/admin/reports/reports.component.html:26:21 - error NG8002: Can't bind to 'animateRows' since it isn't a known property of 'ag-grid-angular'.
+1. If 'ag-grid-angular' is an Angular component and it has 'animateRows' input, then verify that it is part of this module.
+2. If 'ag-grid-angular' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+26                     [animateRows]="true"
+                       ~~~~~~~~~~~~~~~~~~~~
+
+  src/app/components/admin/reports/reports.component.ts:7:16
+    7   templateUrl: './reports.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ReportsComponent.
+
+
+Error: src/app/components/admin/reports/reports.component.html:27:21 - error NG8002: Can't bind to 'getRowId' since it isn't a known property of 'ag-grid-angular'.
+1. If 'ag-grid-angular' is an Angular component and it has 'getRowId' input, then verify that it is part of this module.
+2. If 'ag-grid-angular' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+27                     [getRowId]
+                       ~~~~~~~~~~
+
+  src/app/components/admin/reports/reports.component.ts:7:16
+    7   templateUrl: './reports.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ReportsComponent.
+
+
+Error: src/app/components/dashboard/dashboard.component.html:26:21 - error NG8001: 'app-profile' is not a known element:
+1. If 'app-profile' is an Angular component, then verify that it is part of this module.
+2. If 'app-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+26                     <app-profile></app-profile>
+                       ~~~~~~~~~~~~~
+
+  src/app/components/dashboard/dashboard.component.ts:9:16
+    9   templateUrl: './dashboard.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DashboardComponent.
+
+
+Error: src/app/components/dashboard/dashboard.component.html:30:21 - error NG8001: 'app-profile' is not a known element:
+1. If 'app-profile' is an Angular component, then verify that it is part of this module.
+2. If 'app-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+30                     <app-profile></app-profile>
+                       ~~~~~~~~~~~~~
+
+  src/app/components/dashboard/dashboard.component.ts:9:16
+    9   templateUrl: './dashboard.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DashboardComponent.
+
+
+Error: src/app/components/dashboard/dashboard.component.html:34:21 - error NG8001: 'app-profile' is not a known element:
+1. If 'app-profile' is an Angular component, then verify that it is part of this module.
+2. If 'app-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+34                     <app-profile></app-profile>
+                       ~~~~~~~~~~~~~
+
+  src/app/components/dashboard/dashboard.component.ts:9:16
+    9   templateUrl: './dashboard.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DashboardComponent.
+
+
+Error: src/app/components/events/concert/concert.component.html:52:54 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+52                             <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/components/events/concert/concert.component.ts:10:16
+    10   templateUrl: './concert.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ConcertComponent.
+
+
+Error: src/app/components/events/eventtickets/eventtickets.component.html:49:54 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+49                             <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/components/events/eventtickets/eventtickets.component.ts:10:16
+    10   templateUrl: './eventtickets.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component EventticketsComponent.
+
+
+Error: src/app/components/foodcart/foodtickets/foodtickets.component.html:39:54 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+39                             <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/components/foodcart/foodtickets/foodtickets.component.ts:9:16
+    9   templateUrl: './foodtickets.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component FoodticketsComponent.
+
+
+Error: src/app/components/tickets/tickets.component.html:8:13 - error NG8001: 'app-eventtickets' is not a known element:
+1. If 'app-eventtickets' is an Angular component, then verify that it is part of this module.
+2. If 'app-eventtickets' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+8             <app-eventtickets></app-eventtickets>
+              ~~~~~~~~~~~~~~~~~~
+
+  src/app/components/tickets/tickets.component.ts:5:16
+    5   templateUrl: './tickets.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component TicketsComponent.
+
+
+Error: src/app/components/user-details-check/user-details-check.component.html:31:58 - error NG8004: No pipe found with name 'date'.
+
+31                 Member Since :-   {{userMember?.joined | date}}
+                                                            ~~~~
+
+  src/app/components/user-details-check/user-details-check.component.ts:9:16
+    9   templateUrl: './user-details-check.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component UserDetailsCheckComponent.
+
+
+Error: src/app/components/user-details-check/user-details-check.component.html:34:68 - error NG8004: No pipe found with name 'date'.
+
+34                 Membership Expiry Date :-  {{userMember?.expires | date }}
+                                                                      ~~~~
+
+  src/app/components/user-details-check/user-details-check.component.ts:9:16
+    9   templateUrl: './user-details-check.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component UserDetailsCheckComponent.
+
+
+Error: src/app/components/user-details-check/user-details-check.component.html:45:87 - error NG8004: No pipe found with name 'date'.
+
+45                       <td *ngIf="item.sku.includes('MM2024YY')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                                                                                         ~~~~
+
+  src/app/components/user-details-check/user-details-check.component.ts:9:16
+    9   templateUrl: './user-details-check.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component UserDetailsCheckComponent.
+
+
+Error: src/app/components/user-details-check/user-details-check.component.html:53:87 - error NG8004: No pipe found with name 'date'.
+
+53                       <td *ngIf="item.sku.includes('MM2023YY')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                                                                                         ~~~~
+
+  src/app/components/user-details-check/user-details-check.component.ts:9:16
+    9   templateUrl: './user-details-check.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component UserDetailsCheckComponent.
+
+
+Error: src/app/components/user-details-check/user-details-check.component.html:61:85 - error NG8004: No pipe found with name 'date'.
+
+61                       <td *ngIf="item.sku.includes('SP2024')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                                                                                       ~~~~
+
+  src/app/components/user-details-check/user-details-check.component.ts:9:16
+    9   templateUrl: './user-details-check.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component UserDetailsCheckComponent.
+
+
+Error: src/app/components/user-details-check/user-details-check.component.html:69:85 - error NG8004: No pipe found with name 'date'.
+
+69                       <td *ngIf="item.sku.includes('DP2023')" >{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                                                                                       ~~~~
+
+  src/app/components/user-details-check/user-details-check.component.ts:9:16
+    9   templateUrl: './user-details-check.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component UserDetailsCheckComponent.
+
+
+Error: src/app/helper/dashboard/cartmember/cartmember.component.html:48:107 - error NG8004: No pipe found with name 'date'.
+
+48         <div  class=" " style="text-align: center;" >Membership Expiration Date : {{this.member.expires | date:'d-MMM-yyyy '  }}</div>
+                                                                                                             ~~~~
+
+  src/app/helper/dashboard/cartmember/cartmember.component.ts:14:16
+    14   templateUrl: './cartmember.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component CartmemberComponent.
+
+
+Error: src/app/helper/dashboard/carttickets/carttickets.component.html:25:42 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+25                 <td><input type="number" [(ngModel)] ="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/carttickets/carttickets.component.ts:10:16
+    10   templateUrl: './carttickets.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component CartticketsComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:18:7 - error NG8001: 'app-cartmember' is not a known element:
+1. If 'app-cartmember' is an Angular component, then verify that it is part of this module.
+2. If 'app-cartmember' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+18       <app-cartmember></app-cartmember>
+         ~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:90:13 - error NG8001: 'qrcode' is not a known element:
+1. If 'qrcode' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+ 90             <qrcode
+                ~~~~~~~
+ 91               [qrdata]="siteUrl"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+...
+106               (qrCodeURL)="onChangeURL($event)"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+107             ></qrcode>
+    ~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:91:15 - error NG8002: Can't bind to 'qrdata' since it isn't a known property of 'qrcode'.
+
+91               [qrdata]="siteUrl"
+                 ~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:92:15 - error NG8002: Can't bind to 'allowEmptyString' since it isn't a known property of 'qrcode'.
+
+92               [allowEmptyString]="true"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:93:15 - error NG8002: Can't bind to 'ariaLabel' since it isn't a known property of 'qrcode'.
+
+93               [ariaLabel]="'Member details'"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:94:15 - error NG8002: Can't bind to 'cssClass' since it isn't a known property of 'qrcode'.
+
+94               [cssClass]="'center'"
+                 ~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:95:15 - error NG8002: Can't bind to 'colorDark' since it isn't a known property of 'qrcode'.
+
+95               [colorDark]="'#000000'"
+                 ~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:96:15 - error NG8002: Can't bind to 'colorLight' since it isn't a known property of 'qrcode'.
+
+96               [colorLight]="'#ffffffff'"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:97:15 - error NG8002: Can't bind to 'elementType' since it isn't a known property of 'qrcode'.
+
+97               [elementType]="'canvas'"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:98:15 - error NG8002: Can't bind to 'errorCorrectionLevel' since it isn't a known property of 'qrcode'.
+
+98               [errorCorrectionLevel]="'M'"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:99:15 - error NG8002: Can't bind to 'imageSrc' since it isn't a known property of 'qrcode'.
+
+99               [imageSrc]="'./../../../assets/images/logo/logo.png'"
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:100:15 - error NG8002: Can't bind to 'imageHeight' since it isn't a known property of 'qrcode'.
+
+100               [imageHeight]="24"
+                  ~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:101:15 - error NG8002: Can't bind to 'imageWidth' since it isn't a known property of 'qrcode'.
+
+101               [imageWidth]="115"
+                  ~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:102:15 - error NG8002: Can't bind to 'margin' since it isn't a known property of 'qrcode'.
+
+102               [margin]="4"
+                  ~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:103:15 - error NG8002: Can't bind to 'scale' since it isn't a known property of 'qrcode'.
+
+103               [scale]="1"
+                  ~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:105:15 - error NG8002: Can't bind to 'width' since it isn't a known property of 'qrcode'.
+
+105               [width]="300"
+                  ~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:123:11 - error NG8002: Can't bind to 'formGroup' since it isn't a known property of 'form'.
+
+123     <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" >
+              ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/dashboard/profile/profile.component.html:233:46 - error NG8004: No pipe found with name 'date'.
+
+233                     <td>{{item.paymentTime | date:'d-MMM-yyyy'}}</td>
+                                                 ~~~~
+
+  src/app/helper/dashboard/profile/profile.component.ts:10:16
+    10   templateUrl: './profile.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component ProfileComponent.
+
+
+Error: src/app/helper/home/latestevents/latestevents.component.html:13:37 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+13           <a *ngIf="event.pageLink" routerLink="{{event.pageLink}}" class="block-20" style="background-image: url({{event.eventImage}});"></a>
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/home/latestevents/latestevents.component.ts:7:16
+    7   templateUrl: './latestevents.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component LatesteventsComponent.
+
+
+Error: src/app/helper/home/latestevents/latestevents.component.html:25:18 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+25               <a routerLink="{{event.pageLink}}">{{event.eventName}}</a>
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/home/latestevents/latestevents.component.ts:7:16
+    7   templateUrl: './latestevents.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component LatesteventsComponent.
+
+
+Error: src/app/helper/home/latestevents/latestevents.component.html:30:43 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+30             <p *ngIf="event.pageLink" ><a routerLink="{{event.pageLink}}">Click here for more details</a></p>
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/home/latestevents/latestevents.component.ts:7:16
+    7   templateUrl: './latestevents.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component LatesteventsComponent.
+
+
+Error: src/app/helper/home/latestevents/latestevents.component.html:56:25 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+56                 <div><a routerLink="{{pevent.pageLink}}">{{pevent.eventDate}}</a></div>
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/home/latestevents/latestevents.component.ts:7:16
+    7   templateUrl: './latestevents.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component LatesteventsComponent.
+
+
+Error: src/app/helper/home/latestevents/latestevents.component.html:60:43 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+60               <h3 class="heading mb-4"><a routerLink="{{pevent.pageLink}}">{{pevent.eventName}}</a></h3>
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/home/latestevents/latestevents.component.ts:7:16
+    7   templateUrl: './latestevents.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component LatesteventsComponent.
+
+
+Error: src/app/helper/home/latestevents/latestevents.component.html:64:54 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+64               <p *ngIf="pevent.pageLink != '/' " ><a routerLink="{{pevent.pageLink}}">Click here for more details</a></p>
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/home/latestevents/latestevents.component.ts:7:16
+    7   templateUrl: './latestevents.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component LatesteventsComponent.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:7:5 - error NG8001: 'accordion' is not a known element:
+1. If 'accordion' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+7     <accordion [isAnimated]="true" [closeOthers]="true" >
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:7:16 - error NG8002: Can't bind to 'isAnimated' since it isn't a known property of 'accordion'.
+
+7     <accordion [isAnimated]="true" [closeOthers]="true" >
+                 ~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:7:36 - error NG8002: Can't bind to 'closeOthers' since it isn't a known property of 'accordion'.
+
+7     <accordion [isAnimated]="true" [closeOthers]="true" >
+                                     ~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:8:9 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+8         <accordion-group style="overflow-wrap: break-word;" heading="All 3 Days (September 30th, October 1st and October 2nd, 2022)"  >
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:28:48 - error NG8002: Can't bind to 'ngModel' since it isn't a knownproperty of 'input'.
+
+28                       <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:50:9 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+50         <accordion-group heading="Single Day Tickets" >
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:55:17 - error NG8001: 'accordion' is not a known element:
+1. If 'accordion' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+55                 <accordion>
+                   ~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:56:21 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+56                     <accordion-group heading="Friday only (September 30th, 2022)" >
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:76:62 - error NG8002: Can't bind to 'ngModel' since it isn't a knownproperty of 'input'.
+
+76                                     <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:83:21 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+83                     <accordion-group heading="Saturday only (October 1st , 2022)">
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:103:62 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+103                                     <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:110:21 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+110                     <accordion-group heading="Sunday only (October 2nd, 2022)">
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.html:129:62 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+129                                     <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2022/durgapujatickets2022.component.ts:10:16
+    10   templateUrl: './durgapujatickets2022.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2022Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:7:5 - error NG8001: 'accordion' is not a known element:
+1. If 'accordion' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+7     <accordion [isAnimated]="true" [closeOthers]="false" >
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:7:16 - error NG8002: Can't bind to 'isAnimated' since it isn't a known property of 'accordion'.
+
+7     <accordion [isAnimated]="true" [closeOthers]="false" >
+                 ~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:7:36 - error NG8002: Can't bind to 'closeOthers' since it isn't a known property of 'accordion'.
+
+7     <accordion [isAnimated]="true" [closeOthers]="false" >
+                                     ~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:8:9 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+8         <accordion-group style="overflow-wrap: break-word;" heading="All 3 Days (October 20th, October 21st and October 22nd, 2023)"  >
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:28:48 - error NG8002: Can't bind to 'ngModel' since it isn't a knownproperty of 'input'.
+
+28                       <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:50:9 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+50         <accordion-group heading="Single Day Tickets" >
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:52:17 - error NG8001: 'accordion' is not a known element:
+1. If 'accordion' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.
+
+52                 <accordion>
+                   ~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:53:21 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+53                     <accordion-group heading="Friday only (October 20th, 2023)" >
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:73:62 - error NG8002: Can't bind to 'ngModel' since it isn't a knownproperty of 'input'.
+
+73                                     <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:80:21 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+80                     <accordion-group heading="Saturday only (October 21st , 2023)">
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:100:62 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+100                                     <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:107:21 - error NG8001: 'accordion-group' is not a known element:
+1. If 'accordion-group' is an Angular component, then verify that it is part of this module.
+2. If 'accordion-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+107                     <accordion-group heading="Sunday only (October 22nd, 2023)">
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.html:126:62 - error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.
+
+126                                     <td><input type="number" [(ngModel)]="item.quantity" style="width:50px" min="0" max="10" ></td>
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/helper/tickets/durgapujatickets2023/durgapujatickets2023.component.ts:9:16
+    9   templateUrl: './durgapujatickets2023.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Durgapujatickets2023Component.
+
+
+Error: src/app/pages/aboutus/bod/bod.component.html:20:36 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+20                             <h3><a routerLink="{{member.facebook}}">{{member.display_name}}</a></h3>
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/aboutus/bod/bod.component.ts:7:16
+    7   templateUrl: './bod.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component BodComponent.
+
+
+Error: src/app/pages/aboutus/team/team.component.html:34:36 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+34                             <h3><a routerLink="{{member.facebook}}">{{member.display_name}}</a></h3>
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/aboutus/team/team.component.ts:7:16
+    7   templateUrl: './team.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component TeamComponent.
+
+
+Error: src/app/pages/archive/pastteams/pastteams.component.html:25:36 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+25                             <h3><a routerLink="{{member.facebook}}">{{member.display_name}}</a></h3>
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/archive/pastteams/pastteams.component.ts:6:16
+    6   templateUrl: './pastteams.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component PastteamsComponent.
+
+
+Error: src/app/pages/archive/pastteam2023to24/pastteam2023to24.component.html:25:36 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+25                             <h3><a routerLink="{{member.facebook}}">{{member.display_name}}</a></h3>
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/archive/pastteam2023to24/pastteam2023to24.component.ts:6:16
+    6   templateUrl: './pastteam2023to24.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component Pastteam2023to24Component.
+
+
+Error: src/app/pages/cares/cares.component.html:15:5 - error NG8001: 'app-threecol' is not a known element:
+1. If 'app-threecol' is an Angular component, then verify that it is part of this module.
+2. If 'app-threecol' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+15     <app-threecol></app-threecol>
+       ~~~~~~~~~~~~~~
+
+  src/app/pages/cares/cares.component.ts:5:16
+    5   templateUrl: './cares.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component CaresComponent.
+
+
+Error: src/app/pages/durgapuja/durgapuja.component-2023.html:25:48 - error NG8002: Can't bind to 'ngClass' since it isn't a known property of 'i'.
+
+25         <i id="play-pause-button" class="icon" [ngClass]="playAudio?'icon-volume-up':'icon-volume-off' "  (click)="soundplay()" ></i>
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/durgapuja/durgapuja.component.ts:7:16
+    7   templateUrl: './durgapuja.component-2023.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DurgapujaComponent.
+
+
+Error: src/app/pages/durgapuja/durgapuja.component-2023.html:267:13 - error NG8001: 'app-cartmember' is not a known element:
+1. If 'app-cartmember' is an Angular component, then verify that it is part of this module.
+2. If 'app-cartmember' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+267             <app-cartmember></app-cartmember>
+                ~~~~~~~~~~~~~~~~
+
+  src/app/pages/durgapuja/durgapuja.component.ts:7:16
+    7   templateUrl: './durgapuja.component-2023.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DurgapujaComponent.
+
+
+Error: src/app/pages/durgapuja/durgapuja.component-2023.html:395:1 - error NG8001: 'app-sponsers' is not a known element:
+1. If 'app-sponsers' is an Angular component, then verify that it is part of this module.
+2. If 'app-sponsers' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+395 <app-sponsers></app-sponsers>
+    ~~~~~~~~~~~~~~
+
+  src/app/pages/durgapuja/durgapuja.component.ts:7:16
+    7   templateUrl: './durgapuja.component-2023.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component DurgapujaComponent.
+
+
+Error: src/app/pages/home/home.component.html:5:83 - error NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'.
+
+5      <div class="carousel-item" *ngFor="let itemhi of sliderImage; let i = index" [ngClass]=" i === 0 ? 'active':'' " >
+                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/home/home.component.ts:7:16
+    7   templateUrl: './home.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HomeComponent.
+
+
+Error: src/app/pages/home/home.component.html:20:1 - error NG8001: 'app-threecol' is not a known element:
+1. If 'app-threecol' is an Angular component, then verify that it is part of this module.
+2. If 'app-threecol' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+20 <app-threecol></app-threecol>
+   ~~~~~~~~~~~~~~
+
+  src/app/pages/home/home.component.ts:7:16
+    7   templateUrl: './home.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HomeComponent.
+
+
+Error: src/app/pages/home/home.component.html:21:1 - error NG8001: 'app-latestevents' is not a known element:
+1. If 'app-latestevents' is an Angular component, then verify that it is part of this module.
+2. If 'app-latestevents' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+21 <app-latestevents></app-latestevents>
+   ~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/home/home.component.ts:7:16
+    7   templateUrl: './home.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HomeComponent.
+
+
+Error: src/app/pages/home/home.component.html:26:1 - error NG8001: 'app-sponsers' is not a known element:
+1. If 'app-sponsers' is an Angular component, then verify that it is part of this module.
+2. If 'app-sponsers' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+26 <app-sponsers></app-sponsers>
+   ~~~~~~~~~~~~~~
+
+  src/app/pages/home/home.component.ts:7:16
+    7   templateUrl: './home.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HomeComponent.
+
+
+Error: src/app/pages/saraswati/saraswati.component.html:268:5 - error NG8001: 'app-sponsers' is not a known element:
+1. If 'app-sponsers' is an Angular component, then verify that it is part of this module.
+2. If 'app-sponsers' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+
+268     <app-sponsers></app-sponsers>
+        ~~~~~~~~~~~~~~
+
+  src/app/pages/saraswati/saraswati.component.ts:5:16
+    5   templateUrl: './saraswati.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component SaraswatiComponent.
+
+
+Error: src/app/shared/header/header.component.html:17:76 - error NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'li'.
+
+17             <li *ngFor="let item of dataObject " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item" [ngClass]="item.child ? 'dropmenu':'' "  >
+                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:17:135 - error NG8002: Can't bind to 'ngClass' since it isn't a known property of 'li'.
+
+17             <li *ngFor="let item of dataObject " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item" [ngClass]="item.child ? 'dropmenu':'' "  >
+                                                                                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:19:18 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+19               <a routerLink="/{{item.pageLink}}" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" >{{item.pageName}}</a>
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:19:93 - error NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'.
+
+19               <a routerLink="/{{item.pageLink}}" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" >{{item.pageName}}</a>
+                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:23:28 - error NG8002: Can't bind to 'routerLink' since it isn't a known property of 'a'.
+
+23                   <li > <a routerLink="/{{itemChild.pageLink}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" >{{itemChild.pageName}}</a></li>
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:23:91 - error NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'.
+
+23                   <li > <a routerLink="/{{itemChild.pageLink}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()" >{{itemChild.pageName}}</a></li>
+                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:27:34 - error NG8002: Can't bind to 'ngClass' since it isn't a known property of 'li'.
+
+27             <li class="nav-item" [ngClass]="auth.member.value?.email ? 'dropmenu':'' " >
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:34:48 - error NG8002: Can't bind to 'ngClass' since it isn't a known property of 'ul'.
+
+34                 <ul class="dropmenu-content "  [ngClass]="auth.member.value?.email ? '':'hide' " >
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+Error: src/app/shared/header/header.component.html:43:36 - error NG8002: Can't bind to 'ngClass' since it isn't a known property of 'li'.
+
+43             <li class="nav-item  " [ngClass]="auth.member.value?.usertype == 'admin' ? 'dropmenu':'' "  >
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/shared/header/header.component.ts:11:16
+    11   templateUrl: './header.component.html',
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component HeaderComponent.
+
+
+
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+× Failed to compile.

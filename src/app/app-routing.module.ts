@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { TeamComponent } from './pages/aboutus/team/team.component';
+import { BodComponent } from './pages/aboutus/bod/bod.component';
 import { ConstitutionComponent } from './pages/aboutus/constitution/constitution.component';
 import { HistoryComponent } from './pages/aboutus/history/history.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
@@ -38,6 +39,7 @@ import { CaresComponent } from './pages/cares/cares.component';
 import { ProposedconstitutionComponent } from './pages/archive/proposedconstitution/proposedconstitution.component';
 import { UserDetailsCheckComponent } from './components/user-details-check/user-details-check.component';
 import { Pastteam2023to24Component } from './pages/archive/pastteam2023to24/pastteam2023to24.component';
+import { Kobipronam2024Component } from './pages/kobipronam2024/kobipronam2024.component';
 
 
 
@@ -45,6 +47,7 @@ const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: 'full' }, 
   { path: "home", component: HomeComponent, pathMatch: 'full'  },
   { path: "team", component: TeamComponent, pathMatch: 'full'  },
+  { path: "bod", component: BodComponent, pathMatch: 'full'  },
   { path: "history", component: HistoryComponent, pathMatch: 'full'  },
   { path: "constitution", component: ConstitutionComponent, pathMatch: 'full'  },
   { path: "eventsguidelines", component: EventsguidelinesComponent, pathMatch: 'full'  },
@@ -57,6 +60,9 @@ const routes: Routes = [
   { path: "pastteam2022", component: Pastteam2023to24Component, pathMatch: 'full'  },
   { path: "agm", component: AgmComponent, pathMatch: 'full'  },
   { path: 'frompresidentsdesk', component: PresidentsdeskComponent },
+  { path: 'about', component: TeamComponent },
+  { path: 'archive', component: MagazinesComponent },
+
 
 
   { path: 'sign-in', component: SignInComponent },
@@ -77,6 +83,7 @@ const routes: Routes = [
   { path: 'concertcheckout', component: EventscheckoutComponent },         
   // { path: 'tickets', component: EventticketsComponent, canActivate:[AuthGuard] },kobipronam
   { path: 'kobipronam', component: KobipronamComponent },
+  { path: 'kobipronam-2024', component: Kobipronam2024Component },
   { path: 'foodcheckout', component: FoodcheckoutComponent },
   { path: 'picnic', component: PicnicComponent },
   { path: 'cares', component: CaresComponent },
