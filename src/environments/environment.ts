@@ -2,7 +2,7 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-
+// For Prod
 export const environment = {
   production: false,
   firebase: {
@@ -19,7 +19,7 @@ export const environment = {
 
 export const paypalKey = 'AVBsfj0Jw-jl5_63BPGwuduCaKDsPvbz1pwyqECm7N5FzKEi1Q_o-xQAiM_BTzQhAW064uAPf1v9uZdS';
 
-
+// For Dev
 // export const environment = {
 //   production: false,
 //   firebase: {
